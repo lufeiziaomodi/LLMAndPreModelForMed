@@ -1,0 +1,547 @@
+[
+  {
+    "id": 0,
+    "true_label": "mechanism",
+    "predicted_label": "mechanism",
+    "predicted_label_source": "prediction",
+    "text": "DIFLUCAN reduces the metabolism of tolbutamide, glyburide, and glipizide and increases the plasma concentration of these agents.",
+    "reasoning": "[\n    {\n        \"query\": \"GLOBAL_PHENOMENON\",\n        \"analysis_steps\": \"1. The sentence describes a pharmacokinetic interaction where DIFLUCAN reduces metabolism of certain sulfonylureas. 2. Reduced metabolism leads to increased plasma concentration of tolbutamide, glyburide, and glipizide. 3. This reflects inhibition of hepatic cytochrome P450 enzymes (e.g., CYP2C9) by DIFLUCAN. 4. The net effect is elevated drug exposure and potential hypoglycemia.\",\n        \"mechanism_summary\": \"DIFLUCAN inhibits the hepatic metabolism of tolbutamide, glyburide, and glipizide—primarily via CYP2C9 inhibition—resulting in increased plasma concentrations.\",\n        \"representative_pairs\": [\n            \"DIFLUCAN -> tolbutamide\",\n            \"DIFLUCAN -> glyburide\",\n            \"DIFLUCAN -> glipizide\"\n        ]\n    }\n]",
+    "sentence": "DIFLUCAN reduces the metabolism of tolbutamide, glyburide, and glipizide and increases the plasma concentration of these agents.",
+    "queries": "1. DIFLUCAN -> tolbutamide\n2. DIFLUCAN -> glyburide\n3. DIFLUCAN -> glipizide",
+    "kg_evidence": "",
+    "evidence_mode": "no_kg",
+    "kg_used": false,
+    "coverage_ratio": 0.0,
+    "hallucination_rate": 0.4,
+    "partial_support_rate": 0.6,
+    "consistency_score": 1.0,
+    "kg_grounded_ratio": null,
+    "supported_claims": [],
+    "partial_supported_claims": [
+      {
+        "claim": "The sentence describes a pharmacokinetic interaction where DIFLUCAN reduces metabolism of certain sulfonylureas.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.1875,
+        "token_precision": 0.3333333333333333,
+        "unsupported_tokens": [
+          "describes",
+          "pharmacokinetic",
+          "interaction",
+          "where",
+          "certain",
+          "sulfonylureas"
+        ]
+      },
+      {
+        "claim": "Reduced metabolism leads to increased plasma concentration of tolbutamide, glyburide, and glipizide.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.46153846153846156,
+        "token_precision": 0.6666666666666666,
+        "unsupported_tokens": [
+          "reduced",
+          "leads",
+          "increased"
+        ]
+      },
+      {
+        "claim": "DIFLUCAN inhibits the hepatic metabolism of tolbutamide, glyburide, and glipizide—primarily via CYP2C9 inhibition—resulting in increased plasma concentrations.",
+        "field": "mechanism_summary",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.2777777777777778,
+        "token_precision": 0.38461538461538464,
+        "unsupported_tokens": [
+          "inhibits",
+          "hepatic",
+          "glipizide-primarily",
+          "via",
+          "cyp2c9",
+          "inhibition-resulting",
+          "increased",
+          "concentrations"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      {
+        "claim": "This reflects inhibition of hepatic cytochrome P450 enzymes (e.g., CYP2C9) by DIFLUCAN.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.05263157894736842,
+        "token_precision": 0.1,
+        "unsupported_tokens": [
+          "reflects",
+          "inhibition",
+          "hepatic",
+          "cytochrome",
+          "p450",
+          "enzymes",
+          "e",
+          "g",
+          "cyp2c9"
+        ]
+      },
+      {
+        "claim": "The net effect is elevated drug exposure and potential hypoglycemia.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.0,
+        "token_precision": 0.0,
+        "unsupported_tokens": [
+          "net",
+          "effect",
+          "elevated",
+          "drug",
+          "exposure",
+          "potential",
+          "hypoglycemia"
+        ]
+      }
+    ],
+    "faithfulness": 1,
+    "mechanistic_correctness": 1,
+    "clarity": 1,
+    "label_alignment": 1,
+    "hallucination_flag": true,
+    "judge_overall": 1.0,
+    "rationale": "Judge error: qwen-max judge call failed: <urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>"
+  },
+  {
+    "id": 1,
+    "true_label": "false",
+    "predicted_label": "false",
+    "predicted_label_source": "prediction",
+    "text": "Cimetidine: The effects of chronic cimetidine use on the metabolism of rimantadine are not known.",
+    "reasoning": "[\n    {\n        \"query\": \"GLOBAL_PHENOMENON\",\n        \"analysis_steps\": \"1. The sentence describes uncertainty about a pharmacokinetic interaction: cimetidine's chronic use may alter rimantadine metabolism. 2. This reflects a potential metabolic inhibition or induction effect, but no empirical evidence is provided. 3. The query pairs are variants of the same drug–drug relationship, all linking cimetidine to rimantadine.\",\n        \"mechanism_summary\": \"The clinical phenomenon is a mechanistically plausible but uncharacterized pharmacokinetic interaction—specifically, potential modulation of rimantadine metabolism by chronic cimetidine exposure.\",\n        \"representative_pairs\": [\n            \"Cimetidine -> rimantadine\",\n            \"cimetidine -> rimantadine\"\n        ]\n    }\n]",
+    "sentence": "Cimetidine: The effects of chronic cimetidine use on the metabolism of rimantadine are not known.",
+    "queries": "1. Cimetidine -> cimetidine\n2. Cimetidine -> rimantadine\n3. cimetidine -> rimantadine",
+    "kg_evidence": "",
+    "evidence_mode": "no_kg",
+    "kg_used": false,
+    "coverage_ratio": 0.0,
+    "hallucination_rate": 0.5,
+    "partial_support_rate": 0.5,
+    "consistency_score": 0.0,
+    "kg_grounded_ratio": null,
+    "supported_claims": [],
+    "partial_supported_claims": [
+      {
+        "claim": "The sentence describes uncertainty about a pharmacokinetic interaction: cimetidine's chronic use may alter rimantadine metabolism.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.3333333333333333,
+        "token_precision": 0.4166666666666667,
+        "unsupported_tokens": [
+          "describes",
+          "uncertainty",
+          "about",
+          "pharmacokinetic",
+          "interaction",
+          "s",
+          "alter"
+        ]
+      },
+      {
+        "claim": "The clinical phenomenon is a mechanistically plausible but uncharacterized pharmacokinetic interaction—specifically, potential modulation of rimantadine metabolism by chronic cimetidine exposure.",
+        "field": "mechanism_summary",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.23529411764705882,
+        "token_precision": 0.3076923076923077,
+        "unsupported_tokens": [
+          "mechanistically",
+          "plausible",
+          "but",
+          "uncharacterized",
+          "pharmacokinetic",
+          "interaction-specifically",
+          "potential",
+          "modulation",
+          "exposure"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      {
+        "claim": "This reflects a potential metabolic inhibition or induction effect, but no empirical evidence is provided.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.0,
+        "token_precision": 0.0,
+        "unsupported_tokens": [
+          "reflects",
+          "potential",
+          "metabolic",
+          "inhibition",
+          "induction",
+          "effect",
+          "but",
+          "no",
+          "empirical",
+          "provided"
+        ]
+      },
+      {
+        "claim": "The query pairs are variants of the same drug–drug relationship, all linking cimetidine to rimantadine.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.13333333333333333,
+        "token_precision": 0.2222222222222222,
+        "unsupported_tokens": [
+          "pairs",
+          "variants",
+          "same",
+          "drug-drug",
+          "relationship",
+          "all",
+          "linking"
+        ]
+      }
+    ],
+    "faithfulness": 1,
+    "mechanistic_correctness": 1,
+    "clarity": 1,
+    "label_alignment": 1,
+    "hallucination_flag": true,
+    "judge_overall": 1.0,
+    "rationale": "Judge error: qwen-max judge call failed: <urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>"
+  },
+  {
+    "id": 2,
+    "true_label": "false",
+    "predicted_label": "false",
+    "predicted_label_source": "prediction",
+    "text": "It may also interact with thiazides (increased thrombocytopenia), cyclosporine (increased nephrotoxicity), sulfonylurea agents (increased hypoglycemic response), warfarin (increased anticoagulant effect), methotrexate (decreased renal excretion of methotrexate), phenytoin (decreased hepatic clearance of phenytoin).",
+    "reasoning": "[\n    {\n        \"query\": \"GLOBAL_PHENOMENON\",\n        \"analysis_steps\": \"1. The sentence describes multiple drug–drug interactions involving NSAIDs (as the unlisted agent) and several listed drugs. 2. Each interaction is characterized by an increased or decreased effect of one drug due to co-administration with another. 3. The shared mechanism is pharmacodynamic or pharmacokinetic modulation—e.g., NSAIDs inhibit platelet function (thrombocytopenia), renal prostaglandins (nephrotoxicity), or hepatic metabolism (clearance). 4. The listed drug pairs are instances of this broader phenomenon, not independent mechanisms.\",\n        \"mechanism_summary\": \"NSAIDs impair platelet function, reduce renal prostaglandin-mediated blood flow, and inhibit hepatic metabolism, thereby potentiating the effects of anticoagulants, sulfonylureas, methotrexate, and phenytoin.\",\n        \"representative_pairs\": [\n            \"thiazides -> cyclosporine\",\n            \"thiazides -> warfarin\",\n            \"cyclosporine -> methotrexate\"\n        ]\n    }\n]",
+    "sentence": "It may also interact with thiazides (increased thrombocytopenia), cyclosporine (increased nephrotoxicity), sulfonylurea agents (increased hypoglycemic response), warfarin (increased anticoagulant effect), methotrexate (decreased renal excretion of methotrexate), phenytoin (decreased hepatic clearance of phenytoin).",
+    "queries": "1. thiazides -> cyclosporine\n2. thiazides -> sulfonylurea agents\n3. thiazides -> warfarin\n4. thiazides -> methotrexate\n5. thiazides -> phenytoin\n6. cyclosporine -> sulfonylurea agents\n7. cyclosporine -> warfarin\n8. cyclosporine -> methotrexate\n9. cyclosporine -> phenytoin\n10. sulfonylurea agents -> warfarin\n11. sulfonylurea agents -> methotrexate\n12. sulfonylurea agents -> phenytoin\n13. warfarin -> methotrexate\n14. warfarin -> phenytoin\n15. methotrexate -> methotrexate\n16. methotrexate -> phenytoin\n17. phenytoin -> phenytoin",
+    "kg_evidence": "",
+    "evidence_mode": "no_kg",
+    "kg_used": false,
+    "coverage_ratio": 0.0,
+    "hallucination_rate": 0.4,
+    "partial_support_rate": 0.6,
+    "consistency_score": 0.0,
+    "kg_grounded_ratio": null,
+    "supported_claims": [],
+    "partial_supported_claims": [
+      {
+        "claim": "Each interaction is characterized by an increased or decreased effect of one drug due to co-administration with another.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.10344827586206896,
+        "token_precision": 0.2727272727272727,
+        "unsupported_tokens": [
+          "each",
+          "interaction",
+          "characterized",
+          "one",
+          "drug",
+          "due",
+          "co-administration",
+          "another"
+        ]
+      },
+      {
+        "claim": "The shared mechanism is pharmacodynamic or pharmacokinetic modulation—e.g., NSAIDs inhibit platelet function (thrombocytopenia), renal prostaglandins (nephrotoxicity), or hepatic metabolism (clearance).",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.15625,
+        "token_precision": 0.3125,
+        "unsupported_tokens": [
+          "shared",
+          "pharmacodynamic",
+          "pharmacokinetic",
+          "modulation-e",
+          "g",
+          "nsaids",
+          "inhibit",
+          "platelet",
+          "function",
+          "prostaglandins",
+          "metabolism"
+        ]
+      },
+      {
+        "claim": "NSAIDs impair platelet function, reduce renal prostaglandin-mediated blood flow, and inhibit hepatic metabolism, thereby potentiating the effects of anticoagulants, sulfonylureas, methotrexate, and phenytoin.",
+        "field": "mechanism_summary",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.1111111111111111,
+        "token_precision": 0.21052631578947367,
+        "unsupported_tokens": [
+          "nsaids",
+          "impair",
+          "platelet",
+          "function",
+          "reduce",
+          "prostaglandin-mediated",
+          "blood",
+          "flow",
+          "inhibit",
+          "metabolism",
+          "thereby",
+          "potentiating",
+          "effects",
+          "anticoagulants",
+          "sulfonylureas"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      {
+        "claim": "The sentence describes multiple drug–drug interactions involving NSAIDs (as the unlisted agent) and several listed drugs.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.0,
+        "token_precision": 0.0,
+        "unsupported_tokens": [
+          "describes",
+          "multiple",
+          "drug-drug",
+          "interactions",
+          "involving",
+          "nsaids",
+          "unlisted",
+          "agent",
+          "several",
+          "listed",
+          "drugs"
+        ]
+      },
+      {
+        "claim": "The listed drug pairs are instances of this broader phenomenon, not independent mechanisms.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.0,
+        "token_precision": 0.0,
+        "unsupported_tokens": [
+          "listed",
+          "drug",
+          "pairs",
+          "instances",
+          "broader",
+          "not",
+          "independent",
+          "mechanisms"
+        ]
+      }
+    ],
+    "faithfulness": 1,
+    "mechanistic_correctness": 1,
+    "clarity": 1,
+    "label_alignment": 1,
+    "hallucination_flag": true,
+    "judge_overall": 1.0,
+    "rationale": "Judge error: qwen-max judge call failed: <urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>"
+  },
+  {
+    "id": 3,
+    "true_label": "false",
+    "predicted_label": "false",
+    "predicted_label_source": "prediction",
+    "text": "Neuromuscular blocking agents (such as suxamethonium chloride): Concurrent use of procaine hydrochloride and neuromuscular blocking agents may result in prolongation or enhancement of the neuromuscular blockade.",
+    "reasoning": "[\n    {\n        \"query\": \"GLOBAL_PHENOMENON\",\n        \"analysis_steps\": \"1. The sentence describes a clinical interaction where procaine hydrochloride co-administered with neuromuscular blocking agents leads to prolonged or enhanced neuromuscular blockade. 2. This reflects a pharmacodynamic interaction—procaine potentiates the effect of NMBAs without altering their pharmacokinetics. 3. Suxamethonium chloride is explicitly named as an example of an NMB agent, but the core interaction is between procaine and NMBAs as a class.\",\n        \"mechanism_summary\": \"Procaine hydrochloride enhances or prolongs neuromuscular blockade induced by neuromuscular blocking agents, likely via additive or synergistic inhibition of neuromuscular transmission.\",\n        \"representative_pairs\": [\n            \"Neuromuscular blocking agents -> procaine hydrochloride\",\n            \"suxamethonium chloride -> procaine hydrochloride\",\n            \"Neuromuscular blocking agents -> neuromuscular blocking agents\"\n        ]\n    }\n]",
+    "sentence": "Neuromuscular blocking agents (such as suxamethonium chloride): Concurrent use of procaine hydrochloride and neuromuscular blocking agents may result in prolongation or enhancement of the neuromuscular blockade.",
+    "queries": "1. Neuromuscular blocking agents -> suxamethonium chloride\n2. Neuromuscular blocking agents -> procaine hydrochloride\n3. Neuromuscular blocking agents -> neuromuscular blocking agents\n4. suxamethonium chloride -> procaine hydrochloride\n5. suxamethonium chloride -> neuromuscular blocking agents",
+    "kg_evidence": "",
+    "evidence_mode": "no_kg",
+    "kg_used": false,
+    "coverage_ratio": 0.0,
+    "hallucination_rate": 0.25,
+    "partial_support_rate": 0.75,
+    "consistency_score": 0.0,
+    "kg_grounded_ratio": null,
+    "supported_claims": [],
+    "partial_supported_claims": [
+      {
+        "claim": "The sentence describes a clinical interaction where procaine hydrochloride co-administered with neuromuscular blocking agents leads to prolonged or enhanced neuromuscular blockade.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.2857142857142857,
+        "token_precision": 0.5,
+        "unsupported_tokens": [
+          "describes",
+          "interaction",
+          "where",
+          "co-administered",
+          "leads",
+          "prolonged",
+          "enhanced"
+        ]
+      },
+      {
+        "claim": "Suxamethonium chloride is explicitly named as an example of an NMB agent, but the core interaction is between procaine and NMBAs as a class.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.12,
+        "token_precision": 0.21428571428571427,
+        "unsupported_tokens": [
+          "explicitly",
+          "named",
+          "example",
+          "nmb",
+          "agent",
+          "but",
+          "core",
+          "interaction",
+          "between",
+          "nmbas",
+          "class"
+        ]
+      },
+      {
+        "claim": "Procaine hydrochloride enhances or prolongs neuromuscular blockade induced by neuromuscular blocking agents, likely via additive or synergistic inhibition of neuromuscular transmission.",
+        "field": "mechanism_summary",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.2608695652173913,
+        "token_precision": 0.47058823529411764,
+        "unsupported_tokens": [
+          "enhances",
+          "prolongs",
+          "induced",
+          "likely",
+          "via",
+          "additive",
+          "synergistic",
+          "inhibition",
+          "transmission"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      {
+        "claim": "This reflects a pharmacodynamic interaction—procaine potentiates the effect of NMBAs without altering their pharmacokinetics.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.0,
+        "token_precision": 0.0,
+        "unsupported_tokens": [
+          "reflects",
+          "pharmacodynamic",
+          "interaction-procaine",
+          "potentiates",
+          "effect",
+          "nmbas",
+          "without",
+          "altering",
+          "pharmacokinetics"
+        ]
+      }
+    ],
+    "faithfulness": 1,
+    "mechanistic_correctness": 1,
+    "clarity": 1,
+    "label_alignment": 1,
+    "hallucination_flag": true,
+    "judge_overall": 1.0,
+    "rationale": "Judge error: qwen-max judge call failed: <urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>"
+  },
+  {
+    "id": 4,
+    "true_label": "false",
+    "predicted_label": "false",
+    "predicted_label_source": "prediction",
+    "text": "- Cisapride, pimozide: Other drugs such as cisapride or pimozide, which are metabolised by hepatic CYP3A isozymes have been associated with QT interval prolongation and/or cardiac arrythmias (typically torsades de pointe) as a result of increase in their serum level subsequent to interaction with significant inhibitors of the isozyme, including some macrolide antibacterials.",
+    "reasoning": "[\n    {\n        \"query\": \"GLOBAL_PHENOMENON\",\n        \"analysis_steps\": \"1. The sentence describes QT interval prolongation and cardiac arrhythmias (e.g., torsades de pointe) due to elevated serum levels of CYP3A-metabolized drugs. 2. These effects arise from inhibition of hepatic CYP3A isozymes by macrolide antibacterials. 3. Cisapride and pimozide are explicitly named as examples of such drugs whose serum levels increase upon CYP3A inhibition. 4. The core phenomenon is a pharmacokinetic–pharmacodynamic interaction mediated by CYP3A inhibition leading to life-threatening arrhythmias.\",\n        \"mechanism_summary\": \"CYP3A inhibition by macrolide antibacterials increases serum concentrations of co-administered CYP3A substrates (e.g., cisapride, pimozide), resulting in QT prolongation and torsades de pointe.\",\n        \"representative_pairs\": [\n            \"cisapride -> macrolide antibacterials\",\n            \"pimozide -> macrolide antibacterials\",\n            \"cisapride -> pimozide\"\n        ]\n    }\n]",
+    "sentence": "- Cisapride, pimozide: Other drugs such as cisapride or pimozide, which are metabolised by hepatic CYP3A isozymes have been associated with QT interval prolongation and/or cardiac arrythmias (typically torsades de pointe) as a result of increase in their serum level subsequent to interaction with significant inhibitors of the isozyme, including some macrolide antibacterials.",
+    "queries": "1. Cisapride -> pimozide\n2. Cisapride -> cisapride\n3. Cisapride -> macrolide antibacterials\n4. pimozide -> cisapride\n5. pimozide -> pimozide\n6. cisapride -> pimozide\n7. pimozide -> macrolide antibacterials",
+    "kg_evidence": "",
+    "evidence_mode": "no_kg",
+    "kg_used": false,
+    "coverage_ratio": 0.0,
+    "hallucination_rate": 0.2,
+    "partial_support_rate": 0.8,
+    "consistency_score": 0.0,
+    "kg_grounded_ratio": null,
+    "supported_claims": [],
+    "partial_supported_claims": [
+      {
+        "claim": "The sentence describes QT interval prolongation and cardiac arrhythmias (e.g., torsades de pointe) due to elevated serum levels of CYP3A-metabolized drugs.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.20930232558139536,
+        "token_precision": 0.5294117647058824,
+        "unsupported_tokens": [
+          "describes",
+          "arrhythmias",
+          "e",
+          "g",
+          "due",
+          "elevated",
+          "levels",
+          "cyp3a-metabolized"
+        ]
+      },
+      {
+        "claim": "These effects arise from inhibition of hepatic CYP3A isozymes by macrolide antibacterials.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.13157894736842105,
+        "token_precision": 0.625,
+        "unsupported_tokens": [
+          "effects",
+          "arise",
+          "inhibition"
+        ]
+      },
+      {
+        "claim": "Cisapride and pimozide are explicitly named as examples of such drugs whose serum levels increase upon CYP3A inhibition.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.16666666666666666,
+        "token_precision": 0.5,
+        "unsupported_tokens": [
+          "explicitly",
+          "named",
+          "examples",
+          "whose",
+          "levels",
+          "upon",
+          "inhibition"
+        ]
+      },
+      {
+        "claim": "CYP3A inhibition by macrolide antibacterials increases serum concentrations of co-administered CYP3A substrates (e.g., cisapride, pimozide), resulting in QT prolongation and torsades de pointe.",
+        "field": "mechanism_summary",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.2558139534883721,
+        "token_precision": 0.6,
+        "unsupported_tokens": [
+          "inhibition",
+          "increases",
+          "concentrations",
+          "co-administered",
+          "substrates",
+          "e",
+          "g",
+          "resulting"
+        ]
+      }
+    ],
+    "unsupported_claims": [
+      {
+        "claim": "The core phenomenon is a pharmacokinetic–pharmacodynamic interaction mediated by CYP3A inhibition leading to life-threatening arrhythmias.",
+        "field": "analysis_steps",
+        "query": "GLOBAL_PHENOMENON",
+        "support_score": 0.047619047619047616,
+        "token_precision": 0.2222222222222222,
+        "unsupported_tokens": [
+          "core",
+          "pharmacokinetic-pharmacodynamic",
+          "mediated",
+          "inhibition",
+          "leading",
+          "life-threatening",
+          "arrhythmias"
+        ]
+      }
+    ],
+    "faithfulness": 1,
+    "mechanistic_correctness": 1,
+    "clarity": 1,
+    "label_alignment": 1,
+    "hallucination_flag": true,
+    "judge_overall": 1.0,
+    "rationale": "Judge error: qwen-max judge call failed: <urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>"
+  }
+]

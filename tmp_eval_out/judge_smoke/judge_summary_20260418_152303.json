@@ -1,0 +1,11 @@
+{
+  "n_samples": 5,
+  "judge_model": "qwen-max",
+  "faithfulness_mean": 1.0,
+  "mechanistic_correctness_mean": 1.0,
+  "clarity_mean": 1.0,
+  "label_alignment_mean": 1.0,
+  "hallucination_count": 5,
+  "hallucination_rate": 1.0,
+  "judge_overall_mean": 1.0
+}

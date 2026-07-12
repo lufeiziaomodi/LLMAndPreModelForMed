@@ -1,0 +1,56 @@
+{
+  "experiment": {
+    "name": "restart_without_kg_no_lora_bootstrap",
+    "output_root": "results/eval_report"
+  },
+  "training": {
+    "enabled": false,
+    "script": "finetune_llama3_ddi.py",
+    "args": []
+  },
+  "classification_eval": {
+    "enabled": false
+  },
+  "inference": {
+    "enabled": true,
+    "script": "inference_llama3_ddi.py",
+    "args": [
+      "--base_model",
+      "models/Meta-Llama-3-8B-Instruct",
+      "--adapter_dir",
+      "no_lora",
+      "--input_json",
+      "data/finetune_dataset_input_test_reasoning_without_kg.json",
+      "--labels_json",
+      "data/finetune_dataset_input_test_labels_clean.json",
+      "--output_json",
+      "results/eval_report/restart_without_kg_no_lora_bootstrap/llama3_base_explanation_no_kg_no_lora.json",
+      "--metrics_json",
+      "results/eval_report/restart_without_kg_no_lora_bootstrap/llama3_base_explanation_no_kg_no_lora_metrics.json",
+      "--prompt_mode",
+      "explanation_without_kg",
+      "--max_new_tokens",
+      "-1",
+      "--temperature",
+      "0.0",
+      "--top_p",
+      "1.0",
+      "--multi_gpu_shard"
+    ]
+  },
+  "explanation_eval": {
+    "enabled": true,
+    "model_name": "llama3_base_explanation_no_kg_no_lora",
+    "predictions_file": "results/eval_report/restart_without_kg_no_lora_bootstrap/llama3_base_explanation_no_kg_no_lora.json",
+    "labels_file": "data/finetune_dataset_input_test_labels_clean.json",
+    "label_predictions_file": "",
+    "output_dir": "results/eval_report/restart_without_kg_no_lora_bootstrap/explanation_eval"
+  },
+  "judge": {
+    "enabled": false,
+    "model_id": "qwen-max",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "max_retries": 4,
+    "retry_delay": 2.0
+  }
+}

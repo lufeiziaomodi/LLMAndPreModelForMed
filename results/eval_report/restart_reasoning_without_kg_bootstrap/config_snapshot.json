@@ -1,0 +1,110 @@
+{
+  "experiment": {
+    "name": "restart_reasoning_without_kg_bootstrap",
+    "output_root": "results/eval_report"
+  },
+  "training": {
+    "enabled": true,
+    "script": "finetune_llama3_ddi.py",
+    "args": [
+      "--model_id",
+      "models/Meta-Llama-3-8B-Instruct",
+      "--data_path",
+      "data/finetune_dataset_input_reasoning_without_kg.json",
+      "--output_dir",
+      "results/llama3_ddi_lora_reasoning_without_kg",
+      "--prompt_mode",
+      "explanation_without_kg",
+      "--batch_size",
+      "1",
+      "--grad_accum",
+      "8",
+      "--learning_rate",
+      "2e-4",
+      "--max_steps",
+      "1000",
+      "--lora_r",
+      "16",
+      "--lora_alpha",
+      "32",
+      "--train_test_split",
+      "0.05",
+      "--multi_gpu_shard"
+    ]
+  },
+  "classification_eval": {
+    "enabled": false
+  },
+  "inference": {
+    "enabled": true,
+    "script": "inference_llama3_ddi.py",
+    "args": [
+      "--base_model",
+      "models/Meta-Llama-3-8B-Instruct",
+      "--adapter_dir",
+      "results/llama3_ddi_lora_reasoning_without_kg",
+      "--input_json",
+      "data/finetune_dataset_input_test_reasoning_without_kg.json",
+      "--labels_json",
+      "data/finetune_dataset_input_test_labels_clean.json",
+      "--output_json",
+      "results/eval_report/restart_reasoning_without_kg_bootstrap/finetune_dataset_input_test_out_reasoning_without_kg.json",
+      "--metrics_json",
+      "results/eval_report/restart_reasoning_without_kg_bootstrap/finetune_dataset_input_test_metrics_reasoning_without_kg.json",
+      "--prompt_mode",
+      "explanation_without_kg",
+      "--max_new_tokens",
+      "-1",
+      "--multi_gpu_shard",
+      "--temperature",
+      "0.0",
+      "--top_p",
+      "1.0"
+    ]
+  },
+  "explanation_eval": {
+    "enabled": true,
+    "model_name": "llama3_reasoning_without_kg_lora",
+    "predictions_file": "results/eval_report/restart_reasoning_without_kg_bootstrap/finetune_dataset_input_test_out_reasoning_without_kg.json",
+    "labels_file": "data/finetune_dataset_input_test_labels_clean.json",
+    "output_dir": "results/eval_report/restart_reasoning_without_kg_bootstrap/explanation_eval"
+  },
+  "judge": {
+    "enabled": true,
+    "model_id": "qwen-max",
+    "api_key": "sk-dab6ce1f16e9493fb84137973907b39f",
+    "output_dir": "results/eval_report/restart_reasoning_without_kg_bootstrap/judge_eval",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "max_retries": 4,
+    "retry_delay": 2.0
+  },
+  "distillation_generation": {
+    "input": "data/finetune_dataset_input_label_only_with_kg.json",
+    "output": "data/finetune_dataset_input_reasoning_without_kg.json",
+    "model": "qwen-plus",
+    "api_key": "sk-dab6ce1f16e9493fb84137973907b39f",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "generation_mode": "distill_reasoning_without_kg",
+    "ignore_kg_evidence": true,
+    "max_new_tokens": 768,
+    "max_workers": 4,
+    "save_every": 100,
+    "log_every": 10,
+    "overwrite": true
+  },
+  "distillation_generation_smoke": {
+    "input": "data/finetune_dataset_input_label_only_with_kg.json",
+    "output": "data/_tmp_reasoning_no_kg_distillation_probe.json",
+    "model": "qwen-plus",
+    "api_key": "sk-dab6ce1f16e9493fb84137973907b39f",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "generation_mode": "distill_reasoning_without_kg",
+    "ignore_kg_evidence": true,
+    "limit": 5,
+    "max_new_tokens": 512,
+    "max_workers": 1,
+    "save_every": 5,
+    "log_every": 1,
+    "overwrite": true
+  }
+}

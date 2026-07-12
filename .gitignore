@@ -1,0 +1,9 @@
+models/
+
+# 忽略 llama3 lora 微调结果文件夹
+results/llama3_ddi_lora_reasoning_without_kg/
+results/llama3_ddi_lora_label_only_with_kg/
+# 额外：也把大数据集文件夹一并忽略
+data/kg.csv
+data/primekg_graph.pkl
+data/primekg_pyg.pt

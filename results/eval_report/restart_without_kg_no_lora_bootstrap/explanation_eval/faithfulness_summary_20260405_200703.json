@@ -1,0 +1,23 @@
+{
+  "n_samples": 1042,
+  "coverage_mean": 0.11273860662812263,
+  "hallucination_mean": 0.8872613933718779,
+  "consistency_mean": 0.24046705054382655,
+  "kg_grounded_mean": null,
+  "by_evidence_mode": {
+    "with_kg": {
+      "n_samples": 0,
+      "coverage_mean": 0.0,
+      "hallucination_mean": 0.0,
+      "consistency_mean": 0.0,
+      "kg_grounded_mean": null
+    },
+    "no_kg": {
+      "n_samples": 1042,
+      "coverage_mean": 0.11273860662812263,
+      "hallucination_mean": 0.8872613933718779,
+      "consistency_mean": 0.24046705054382655,
+      "kg_grounded_mean": null
+    }
+  }
+}

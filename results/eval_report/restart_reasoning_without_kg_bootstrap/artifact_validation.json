@@ -1,0 +1,23 @@
+{
+  "n_artifacts": 4,
+  "ok": true,
+  "missing": [],
+  "checked": [
+    {
+      "path": "results\\eval_report\\restart_reasoning_without_kg_bootstrap\\explanation_eval\\faithfulness_detail_20260417_050759.json",
+      "exists": true
+    },
+    {
+      "path": "results\\eval_report\\restart_reasoning_without_kg_bootstrap\\explanation_eval\\faithfulness_summary_20260417_050759.json",
+      "exists": true
+    },
+    {
+      "path": "results\\eval_report\\restart_reasoning_without_kg_bootstrap\\judge_eval\\judge_detail_20260417_063955.json",
+      "exists": true
+    },
+    {
+      "path": "results\\eval_report\\restart_reasoning_without_kg_bootstrap\\judge_eval\\judge_summary_20260417_063955.json",
+      "exists": true
+    }
+  ]
+}

@@ -1,0 +1,2529 @@
+[
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "Ritalin",
+    "e2": "tricyclic drugs",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "Coadministration with a high dose of antacid (170 mEq) results in a 28% decrease in plasma concentrations of ranitidine and may decrease plasma concentrations of bismuth from TRITEC.",
+    "e1": "antacid",
+    "e2": "ranitidine",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "Coadministration with a high dose of antacid (170 mEq) results in a 28% decrease in plasma concentrations of ranitidine and may decrease plasma concentrations of bismuth from TRITEC.",
+    "e1": "antacid",
+    "e2": "TRITEC",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "MAO-A inhibitors reduce sumatriptan clearance, significantly increasing systemic exposure.",
+    "e1": "MAO-A inhibitors",
+    "e2": "sumatriptan",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "TOLECTIN and other nonsteroidal anti-inflammatory drugs have been reported to reduce the tubular secretion of methotrexate in an animal model, possibly enhancing the toxicity of methotrexate.",
+    "e1": "nonsteroidal anti-inflammatory drugs",
+    "e2": "methotrexate",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "Moxifloxacin and Lomefloxacin reacts faster with sucralfate and gelusil in acidic media whereas with erythromycin in basic media and multi-minerals in neutral media.",
+    "e1": "Moxifloxacin",
+    "e2": "gelusil",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "Moxifloxacin and Lomefloxacin reacts faster with sucralfate and gelusil in acidic media whereas with erythromycin in basic media and multi-minerals in neutral media.",
+    "e1": "Lomefloxacin",
+    "e2": "gelusil",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "Paroxetine and fluoxetine reduce the plasma concentration of endoxifen by about 50%.",
+    "e1": "Paroxetine",
+    "e2": "endoxifen",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "Paroxetine and fluoxetine reduce the plasma concentration of endoxifen by about 50%.",
+    "e1": "fluoxetine",
+    "e2": "endoxifen",
+    "gold_label": "Mechanism",
+    "source_file": "mechanism_test.json"
+  },
+  {
+    "text": "The action of Mecamylamine may be potentiated by anesthesia, other antihypertensive drugs and alcohol.",
+    "e1": "Mecamylamine",
+    "e2": "antihypertensive drugs",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "anticholinergic drugs",
+    "e2": "MAO inhibitors",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Monoamine oxidase inhibitors or tricyclic antidepressants may potentiate the action of sympathomimetic amines.",
+    "e1": "Monoamine oxidase inhibitors",
+    "e2": "sympathomimetic amines",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Thiazides may add to or potentiate the action of other antihypertensive drugs.",
+    "e1": "Thiazides",
+    "e2": "antihypertensive drugs",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "When methyldopa is used with other antihypertensive drugs, potentiation of antihypertensive effect may occur.",
+    "e1": "methyldopa",
+    "e2": "antihypertensive drugs",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Concurrent use of alcohol and other CNS depression-producing drugs may increase the CNS depressant effects of methyprylon or these other medications.",
+    "e1": "CNS depression-producing drugs",
+    "e2": "methyprylon",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Curariform Drugs: Diuretic-induced hypokalemia may enhance neuromuscular blocking effects of curariform drugs (such as tubocurarine) the most serious effect would be respiratory depression which could proceed to apnea.",
+    "e1": "Diuretic",
+    "e2": "curariform drugs",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Salicylates and Other Non-Steroidal Anti-Inflammatory Drugs: May decrease the antihypertensive effects of MYKROX Tablets.",
+    "e1": "Non-Steroidal Anti-Inflammatory Drugs",
+    "e2": "MYKROX",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "The neuromuscular blocking effect of MIVACRON may be enhanced by drugs that reduce plasma cholinesterase activity (e.g., chronically administered oral contraceptives, glucocorticoids, or certain monoamine oxidase inhibitors) or by drugs that irreversibly inhibit plasma cholinesterase . Resistance to the neuromuscular blocking action of nondepolarizing neuromuscular blocking agents has been demonstrated in patients chronically administered phenytoin or carbamazepine.",
+    "e1": "MIVACRON",
+    "e2": "monoamine oxidase inhibitors",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Anticholinergics or other medications with anticholinergic activity when used concurrently with opioid analgesics may result in increased risk of urinary retention and/or severe constipation, which may lead to paralytic ileus.",
+    "e1": "Anticholinergics",
+    "e2": "opioid analgesics",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "In addition, CNS toxicity has been reported (confusion, disorientation, respiratory depression, apnea, seizures) following coadministration of cimetidine with opioid analgesics;",
+    "e1": "cimetidine",
+    "e2": "opioid analgesics",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "There have been postmarketing reports of increased INR and prothrombin time in patients receiving proton pump inhibitors, including pantoprazole, and warfarin concomitantly.",
+    "e1": "proton pump inhibitors",
+    "e2": "warfarin",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Vasopressors, particularly metaraminol, may cause serious cardiac arrhythmias during halothane anesthesia and therefore should be used only with great caution or not at all.",
+    "e1": "Vasopressors",
+    "e2": "halothane",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "MAO Inhibitors: The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "sympathomimetic pressor amines",
+    "e2": "monoamine oxidase inhibitors",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "MAO Inhibitors: The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "sympathomimetic pressor amines",
+    "e2": "MAOI",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "MAO Inhibitors - The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "sympathomimetic pressor amines",
+    "e2": "monoamine oxidase inhibitors",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "MAO Inhibitors - The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "sympathomimetic pressor amines",
+    "e2": "MAOI",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "MAO inhibitors and beta adrenergic blockers increase the effects of pseudoephedrine.",
+    "e1": "MAO inhibitors",
+    "e2": "pseudoephedrine",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "however, in patients with Paget's Disease prior diphosphonate use appears to reduce the anti-resorptive response to Calcitonin (salmon) nasal spray.",
+    "e1": "diphosphonate",
+    "e2": "Calcitonin (salmon)",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Salicylates given concomitantly with anticoagulant drugs may predispose to systemic bleeding.",
+    "e1": "Salicylates",
+    "e2": "anticoagulant drugs",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Salicylates may enhance the hypoglycemic effect of oral antidiabetic drugs of the sulfonylurea class.",
+    "e1": "Salicylates",
+    "e2": "antidiabetic drugs",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Sulfoxone may increase the effects of barbiturates, tolbutamide, and uricosurics.",
+    "e1": "Sulfoxone",
+    "e2": "barbiturates",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Sulfoxone may increase the effects of barbiturates, tolbutamide, and uricosurics.",
+    "e1": "Sulfoxone",
+    "e2": "tolbutamide",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Sulfoxone may increase the effects of barbiturates, tolbutamide, and uricosurics.",
+    "e1": "Sulfoxone",
+    "e2": "uricosurics",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "carbachol",
+    "e2": "suprofen",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "Carboptic",
+    "e2": "suprofen",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "Isopto Carbachol",
+    "e2": "suprofen",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "There is usually complete cross-resistance between PURINETHOL (mercaptopurine) and TABLOID brand Thioguanine.",
+    "e1": "PURINETHOL",
+    "e2": "TABLOID",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "There is usually complete cross-resistance between PURINETHOL (mercaptopurine) and TABLOID brand Thioguanine.",
+    "e1": "mercaptopurine",
+    "e2": "TABLOID",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Concurrent use of antibacterial drugs with oral contraceptives may render oral contraceptives less effective.",
+    "e1": "antibacterial drugs",
+    "e2": "contraceptives",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Other HDAC Inhibitors Severe thrombocytopenia and gastrointestinal bleeding have been reported with concomitant use of ZOLINZA and other HDAC inhibitors (e.g., valproic acid).",
+    "e1": "ZOLINZA",
+    "e2": "HDAC inhibitors",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "We also found that Bcl-2 was overexpressed in DZNep insensitive cells, and cotreatment with DZNep and ABT-737, a Bcl-2 family inhibitor, synergistically inhibited growth and induced apoptosis of DZNep insensitive MM cells.",
+    "e1": "DZNep",
+    "e2": "ABT-737",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "In addition, DZNep insensitivity might be associated with overexpression of Bcl-2, and the combination of ABT-737 and DZNep could synergistically induced apoptosis.",
+    "e1": "ABT-737",
+    "e2": "DZNep",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "ABT decreased the toxicity of precocene I, increased exposure to parent compound, and decreased metabolite levels in a dose-dependent manner.",
+    "e1": "ABT",
+    "e2": "precocene I",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Furafylline and sulfaphenazole had no effect, while quinidine appeared to augment precocene I toxicity.",
+    "e1": "quinidine",
+    "e2": "precocene I",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "AAV2-mediated retinal transduction is improved by co-injection of heparinase III or chondroitin ABC lyase.",
+    "e1": "AAV2",
+    "e2": "heparinase III",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "AAV2-mediated retinal transduction is improved by co-injection of heparinase III or chondroitin ABC lyase.",
+    "e1": "AAV2",
+    "e2": "chondroitin ABC lyase",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "Acute administration of hemantane or doxycycline failed to influence locomotion in mice, while their combination normalized motor activity.",
+    "e1": "hemantane",
+    "e2": "doxycycline",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "In experiment 2, the same regimen of GSLS was administered to chickens inoculated with inactivated AI vaccines, and an enhanced serum antibody response to AI vaccination was also observed.",
+    "e1": "GSLS",
+    "e2": "inactivated AI vaccines",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "CRM197 induced apoptosis, and furthermore, the combination of CRM197 plus doxorubicin enhanced cytotoxicity in a T-ALL cell line.",
+    "e1": "CRM197",
+    "e2": "doxorubicin",
+    "gold_label": "Effect",
+    "source_file": "effect_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "mazindol",
+    "e2": "monoamine oxidase inhibitor",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "mazindol",
+    "e2": "MAOI",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "The finding that metoclopramide releases catecholamines in patients with essential hypertension suggests that it should be used cautiously, if at all, in patients receiving monoamine oxi-dase inhibitors.",
+    "e1": "metoclopramide",
+    "e2": "monoamine oxi-dase inhibitors",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Other Antihypertensives: When MYKROX Tablets are used with other antihypertensive drugs, care must be taken, especially during initial therapy.",
+    "e1": "MYKROX",
+    "e2": "antihypertensive drugs",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Agonist/antagonist analgesics",
+    "e2": "opioid agonist analgesic",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "pentazocine",
+    "e2": "opioid agonist analgesic",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "nalbuphine",
+    "e2": "opioid agonist analgesic",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "butorphanol",
+    "e2": "opioid agonist analgesic",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "buprenorphine",
+    "e2": "opioid agonist analgesic",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Other beta adrenergic aerosol bronchodilators should not be used concomitantly with Alupent    (metaproterenol sulfate USP) because they may have additive effects.",
+    "e1": "beta adrenergic aerosol bronchodilators",
+    "e2": "Alupent",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Beta adrenergic agonists should be administered with caution to patients being treated with monoamine oxidase inhibitors or tricyclic antidepressants, since the action of beta adrenergic agonists on the vascular system may be potentiated.",
+    "e1": "Beta adrenergic agonists",
+    "e2": "monoamine oxidase inhibitors",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Patients treated with proton pump inhibitors and warfarin concomitantly should be monitored for increases in INR and prothrombin time.",
+    "e1": "proton pump inhibitors",
+    "e2": "warfarin",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Due to its effects on gastric emptying, SYMLIN therapy should not be considered for patients taking drugs that alter gastrointestinal motility (e.g., anticholinergic agents such as atropine) and agents that slow the intestinal absorption of nutrients (e.g., alpha glucosidase inhibitors).",
+    "e1": "SYMLIN",
+    "e2": "alpha glucosidase inhibitors",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Concomitant administration of CHEMET with other chelation therapy, such as CaNa 2 EDTA is not recommended.",
+    "e1": "CHEMET",
+    "e2": "CaNa 2 EDTA",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Therefore, the use of sumatriptan succinate tablets in patients receiving MAO-A inhibitors is contraindicated . Selective serotonin reuptake inhibitors (SSRIs) (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline) have been reported, rarely, to cause weakness, hyperreflexia, and incoordination when coadministered with sumatriptan.",
+    "e1": "sumatriptan succinate",
+    "e2": "MAO-A inhibitors",
+    "gold_label": "Advice",
+    "source_file": "advise_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "Melatonin",
+    "e2": "beta blockers",
+    "gold_label": "Int",
+    "source_file": "int_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "Mequitazine",
+    "e2": "CNS depressant",
+    "gold_label": "Int",
+    "source_file": "int_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "Mequitazine",
+    "e2": "MAOIs",
+    "gold_label": "Int",
+    "source_file": "int_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "Methscopolamine",
+    "e2": "MAO inhibitors",
+    "gold_label": "Int",
+    "source_file": "int_test.json"
+  },
+  {
+    "text": "Barbiturates may decrease the effectiveness of oral contraceptives, certain antibiotics, quinidine, theophylline, corticosteroids, anticoagulants, and beta blockers.",
+    "e1": "Barbiturates",
+    "e2": "beta blockers",
+    "gold_label": "Int",
+    "source_file": "int_test.json"
+  },
+  {
+    "text": "This is typical of the interaction of meperidine and MAOIs.",
+    "e1": "meperidine",
+    "e2": "MAOIs",
+    "gold_label": "Int",
+    "source_file": "int_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Coumarin-type anticoagulants",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Phenytoin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Cyclosporine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Rifampin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Theophylline",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Terfenadine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Cisapride",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Astemizole",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Rifabutin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Tacrolimus",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "Short-acting benzodiazepines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "DIFLUCAN",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "hypoglycemics",
+    "e2": "hypoglycemic agents",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Coumarin-type anticoagulants",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Phenytoin",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Cyclosporine",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Rifampin",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Theophylline",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Terfenadine",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Cisapride",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Astemizole",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Rifabutin",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Tacrolimus",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These are described in greater detail below:  Oral hypoglycemics, Coumarin-type anticoagulants, Phenytoin, Cyclosporine, Rifampin, Theophylline, Terfenadine, Cisapride, Astemizole, Rifabutin, Tacrolimus, Short-acting benzodiazepines,  Oral hypoglycemics: Clinically significant hypoglycemia may be precipitated by the use of DIFLUCAN with oral hypoglycemic agents;",
+    "e1": "Short-acting benzodiazepines",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "monoamine oxidase inhibitor",
+    "e2": "MAOI",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "monoamine oxidase inhibitor",
+    "e2": "isocarboxazid",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "monoamine oxidase inhibitor",
+    "e2": "Marplan",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "monoamine oxidase inhibitor",
+    "e2": "tranylcypromine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "monoamine oxidase inhibitor",
+    "e2": "Parnate",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "monoamine oxidase inhibitor",
+    "e2": "phenelzine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "monoamine oxidase inhibitor",
+    "e2": "Nardil",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "MAOI",
+    "e2": "isocarboxazid",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "MAOI",
+    "e2": "Marplan",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "MAOI",
+    "e2": "tranylcypromine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "MAOI",
+    "e2": "Parnate",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "MAOI",
+    "e2": "phenelzine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "You cannot take mazindol if you have taken a monoamine oxidase inhibitor (MAOI) such as isocarboxazid (Marplan), tranylcypromine (Parnate), or phenelzine (Nardil) in the last 14 days.",
+    "e1": "MAOI",
+    "e2": "Nardil",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The action of Mecamylamine may be potentiated by anesthesia, other antihypertensive drugs and alcohol.",
+    "e1": "antihypertensive drugs",
+    "e2": "alcohol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "aspirin",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "NSAIDs",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "melatonin",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "fluvoxamine",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "beta blockers",
+    "e2": "melatonin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "beta blockers",
+    "e2": "fluoxetine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "beta blockers",
+    "e2": "progestin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "beta blockers",
+    "e2": "benzodiazepenes",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "e1": "beta blockers",
+    "e2": "corticosteroids",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "amantadine",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "antiarrhythmic agents of class I",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "quinidine",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "antihistamines",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "antipsychotic agents",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "phenothiazines",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "benzodiazepines",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "MAO inhibitors",
+    "e2": "narcotic analgesics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "MAO inhibitors",
+    "e2": "meperidine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "MAO inhibitors",
+    "e2": "nitrates",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "MAO inhibitors",
+    "e2": "nitrites",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "MAO inhibitors",
+    "e2": "sympathomimetic agents",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The following agents may increase certain actions or side effects of anticholinergic drugs: amantadine, antiarrhythmic agents of class I (e.g., quinidine), antihistamines, antipsychotic agents (e.g., phenothiazines), benzodiazepines, MAO inhibitors, narcotic analgesics (e.g., meperidine), nitrates and nitrites, sympathomimetic agents, tricyclic antidepressants, and other drugs having anticholinergic activity.",
+    "e1": "MAO inhibitors",
+    "e2": "tricyclic antidepressants",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "CNS depressant",
+    "e2": "antichlolinergic",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "CNS depressant",
+    "e2": "TCA",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "CNS depressant",
+    "e2": "MAOIs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "CNS depressant",
+    "e2": "alcohol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "antichlolinergic",
+    "e2": "MAOIs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "TCA",
+    "e2": "MAOIs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "e1": "MAOIs",
+    "e2": "alcohol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Monoamine oxidase inhibitors or tricyclic antidepressants may potentiate the action of sympathomimetic amines.",
+    "e1": "Monoamine oxidase inhibitors",
+    "e2": "tricyclic antidepressants",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "coumarin anticoagulants",
+    "e2": "tricyclic drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "anticonvulsants",
+    "e2": "tricyclic drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "phenobarbital",
+    "e2": "tricyclic drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "diphenylhydantoin",
+    "e2": "tricyclic drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "primidone",
+    "e2": "tricyclic drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "phenylbutazone",
+    "e2": "tricyclic drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "tricyclic drugs",
+    "e2": "imipramine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "tricyclic drugs",
+    "e2": "clomipramine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Human pharmacologic studies have shown that Ritalin may inhibit the metabolism of coumarin anticoagulants, anticonvulsants (phenobarbital, diphenylhydantoin, primidone), phenylbutazone, and tricyclic drugs (imipramine, clomipramine, desipramine).",
+    "e1": "tricyclic drugs",
+    "e2": "desipramine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "antidepressants",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "tricyclic",
+    "e2": "MAO inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "phenelzine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "linezolid",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "tranylcypromine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "isocarboxazid",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "selegiline",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "furazolidone",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "quinidine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "amantadine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "antihistamines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "diphenhydramine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "anticholinergics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "potassium chloride",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "antacids",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "absorbent-type anti-diarrhea medicines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "kaolin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "pectin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "phenothiazines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "chlorpromazine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "e1": "MAO inhibitors",
+    "e2": "promethazine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Concurrent use of alcohol and other CNS depression-producing drugs may increase the CNS depressant effects of methyprylon or these other medications.",
+    "e1": "alcohol",
+    "e2": "CNS depression-producing drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other Antihypertensives: When MYKROX Tablets are used with other antihypertensive drugs, care must be taken, especially during initial therapy.",
+    "e1": "Antihypertensives",
+    "e2": "MYKROX",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other Antihypertensives: When MYKROX Tablets are used with other antihypertensive drugs, care must be taken, especially during initial therapy.",
+    "e1": "Antihypertensives",
+    "e2": "antihypertensive drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Curariform Drugs: Diuretic-induced hypokalemia may enhance neuromuscular blocking effects of curariform drugs (such as tubocurarine) the most serious effect would be respiratory depression which could proceed to apnea.",
+    "e1": "Curariform Drugs",
+    "e2": "Diuretic",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Curariform Drugs: Diuretic-induced hypokalemia may enhance neuromuscular blocking effects of curariform drugs (such as tubocurarine) the most serious effect would be respiratory depression which could proceed to apnea.",
+    "e1": "Curariform Drugs",
+    "e2": "curariform drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Curariform Drugs: Diuretic-induced hypokalemia may enhance neuromuscular blocking effects of curariform drugs (such as tubocurarine) the most serious effect would be respiratory depression which could proceed to apnea.",
+    "e1": "Curariform Drugs",
+    "e2": "tubocurarine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Curariform Drugs: Diuretic-induced hypokalemia may enhance neuromuscular blocking effects of curariform drugs (such as tubocurarine) the most serious effect would be respiratory depression which could proceed to apnea.",
+    "e1": "curariform drugs",
+    "e2": "tubocurarine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Salicylates and Other Non-Steroidal Anti-Inflammatory Drugs: May decrease the antihypertensive effects of MYKROX Tablets.",
+    "e1": "Salicylates",
+    "e2": "Non-Steroidal Anti-Inflammatory Drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "In a large compassionate use program Mexitil    has been used concurrently with commonly employed antianginal, antihypertensive, and anticoagulant drugs without observed interactions.",
+    "e1": "Mexitil",
+    "e2": "antihypertensive",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "In a large compassionate use program Mexitil    has been used concurrently with commonly employed antianginal, antihypertensive, and anticoagulant drugs without observed interactions.",
+    "e1": "Mexitil",
+    "e2": "anticoagulant drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "In a large compassionate use program Mexitil    has been used concurrently with commonly employed antianginal, antihypertensive, and anticoagulant drugs without observed interactions.",
+    "e1": "antihypertensive",
+    "e2": "anticoagulant drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The neuromuscular blocking effect of MIVACRON may be enhanced by drugs that reduce plasma cholinesterase activity (e.g., chronically administered oral contraceptives, glucocorticoids, or certain monoamine oxidase inhibitors) or by drugs that irreversibly inhibit plasma cholinesterase . Resistance to the neuromuscular blocking action of nondepolarizing neuromuscular blocking agents has been demonstrated in patients chronically administered phenytoin or carbamazepine.",
+    "e1": "contraceptives",
+    "e2": "monoamine oxidase inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The neuromuscular blocking effect of MIVACRON may be enhanced by drugs that reduce plasma cholinesterase activity (e.g., chronically administered oral contraceptives, glucocorticoids, or certain monoamine oxidase inhibitors) or by drugs that irreversibly inhibit plasma cholinesterase . Resistance to the neuromuscular blocking action of nondepolarizing neuromuscular blocking agents has been demonstrated in patients chronically administered phenytoin or carbamazepine.",
+    "e1": "glucocorticoids",
+    "e2": "monoamine oxidase inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The neuromuscular blocking effect of MIVACRON may be enhanced by drugs that reduce plasma cholinesterase activity (e.g., chronically administered oral contraceptives, glucocorticoids, or certain monoamine oxidase inhibitors) or by drugs that irreversibly inhibit plasma cholinesterase . Resistance to the neuromuscular blocking action of nondepolarizing neuromuscular blocking agents has been demonstrated in patients chronically administered phenytoin or carbamazepine.",
+    "e1": "monoamine oxidase inhibitors",
+    "e2": "neuromuscular blocking agents",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The neuromuscular blocking effect of MIVACRON may be enhanced by drugs that reduce plasma cholinesterase activity (e.g., chronically administered oral contraceptives, glucocorticoids, or certain monoamine oxidase inhibitors) or by drugs that irreversibly inhibit plasma cholinesterase . Resistance to the neuromuscular blocking action of nondepolarizing neuromuscular blocking agents has been demonstrated in patients chronically administered phenytoin or carbamazepine.",
+    "e1": "monoamine oxidase inhibitors",
+    "e2": "phenytoin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The neuromuscular blocking effect of MIVACRON may be enhanced by drugs that reduce plasma cholinesterase activity (e.g., chronically administered oral contraceptives, glucocorticoids, or certain monoamine oxidase inhibitors) or by drugs that irreversibly inhibit plasma cholinesterase . Resistance to the neuromuscular blocking action of nondepolarizing neuromuscular blocking agents has been demonstrated in patients chronically administered phenytoin or carbamazepine.",
+    "e1": "monoamine oxidase inhibitors",
+    "e2": "carbamazepine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "UNIVASC    has been used in clinical trials concomitantly with calcium-channel-blocking agents, diuretics, H2 blockers, digoxin, oral hypoglycemic agents, and cholesterol-lowering agents.",
+    "e1": "UNIVASC",
+    "e2": "H2 blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "UNIVASC    has been used in clinical trials concomitantly with calcium-channel-blocking agents, diuretics, H2 blockers, digoxin, oral hypoglycemic agents, and cholesterol-lowering agents.",
+    "e1": "calcium-channel-blocking agents",
+    "e2": "H2 blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "UNIVASC    has been used in clinical trials concomitantly with calcium-channel-blocking agents, diuretics, H2 blockers, digoxin, oral hypoglycemic agents, and cholesterol-lowering agents.",
+    "e1": "diuretics",
+    "e2": "H2 blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "UNIVASC    has been used in clinical trials concomitantly with calcium-channel-blocking agents, diuretics, H2 blockers, digoxin, oral hypoglycemic agents, and cholesterol-lowering agents.",
+    "e1": "H2 blockers",
+    "e2": "digoxin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "UNIVASC    has been used in clinical trials concomitantly with calcium-channel-blocking agents, diuretics, H2 blockers, digoxin, oral hypoglycemic agents, and cholesterol-lowering agents.",
+    "e1": "H2 blockers",
+    "e2": "hypoglycemic agents",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Mixed Agonist/Antagonist Opioid Analgesics",
+    "e2": "Agonist/antagonist analgesics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Mixed Agonist/Antagonist Opioid Analgesics",
+    "e2": "pentazocine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Mixed Agonist/Antagonist Opioid Analgesics",
+    "e2": "nalbuphine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Mixed Agonist/Antagonist Opioid Analgesics",
+    "e2": "butorphanol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Mixed Agonist/Antagonist Opioid Analgesics",
+    "e2": "buprenorphine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Mixed Agonist/Antagonist Opioid Analgesics",
+    "e2": "opioid agonist analgesic",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Agonist/antagonist analgesics",
+    "e2": "pentazocine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Agonist/antagonist analgesics",
+    "e2": "nalbuphine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Agonist/antagonist analgesics",
+    "e2": "butorphanol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Interaction with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (i.e., pentazocine, nalbuphine, butorphanol, or buprenorphine) should NOT be administered to patients who have received or are receiving a course of therapy with a proof opioid agonist analgesic.",
+    "e1": "Agonist/antagonist analgesics",
+    "e2": "buprenorphine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other beta adrenergic aerosol bronchodilators should not be used concomitantly with Alupent    (metaproterenol sulfate USP) because they may have additive effects.",
+    "e1": "Alupent",
+    "e2": "metaproterenol sulfate",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Beta adrenergic agonists should be administered with caution to patients being treated with monoamine oxidase inhibitors or tricyclic antidepressants, since the action of beta adrenergic agonists on the vascular system may be potentiated.",
+    "e1": "monoamine oxidase inhibitors",
+    "e2": "tricyclic antidepressants",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Beta adrenergic agonists should be administered with caution to patients being treated with monoamine oxidase inhibitors or tricyclic antidepressants, since the action of beta adrenergic agonists on the vascular system may be potentiated.",
+    "e1": "monoamine oxidase inhibitors",
+    "e2": "beta adrenergic agonists",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Concurrent ingestion of antacid (20 mL of antacid containing aluminum hydroxide, magnesium hydroxide, and simethicone) did not significantly affect the exposure of oxybutynin or desethyloxybutynin.",
+    "e1": "antacid",
+    "e2": "antacid",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Concurrent ingestion of antacid (20 mL of antacid containing aluminum hydroxide, magnesium hydroxide, and simethicone) did not significantly affect the exposure of oxybutynin or desethyloxybutynin.",
+    "e1": "antacid",
+    "e2": "aluminum hydroxide",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Concurrent ingestion of antacid (20 mL of antacid containing aluminum hydroxide, magnesium hydroxide, and simethicone) did not significantly affect the exposure of oxybutynin or desethyloxybutynin.",
+    "e1": "antacid",
+    "e2": "magnesium hydroxide",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Concurrent ingestion of antacid (20 mL of antacid containing aluminum hydroxide, magnesium hydroxide, and simethicone) did not significantly affect the exposure of oxybutynin or desethyloxybutynin.",
+    "e1": "antacid",
+    "e2": "simethicone",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Concurrent ingestion of antacid (20 mL of antacid containing aluminum hydroxide, magnesium hydroxide, and simethicone) did not significantly affect the exposure of oxybutynin or desethyloxybutynin.",
+    "e1": "antacid",
+    "e2": "oxybutynin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Concurrent ingestion of antacid (20 mL of antacid containing aluminum hydroxide, magnesium hydroxide, and simethicone) did not significantly affect the exposure of oxybutynin or desethyloxybutynin.",
+    "e1": "antacid",
+    "e2": "desethyloxybutynin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "CNS depressants",
+    "e2": "monoamine oxidase (MAO) inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "sedatives",
+    "e2": "monoamine oxidase (MAO) inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "hypnotics",
+    "e2": "monoamine oxidase (MAO) inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "tranquilizers",
+    "e2": "monoamine oxidase (MAO) inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "anesthetics",
+    "e2": "monoamine oxidase (MAO) inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "phenothiazines",
+    "e2": "monoamine oxidase (MAO) inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "opioids",
+    "e2": "monoamine oxidase (MAO) inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "tricyclic antidepressants",
+    "e2": "monoamine oxidase (MAO) inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The concomitant use of other CNS depressants including sedatives, hypnotics, tranquilizers, general anesthetics, phenothiazines, other opioids, tricyclic antidepressants, monoamine oxidase (MAO) inhibitors, and alcohol may produce additive CNS depressant effects.",
+    "e1": "monoamine oxidase (MAO) inhibitors",
+    "e2": "alcohol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There have been postmarketing reports of increased INR and prothrombin time in patients receiving proton pump inhibitors, including pantoprazole, and warfarin concomitantly.",
+    "e1": "proton pump inhibitors",
+    "e2": "pantoprazole",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Laboratory Tests There have been reports of false-positive urine screening tests for tetrahydrocannabinol (THC) in patients receiving most proton pump inhibitors, including pantoprazole.",
+    "e1": "tetrahydrocannabinol",
+    "e2": "proton pump inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Laboratory Tests There have been reports of false-positive urine screening tests for tetrahydrocannabinol (THC) in patients receiving most proton pump inhibitors, including pantoprazole.",
+    "e1": "THC",
+    "e2": "proton pump inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Laboratory Tests There have been reports of false-positive urine screening tests for tetrahydrocannabinol (THC) in patients receiving most proton pump inhibitors, including pantoprazole.",
+    "e1": "proton pump inhibitors",
+    "e2": "pantoprazole",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "TRENTAL",
+    "e2": "antihypertensive drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "TRENTAL",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "antihypertensive drugs",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "antihypertensive drugs",
+    "e2": "digitalis",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "antihypertensive drugs",
+    "e2": "diuretics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "antihypertensive drugs",
+    "e2": "antidiabetic agents",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "antihypertensive drugs",
+    "e2": "antiarrhythmics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "beta blockers",
+    "e2": "digitalis",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "beta blockers",
+    "e2": "diuretics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "beta blockers",
+    "e2": "antidiabetic agents",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TRENTAL has been used concurrently with antihypertensive drugs, beta blockers, digitalis, diuretics, antidiabetic agents, and antiarrhythmics, without observed problems.",
+    "e1": "beta blockers",
+    "e2": "antiarrhythmics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Vasopressors, particularly metaraminol, may cause serious cardiac arrhythmias during halothane anesthesia and therefore should be used only with great caution or not at all.",
+    "e1": "Vasopressors",
+    "e2": "metaraminol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO Inhibitors: The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "MAO Inhibitors",
+    "e2": "sympathomimetic pressor amines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO Inhibitors: The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "MAO Inhibitors",
+    "e2": "monoamine oxidase inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO Inhibitors: The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "MAO Inhibitors",
+    "e2": "MAOI",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO Inhibitors: The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "monoamine oxidase inhibitors",
+    "e2": "MAOI",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO Inhibitors - The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "MAO Inhibitors",
+    "e2": "sympathomimetic pressor amines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO Inhibitors - The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "MAO Inhibitors",
+    "e2": "monoamine oxidase inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO Inhibitors - The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "MAO Inhibitors",
+    "e2": "MAOI",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO Inhibitors - The pressor effect of sympathomimetic pressor amines is markedly potentiated in patients receiving monoamine oxidase inhibitors (MAOI).",
+    "e1": "monoamine oxidase inhibitors",
+    "e2": "MAOI",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Due to its effects on gastric emptying, SYMLIN therapy should not be considered for patients taking drugs that alter gastrointestinal motility (e.g., anticholinergic agents such as atropine) and agents that slow the intestinal absorption of nutrients (e.g., alpha glucosidase inhibitors).",
+    "e1": "anticholinergic agents",
+    "e2": "alpha glucosidase inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Due to its effects on gastric emptying, SYMLIN therapy should not be considered for patients taking drugs that alter gastrointestinal motility (e.g., anticholinergic agents such as atropine) and agents that slow the intestinal absorption of nutrients (e.g., alpha glucosidase inhibitors).",
+    "e1": "atropine",
+    "e2": "alpha glucosidase inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "CNS depressant medications: Concurrent use of procaine hydrochloride and CNS depressant medications may result in additive depressant effects.",
+    "e1": "CNS depressant",
+    "e2": "procaine hydrochloride",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "CNS depressant medications: Concurrent use of procaine hydrochloride and CNS depressant medications may result in additive depressant effects.",
+    "e1": "CNS depressant",
+    "e2": "CNS depressant medications",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "MAO inhibitors and beta adrenergic blockers increase the effects of pseudoephedrine.",
+    "e1": "MAO inhibitors",
+    "e2": "beta adrenergic blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "rivastigmine",
+    "e2": "antihypertensives",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "rivastigmine",
+    "e2": "nonsteroidal anti-inflammatory drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antacids",
+    "e2": "antihypertensives",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antacids",
+    "e2": "nonsteroidal anti-inflammatory drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antihypertensives",
+    "e2": "calcium channel blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antihypertensives",
+    "e2": "antidiabetics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antihypertensives",
+    "e2": "nonsteroidal anti-inflammatory drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antihypertensives",
+    "e2": "estrogens",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antihypertensives",
+    "e2": "salicylate analgesics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antihypertensives",
+    "e2": "antianginals",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antihypertensives",
+    "e2": "antihistamines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "calcium channel blockers",
+    "e2": "nonsteroidal anti-inflammatory drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "antidiabetics",
+    "e2": "nonsteroidal anti-inflammatory drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "nonsteroidal anti-inflammatory drugs",
+    "e2": "estrogens",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "nonsteroidal anti-inflammatory drugs",
+    "e2": "salicylate analgesics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "nonsteroidal anti-inflammatory drugs",
+    "e2": "antianginals",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Population PK analysis with a database of 625 patients showed that the pharmacokinetics of rivastigmine were not influenced by commonly prescribed medications such as antacids (n=77), antihypertensives (n=72), calcium channel blockers (n=75), antidiabetics (n=21), nonsteroidal anti-inflammatory drugs (n=79), estrogens (n=70), salicylate analgesics (n=177), antianginals (n=35), and antihistamines (n=15).",
+    "e1": "nonsteroidal anti-inflammatory drugs",
+    "e2": "antihistamines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Barbiturates may decrease the effectiveness of oral contraceptives, certain antibiotics, quinidine, theophylline, corticosteroids, anticoagulants, and beta blockers.",
+    "e1": "contraceptives",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Barbiturates may decrease the effectiveness of oral contraceptives, certain antibiotics, quinidine, theophylline, corticosteroids, anticoagulants, and beta blockers.",
+    "e1": "antibiotics",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Barbiturates may decrease the effectiveness of oral contraceptives, certain antibiotics, quinidine, theophylline, corticosteroids, anticoagulants, and beta blockers.",
+    "e1": "quinidine",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Barbiturates may decrease the effectiveness of oral contraceptives, certain antibiotics, quinidine, theophylline, corticosteroids, anticoagulants, and beta blockers.",
+    "e1": "theophylline",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Barbiturates may decrease the effectiveness of oral contraceptives, certain antibiotics, quinidine, theophylline, corticosteroids, anticoagulants, and beta blockers.",
+    "e1": "corticosteroids",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Barbiturates may decrease the effectiveness of oral contraceptives, certain antibiotics, quinidine, theophylline, corticosteroids, anticoagulants, and beta blockers.",
+    "e1": "anticoagulants",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Therefore, the use of sumatriptan succinate tablets in patients receiving MAO-A inhibitors is contraindicated . Selective serotonin reuptake inhibitors (SSRIs) (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline) have been reported, rarely, to cause weakness, hyperreflexia, and incoordination when coadministered with sumatriptan.",
+    "e1": "MAO-A inhibitors",
+    "e2": "Selective serotonin reuptake inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Therefore, the use of sumatriptan succinate tablets in patients receiving MAO-A inhibitors is contraindicated . Selective serotonin reuptake inhibitors (SSRIs) (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline) have been reported, rarely, to cause weakness, hyperreflexia, and incoordination when coadministered with sumatriptan.",
+    "e1": "MAO-A inhibitors",
+    "e2": "SSRIs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Therefore, the use of sumatriptan succinate tablets in patients receiving MAO-A inhibitors is contraindicated . Selective serotonin reuptake inhibitors (SSRIs) (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline) have been reported, rarely, to cause weakness, hyperreflexia, and incoordination when coadministered with sumatriptan.",
+    "e1": "MAO-A inhibitors",
+    "e2": "fluoxetine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Therefore, the use of sumatriptan succinate tablets in patients receiving MAO-A inhibitors is contraindicated . Selective serotonin reuptake inhibitors (SSRIs) (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline) have been reported, rarely, to cause weakness, hyperreflexia, and incoordination when coadministered with sumatriptan.",
+    "e1": "MAO-A inhibitors",
+    "e2": "fluvoxamine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Therefore, the use of sumatriptan succinate tablets in patients receiving MAO-A inhibitors is contraindicated . Selective serotonin reuptake inhibitors (SSRIs) (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline) have been reported, rarely, to cause weakness, hyperreflexia, and incoordination when coadministered with sumatriptan.",
+    "e1": "MAO-A inhibitors",
+    "e2": "paroxetine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Therefore, the use of sumatriptan succinate tablets in patients receiving MAO-A inhibitors is contraindicated . Selective serotonin reuptake inhibitors (SSRIs) (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline) have been reported, rarely, to cause weakness, hyperreflexia, and incoordination when coadministered with sumatriptan.",
+    "e1": "MAO-A inhibitors",
+    "e2": "sertraline",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Therefore, the use of sumatriptan succinate tablets in patients receiving MAO-A inhibitors is contraindicated . Selective serotonin reuptake inhibitors (SSRIs) (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline) have been reported, rarely, to cause weakness, hyperreflexia, and incoordination when coadministered with sumatriptan.",
+    "e1": "MAO-A inhibitors",
+    "e2": "sumatriptan",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "acetylcholine chloride",
+    "e2": "carbachol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "acetylcholine chloride",
+    "e2": "Carboptic",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "acetylcholine chloride",
+    "e2": "Isopto Carbachol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "Miochol",
+    "e2": "carbachol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "Miochol",
+    "e2": "Carboptic",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "Miochol",
+    "e2": "Isopto Carbachol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "carbachol",
+    "e2": "Carboptic",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "carbachol",
+    "e2": "Isopto Carbachol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other eye drops or medications such as acetylcholine chloride (Miochol) and carbachol (Carboptic, Isopto Carbachol) may decrease the effects of suprofen ophthalmic.",
+    "e1": "Carboptic",
+    "e2": "Isopto Carbachol",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "This may be of clinical relevance for compounds predominantly metabolized by this enzyme, such as tricyclic antidepressants,    -blockers, selective serotonin reuptake inhibitors (SSRIs), and monoamine oxidase inhibitors (MAO-Is) Type B, if they have a narrow therapeutic window.",
+    "e1": "tricyclic antidepressants",
+    "e2": "monoamine oxidase inhibitors (MAO-Is) Type B",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "This may be of clinical relevance for compounds predominantly metabolized by this enzyme, such as tricyclic antidepressants,    -blockers, selective serotonin reuptake inhibitors (SSRIs), and monoamine oxidase inhibitors (MAO-Is) Type B, if they have a narrow therapeutic window.",
+    "e1": "selective serotonin reuptake inhibitors",
+    "e2": "monoamine oxidase inhibitors (MAO-Is) Type B",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "This may be of clinical relevance for compounds predominantly metabolized by this enzyme, such as tricyclic antidepressants,    -blockers, selective serotonin reuptake inhibitors (SSRIs), and monoamine oxidase inhibitors (MAO-Is) Type B, if they have a narrow therapeutic window.",
+    "e1": "SSRIs",
+    "e2": "monoamine oxidase inhibitors (MAO-Is) Type B",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "contraceptives",
+    "e2": "hypoglycemics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "contraceptives",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "hypoglycemics",
+    "e2": "theophyllines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "hypoglycemics",
+    "e2": "phenytoins",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "hypoglycemics",
+    "e2": "thiazide diuretics",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "hypoglycemics",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "hypoglycemics",
+    "e2": "calcium channel blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "theophyllines",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "phenytoins",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "thiazide diuretics",
+    "e2": "beta blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is no information available from adequate drug-drug interaction studies with the following classes of drugs: oral contraceptives, hormone replacement therapies, hypoglycemics, theophyllines, phenytoins, thiazide diuretics, beta blockers, and calcium channel blockers.",
+    "e1": "beta blockers",
+    "e2": "calcium channel blockers",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "There is usually complete cross-resistance between PURINETHOL (mercaptopurine) and TABLOID brand Thioguanine.",
+    "e1": "TABLOID",
+    "e2": "Thioguanine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Concurrent use of antibacterial drugs with oral contraceptives may render oral contraceptives less effective.",
+    "e1": "antibacterial drugs",
+    "e2": "contraceptives",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TOLECTIN and other nonsteroidal anti-inflammatory drugs have been reported to reduce the tubular secretion of methotrexate in an animal model, possibly enhancing the toxicity of methotrexate.",
+    "e1": "TOLECTIN",
+    "e2": "nonsteroidal anti-inflammatory drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "TOLECTIN and other nonsteroidal anti-inflammatory drugs have been reported to reduce the tubular secretion of methotrexate in an animal model, possibly enhancing the toxicity of methotrexate.",
+    "e1": "nonsteroidal anti-inflammatory drugs",
+    "e2": "methotrexate",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other HDAC Inhibitors Severe thrombocytopenia and gastrointestinal bleeding have been reported with concomitant use of ZOLINZA and other HDAC inhibitors (e.g., valproic acid).",
+    "e1": "HDAC Inhibitors",
+    "e2": "ZOLINZA",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other HDAC Inhibitors Severe thrombocytopenia and gastrointestinal bleeding have been reported with concomitant use of ZOLINZA and other HDAC inhibitors (e.g., valproic acid).",
+    "e1": "HDAC Inhibitors",
+    "e2": "HDAC inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other HDAC Inhibitors Severe thrombocytopenia and gastrointestinal bleeding have been reported with concomitant use of ZOLINZA and other HDAC inhibitors (e.g., valproic acid).",
+    "e1": "HDAC Inhibitors",
+    "e2": "valproic acid",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Other HDAC Inhibitors Severe thrombocytopenia and gastrointestinal bleeding have been reported with concomitant use of ZOLINZA and other HDAC inhibitors (e.g., valproic acid).",
+    "e1": "HDAC inhibitors",
+    "e2": "valproic acid",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Being moxifloxacin and lomefloxacin fluoroquinolones the interaction study of was carried out with sucralfate, gelusil, erythromycin and multi minerals.",
+    "e1": "moxifloxacin",
+    "e2": "gelusil",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Being moxifloxacin and lomefloxacin fluoroquinolones the interaction study of was carried out with sucralfate, gelusil, erythromycin and multi minerals.",
+    "e1": "fluoroquinolones",
+    "e2": "gelusil",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Being moxifloxacin and lomefloxacin fluoroquinolones the interaction study of was carried out with sucralfate, gelusil, erythromycin and multi minerals.",
+    "e1": "sucralfate",
+    "e2": "gelusil",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Being moxifloxacin and lomefloxacin fluoroquinolones the interaction study of was carried out with sucralfate, gelusil, erythromycin and multi minerals.",
+    "e1": "gelusil",
+    "e2": "erythromycin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Being moxifloxacin and lomefloxacin fluoroquinolones the interaction study of was carried out with sucralfate, gelusil, erythromycin and multi minerals.",
+    "e1": "gelusil",
+    "e2": "multi minerals",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Moxifloxacin and Lomefloxacin reacts faster with sucralfate and gelusil in acidic media whereas with erythromycin in basic media and multi-minerals in neutral media.",
+    "e1": "sucralfate",
+    "e2": "gelusil",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Moxifloxacin and Lomefloxacin reacts faster with sucralfate and gelusil in acidic media whereas with erythromycin in basic media and multi-minerals in neutral media.",
+    "e1": "gelusil",
+    "e2": "erythromycin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Moxifloxacin and Lomefloxacin reacts faster with sucralfate and gelusil in acidic media whereas with erythromycin in basic media and multi-minerals in neutral media.",
+    "e1": "gelusil",
+    "e2": "multi-minerals",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The 3-Deazaneplanocin A (DZNep), one of S-adenosylhomocysteine (AdoHcy) hydrolase inhibitors, has shown antitumor activities in a broad range of solid tumors and acute myeloid leukemia.",
+    "e1": "3-Deazaneplanocin A",
+    "e2": "DZNep",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "We also found that Bcl-2 was overexpressed in DZNep insensitive cells, and cotreatment with DZNep and ABT-737, a Bcl-2 family inhibitor, synergistically inhibited growth and induced apoptosis of DZNep insensitive MM cells.",
+    "e1": "DZNep",
+    "e2": "DZNep",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "We also found that Bcl-2 was overexpressed in DZNep insensitive cells, and cotreatment with DZNep and ABT-737, a Bcl-2 family inhibitor, synergistically inhibited growth and induced apoptosis of DZNep insensitive MM cells.",
+    "e1": "DZNep",
+    "e2": "ABT-737",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "We also found that Bcl-2 was overexpressed in DZNep insensitive cells, and cotreatment with DZNep and ABT-737, a Bcl-2 family inhibitor, synergistically inhibited growth and induced apoptosis of DZNep insensitive MM cells.",
+    "e1": "ABT-737",
+    "e2": "DZNep",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "In addition, DZNep insensitivity might be associated with overexpression of Bcl-2, and the combination of ABT-737 and DZNep could synergistically induced apoptosis.",
+    "e1": "DZNep",
+    "e2": "ABT-737",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "In addition, DZNep insensitivity might be associated with overexpression of Bcl-2, and the combination of ABT-737 and DZNep could synergistically induced apoptosis.",
+    "e1": "DZNep",
+    "e2": "DZNep",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Of the isoform-specific CYP inhibitors tested for an effect on the precocene I metabolite profile, only tranylcypromine was noticeably effective, indicating a role of CYPs 2A6, 2C9, 2Cl9, and 2E1.",
+    "e1": "precocene I",
+    "e2": "tranylcypromine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "With respect to toxicity, the order of CYP inhibitor effectiveness was ABT>diethyldithiocarbamate~tranylcypromine>ketoconazole.",
+    "e1": "ABT",
+    "e2": "diethyldithiocarbamate",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "With respect to toxicity, the order of CYP inhibitor effectiveness was ABT>diethyldithiocarbamate~tranylcypromine>ketoconazole.",
+    "e1": "diethyldithiocarbamate",
+    "e2": "tranylcypromine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "With respect to toxicity, the order of CYP inhibitor effectiveness was ABT>diethyldithiocarbamate~tranylcypromine>ketoconazole.",
+    "e1": "diethyldithiocarbamate",
+    "e2": "ketoconazole",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Furafylline and sulfaphenazole had no effect, while quinidine appeared to augment precocene I toxicity.",
+    "e1": "Furafylline",
+    "e2": "precocene I",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Furafylline and sulfaphenazole had no effect, while quinidine appeared to augment precocene I toxicity.",
+    "e1": "sulfaphenazole",
+    "e2": "precocene I",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "These results suggest that rat liver slices do not reproduce the reported in vivo biotransformation of precocene I and therefore may not be an appropriate model for precocene I metabolism.",
+    "e1": "precocene I",
+    "e2": "precocene I",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "To determine whether the co-injection of extracellular matrix degrading enzymes improves retinal transduction following intravitreal delivery of adeno-associated virus-2 (AAV2).",
+    "e1": "adeno-associated virus-2",
+    "e2": "AAV2",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "AAV2 containing cDNA encoding enhanced green fluorescent protein (GFP), under the control of a chicken   -actin promoter, was delivered by intravitreal injection to adult mice in conjunction with enzymes including collagenase, hyaluronan lyase, heparinase III, or chondroitin ABC lyase.",
+    "e1": "AAV2",
+    "e2": "collagenase",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "AAV2 containing cDNA encoding enhanced green fluorescent protein (GFP), under the control of a chicken   -actin promoter, was delivered by intravitreal injection to adult mice in conjunction with enzymes including collagenase, hyaluronan lyase, heparinase III, or chondroitin ABC lyase.",
+    "e1": "AAV2",
+    "e2": "hyaluronan lyase",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "AAV2 containing cDNA encoding enhanced green fluorescent protein (GFP), under the control of a chicken   -actin promoter, was delivered by intravitreal injection to adult mice in conjunction with enzymes including collagenase, hyaluronan lyase, heparinase III, or chondroitin ABC lyase.",
+    "e1": "AAV2",
+    "e2": "heparinase III",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "AAV2 containing cDNA encoding enhanced green fluorescent protein (GFP), under the control of a chicken   -actin promoter, was delivered by intravitreal injection to adult mice in conjunction with enzymes including collagenase, hyaluronan lyase, heparinase III, or chondroitin ABC lyase.",
+    "e1": "AAV2",
+    "e2": "chondroitin ABC lyase",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The latter displayed midazolam clearances similar to those in two larger cohorts of nonmatched tacrolimus-treated patients (n = 58 and n = 80) and to those receiving a calcineurin inhibitor-free regimen (n = 6).",
+    "e1": "midazolam",
+    "e2": "calcineurin inhibitor",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The latter displayed midazolam clearances similar to those in two larger cohorts of nonmatched tacrolimus-treated patients (n = 58 and n = 80) and to those receiving a calcineurin inhibitor-free regimen (n = 6).",
+    "e1": "tacrolimus",
+    "e2": "calcineurin inhibitor",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "[Interaction between clopidogrel and proton pump inhibitors].",
+    "e1": "clopidogrel",
+    "e2": "proton pump inhibitors",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The drug interaction between proton pump inhibitors and clopidogrel has been the subject of much study in recent years.",
+    "e1": "proton pump inhibitors",
+    "e2": "clopidogrel",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Contradictory results regarding the effect of proton pump inhibitors on platelet reactivity and on clinical outcome in clopidogrel-treated patients have been reported in literature.",
+    "e1": "proton pump inhibitors",
+    "e2": "clopidogrel",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The influence of the other proton pump inhibitors when used simultaneously with clopidogrel has not yet been investigated in adequately randomized studies.",
+    "e1": "proton pump inhibitors",
+    "e2": "clopidogrel",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "To date, there is no conclusive evidence of a clinically-relevant interaction between any of the proton pump inhibitors and clopidogrel.",
+    "e1": "proton pump inhibitors",
+    "e2": "clopidogrel",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Questioning revealed the child was taking Infacol drops before feeds while on levothyroxine.",
+    "e1": "Infacol",
+    "e2": "levothyroxine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "[Influence of hemantane and doxycycline on MPTP-evoked behavior violations in C57BL/6 mice].",
+    "e1": "hemantane",
+    "e2": "doxycycline",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The effects of anti-parkinsonian drug hemantane [(2-adamantyl)hexamethylenimine] (10 mg/kg, p. o.)",
+    "e1": "anti-parkinsonian drug",
+    "e2": "hemantane",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The effects of anti-parkinsonian drug hemantane [(2-adamantyl)hexamethylenimine] (10 mg/kg, p. o.)",
+    "e1": "hemantane",
+    "e2": "(2-adamantyl)hexamethylenimine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "and/or antibiotic drug doxycycline (100 mg/kg, p. o.), as well as that of neurotoxin 1-methyl-4-phenyl-1,2,3,4-tetrahydropyridine (MPTP) (4 x 20 mg/kg, i. p.)",
+    "e1": "antibiotic drug",
+    "e2": "doxycycline",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "and/or antibiotic drug doxycycline (100 mg/kg, p. o.), as well as that of neurotoxin 1-methyl-4-phenyl-1,2,3,4-tetrahydropyridine (MPTP) (4 x 20 mg/kg, i. p.)",
+    "e1": "antibiotic drug",
+    "e2": "1-methyl-4-phenyl-1,2,3,4-tetrahydropyridine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "and/or antibiotic drug doxycycline (100 mg/kg, p. o.), as well as that of neurotoxin 1-methyl-4-phenyl-1,2,3,4-tetrahydropyridine (MPTP) (4 x 20 mg/kg, i. p.)",
+    "e1": "antibiotic drug",
+    "e2": "MPTP",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The objective of this study was to evaluate the effect of oral administration of ginseng stem-and-leaf saponins (GSLS) on the humoral immune responses of chickens to inactivated ND vaccines and inactivated AI vaccines.",
+    "e1": "ginseng stem-and-leaf saponins",
+    "e2": "GSLS",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The objective of this study was to evaluate the effect of oral administration of ginseng stem-and-leaf saponins (GSLS) on the humoral immune responses of chickens to inactivated ND vaccines and inactivated AI vaccines.",
+    "e1": "GSLS",
+    "e2": "inactivated ND vaccines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The objective of this study was to evaluate the effect of oral administration of ginseng stem-and-leaf saponins (GSLS) on the humoral immune responses of chickens to inactivated ND vaccines and inactivated AI vaccines.",
+    "e1": "GSLS",
+    "e2": "inactivated AI vaccines",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "In experiment 1, oral administration of GSLS at a dose of 5 mg/kg of BW for 7 d on the immune response in chickens intramuscularly injected with inactivated ND vaccine was evaluated.",
+    "e1": "GSLS",
+    "e2": "inactivated ND vaccine",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "Considering the safety of GSLS, because no adverse effect was found throughout the experiments, GSLS may be a promising oral adjuvant to improve immunization in poultry.",
+    "e1": "GSLS",
+    "e2": "GSLS",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "The aim of the present study was to investigate whether HB-EGF is a therapeutic target for T-ALL, and to further elucidate the antitumor effects of a specific inhibitor of HB-EGF, cross-reacting material 197 (CRM197).",
+    "e1": "cross-reacting material 197",
+    "e2": "CRM197",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "We elucidated the expression of HB-EGF in T-ALL cell lines, and evaluated the effect of CRM197 on these cells alone or in combination with anticancer agent.",
+    "e1": "CRM197",
+    "e2": "anticancer agent",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "CRM197 induced apoptosis, and furthermore, the combination of CRM197 plus doxorubicin enhanced cytotoxicity in a T-ALL cell line.",
+    "e1": "CRM197",
+    "e2": "CRM197",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "CRM197 induced apoptosis, and furthermore, the combination of CRM197 plus doxorubicin enhanced cytotoxicity in a T-ALL cell line.",
+    "e1": "CRM197",
+    "e2": "doxorubicin",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "But the use of fixed combination amlodipine/valsartan compared with traditional therapy was associated with lower clinical and self measured BP, quicker achievement of target BP (5.8+/-2.3 and 9.2+/-1.8 days, respectively, 0.05), lesser number of antihypertensive drugs (2.5+/-0.6 and 3.0+/-0.9 days, respectively), lower rate of concealed inefficacy of treatment (12 and 31%, respectively, 0.05).",
+    "e1": "amlodipine",
+    "e2": "antihypertensive drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "But the use of fixed combination amlodipine/valsartan compared with traditional therapy was associated with lower clinical and self measured BP, quicker achievement of target BP (5.8+/-2.3 and 9.2+/-1.8 days, respectively, 0.05), lesser number of antihypertensive drugs (2.5+/-0.6 and 3.0+/-0.9 days, respectively), lower rate of concealed inefficacy of treatment (12 and 31%, respectively, 0.05).",
+    "e1": "valsartan",
+    "e2": "antihypertensive drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "We have demonstrated appropriateness of inhospital administration of fixed amlodipine/valsartan combination as an approach allowing to achieve target BP in shorter time, with the use of fewer antihypertensive drugs, and diminishing concealed inefficacy of treatment.",
+    "e1": "amlodipine",
+    "e2": "antihypertensive drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  },
+  {
+    "text": "We have demonstrated appropriateness of inhospital administration of fixed amlodipine/valsartan combination as an approach allowing to achieve target BP in shorter time, with the use of fewer antihypertensive drugs, and diminishing concealed inefficacy of treatment.",
+    "e1": "valsartan",
+    "e2": "antihypertensive drugs",
+    "gold_label": "False",
+    "source_file": "false_test.json"
+  }
+]

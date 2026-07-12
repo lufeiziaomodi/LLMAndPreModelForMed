@@ -1,0 +1,13 @@
+[
+  {
+    "instruction": "Analyze the biological mechanisms for the specific drug pairs listed in the 'Queries' section, based on the provided sentence only. Do not use Knowledge Graph evidence.",
+    "input": {
+      "sentence": "DIFLUCAN reduces the metabolism of tolbutamide, glyburide, and glipizide and increases the plasma concentration of these agents.",
+      "queries": "1. DIFLUCAN -> tolbutamide\n2. DIFLUCAN -> glyburide\n3. DIFLUCAN -> glipizide"
+    },
+    "output": "[\n    {\n        \"query\": \"GLOBAL_PHENOMENON\",\n        \"analysis_steps\": \"1. The sentence describes a pharmacokinetic interaction where DIFLUCAN reduces metabolism of certain sulfonylureas. 2. Reduced metabolism leads to increased plasma concentration of tolbutamide, glyburide, and glipizide. 3. This reflects inhibition of hepatic cytochrome P450 enzymes (e.g., CYP2C9) by DIFLUCAN. 4. The net effect is elevated drug exposure and potential hypoglycemia.\",\n        \"mechanism_summary\": \"DIFLUCAN inhibits the hepatic metabolism of tolbutamide, glyburide, and glipizide—primarily via CYP2C9 inhibition—resulting in increased plasma concentrations.\",\n        \"representative_pairs\": [\n            \"DIFLUCAN -> tolbutamide\",\n            \"DIFLUCAN -> glyburide\",\n            \"DIFLUCAN -> glipizide\"\n        ]\n    }\n]",
+    "predicted_label": "",
+    "gold_label": "Mechanism",
+    "true_label": "Mechanism"
+  }
+]

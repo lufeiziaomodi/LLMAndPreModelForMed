@@ -1,0 +1,35 @@
+experiment:
+  name: restart_classification_only
+  output_root: results/experiments
+
+training:
+  enabled: false
+  script: finetune_llama3_ddi.py
+  args:
+    - --data_path
+    - data/finetune_dataset_input_label_only_without_kg.json
+    - --output_dir
+    - results/llama3_ddi_lora_label_only_without_kg
+    - --prompt_mode
+    - label_only_without_kg
+
+classification_eval:
+  enabled: true
+  model_name: llama3_label_only_without_kg_adapter
+  model_id: models/Meta-Llama-3-8B-Instruct
+  test_data: data/test_augmented_data.csv
+  output_dir: results/ddi_evaluation/classification_restart
+  max_new_tokens: 256
+
+explanation_eval:
+  enabled: false
+  model_name: explanation_todo
+  predictions_file: results/test_predictions/TODO_explanation_predictions.json
+  output_dir: results/ddi_evaluation/explanation_restart
+
+judge:
+  enabled: false
+  model_id: qwen-max
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  max_retries: 4
+  retry_delay: 2.0

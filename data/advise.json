@@ -1,0 +1,6522 @@
+[
+  {
+    "text": "Although no specific drug interactions with topical glaucoma drugs or systemic medications were identified in clinical studies of IOPIDINE 0.5% Ophthalmic Solution, the possibility of an additive or potentiating effect with CNS depressants (alcohol, barbiturates, opiates, sedatives, anesthetics) should be considered.",
+    "relations": [
+      {
+        "e1": "IOPIDINE",
+        "e2": "CNS depressants",
+        "label": "advise"
+      },
+      {
+        "e1": "IOPIDINE",
+        "e2": "opiates",
+        "label": "advise"
+      },
+      {
+        "e1": "IOPIDINE",
+        "e2": "alcohol",
+        "label": "advise"
+      },
+      {
+        "e1": "IOPIDINE",
+        "e2": "sedatives",
+        "label": "advise"
+      },
+      {
+        "e1": "IOPIDINE",
+        "e2": "barbiturates",
+        "label": "advise"
+      },
+      {
+        "e1": "IOPIDINE",
+        "e2": "anesthetics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Videx (Didanosine) chewable/buffered tablets or the pediatric powder for oral solution should not be administered concomitantly with, or within 2 hours of, the administration of norfloxacin, because these products may interfere with absorption resulting in lower serum and urine levels of norfloxacin.",
+    "relations": [
+      {
+        "e1": "Didanosine",
+        "e2": "norfloxacin",
+        "label": "advise"
+      },
+      {
+        "e1": "Videx",
+        "e2": "norfloxacin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drugs that induce hepatic enzymes such as phenobarbital, phenytoin and rifampin may increase the clearance of corticosteroids and may require increases in corticosteroid dose to achieve the desired response.",
+    "relations": [
+      {
+        "e1": "phenytoin",
+        "e2": "corticosteroid",
+        "label": "advise"
+      },
+      {
+        "e1": "rifampin",
+        "e2": "corticosteroid",
+        "label": "advise"
+      },
+      {
+        "e1": "phenobarbital",
+        "e2": "corticosteroid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, if theophylline is co-administered with fluvoxamine maleate, its dose should be reduced to one third of the usual daily maintenance dose and plasma concentrations of theophylline should to monitored.",
+    "relations": [
+      {
+        "e1": "theophylline",
+        "e2": "fluvoxamine maleate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Magnesium- and/or aluminum-containing antacids, products containing ferrous sulfate (iron), multivitamin preparations containing zinc or other metal cations, or Videx (didanosine) chewable/buffered tablets or the pediatric powder for oral solution should not be taken within 3 hours before or 2 hours after FACTIVE.",
+    "relations": [
+      {
+        "e1": "multivitamin preparations",
+        "e2": "FACTIVE",
+        "label": "advise"
+      },
+      {
+        "e1": "ferrous sulfate",
+        "e2": "FACTIVE",
+        "label": "advise"
+      },
+      {
+        "e1": "Magnesium",
+        "e2": "FACTIVE",
+        "label": "advise"
+      },
+      {
+        "e1": "didanosine",
+        "e2": "FACTIVE",
+        "label": "advise"
+      },
+      {
+        "e1": "aluminum",
+        "e2": "FACTIVE",
+        "label": "advise"
+      },
+      {
+        "e1": "iron",
+        "e2": "FACTIVE",
+        "label": "advise"
+      },
+      {
+        "e1": "zinc",
+        "e2": "FACTIVE",
+        "label": "advise"
+      },
+      {
+        "e1": "Videx",
+        "e2": "FACTIVE",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Hypersensitivity Reactions: Patients with a history of severe hypersensitivity reactions to products containing Cremophor  EL (eg, cyclosporin for injection concentrate and teniposide for injection concentrate) should not be treated with TAXOL.",
+    "relations": [
+      {
+        "e1": "cyclosporin",
+        "e2": "TAXOL",
+        "label": "advise"
+      },
+      {
+        "e1": "teniposide",
+        "e2": "TAXOL",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "aspirin should be used cautiously in conjunction with corticosteroids in hypoprothrombinemia.",
+    "relations": [
+      {
+        "e1": "aspirin",
+        "e2": "corticosteroids",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Before taking glimepiride, tell your doctor if you are taking any of the following medicines: - aspirin or another salicylate such as magnesium/choline salicylate (Trilisate), salsalate (Disalcid, others), choline salicylate (Arthropan), magnesium salicylate (Magan), or bismuth subsalicylate (Pepto-Bismol);",
+    "relations": [
+      {
+        "e1": "glimepiride",
+        "e2": "magnesium/choline salicylate",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "Disalcid",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "Trilisate",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "Arthropan",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "salicylate",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "magnesium salicylate",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "aspirin",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "bismuth subsalicylate",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "Magan",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "Pepto-Bismol",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "salsalate",
+        "label": "advise"
+      },
+      {
+        "e1": "glimepiride",
+        "e2": "choline salicylate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When concomitant administration of ketoconazole with aripiprazole occurs, aripiprazole dose should be reduced to one-half of its normal dose.",
+    "relations": [
+      {
+        "e1": "ketoconazole",
+        "e2": "aripiprazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Also, due to the potential for additive effects such as bradycardia and AV block, caution is warranted in patients receiving clonidine with agents known to affect sinus node function or AV nodal conduction (e.g., digitalis, calcium channel blockers, and beta-blockers.)",
+    "relations": [
+      {
+        "e1": "clonidine",
+        "e2": "digitalis",
+        "label": "advise"
+      },
+      {
+        "e1": "clonidine",
+        "e2": "beta-blockers",
+        "label": "advise"
+      },
+      {
+        "e1": "clonidine",
+        "e2": "calcium channel blockers",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients receiving flurbiprofen and furosemide or other diuretics should be observed closely to determine if the desired effect is obtained.",
+    "relations": [
+      {
+        "e1": "flurbiprofen",
+        "e2": "diuretics",
+        "label": "advise"
+      },
+      {
+        "e1": "flurbiprofen",
+        "e2": "furosemide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients stabilized on oral anticoagulants who are found to require thyroid replacement therapy should be watched very closely when thyroid is started.",
+    "relations": [
+      {
+        "e1": "anticoagulants",
+        "e2": "thyroid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "As with most psychoactive medications, patients should be advised to avoid alcohol while taking ABILIFY",
+    "relations": [
+      {
+        "e1": "alcohol",
+        "e2": "ABILIFY",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Wait 2 weeks after stopping an MAO inhibitor before starting escitalopram.",
+    "relations": [
+      {
+        "e1": "MAO inhibitor",
+        "e2": "escitalopram",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be used when administering or taking TARCEVA with ketoconazole and other strong CYP3A4 inhibitors such as, but not limited to, atazanavir, clarithromycin, indinavir, itraconazole, nefazodone, nelfinavir, ritonavir, saquinavir, telithromycin, troleandomycin (TAO), and voriconazole .",
+    "relations": [
+      {
+        "e1": "TARCEVA",
+        "e2": "ketoconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "atazanavir",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "clarithromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "telithromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "troleandomycin",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "nelfinavir",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "ritonavir",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "indinavir",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "nefazodone",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "voriconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "saquinavir",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "itraconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "TARCEVA",
+        "e2": "TAO",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because their vasospastic effects may be additive, coadministration of naratriptan and other 5-HT1 agonists within 24 hours of each other is not recommended.",
+    "relations": [
+      {
+        "e1": "naratriptan",
+        "e2": "5-HT1 agonists",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drugs that may alter imatinib plasma concentrations Drugs that may increase imatinib plasma concentrations: Caution is recommended when administering Gleevec with inhibitors of the CYP3A4 family (e.g., ketoconazole, itraconazole, erythromycin, clarithromycin).",
+    "relations": [
+      {
+        "e1": "Gleevec",
+        "e2": "clarithromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "Gleevec",
+        "e2": "ketoconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "Gleevec",
+        "e2": "erythromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "Gleevec",
+        "e2": "itraconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, because some quinolones have been reported to enhance the anticoagulant effects of warfarin or its derivatives in patients, the prothrombin time or other suitable coagulation test should be closely monitored if a quinolone antimicrobial is administered concomitantly with warfarin or its derivatives.",
+    "relations": [
+      {
+        "e1": "quinolone antimicrobial",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "sumatriptan and dihydroergotamine  (dihydroergotamine mesylate) Injection, USP should not be taken within 24 hours of each other..",
+    "relations": [
+      {
+        "e1": "sumatriptan",
+        "e2": "dihydroergotamine",
+        "label": "advise"
+      },
+      {
+        "e1": "sumatriptan",
+        "e2": "dihydroergotamine mesylate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Exert particular caution in combining chlorprothixene with other anticholinergic drugs (tricyclic antidepressants and antiparkinsonian agents): Particularly the elderly may develop delirium, high fever, severe obstipation, even ileus and glaucoma.",
+    "relations": [
+      {
+        "e1": "chlorprothixene",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "chlorprothixene",
+        "e2": "anticholinergic drugs",
+        "label": "advise"
+      },
+      {
+        "e1": "chlorprothixene",
+        "e2": "antiparkinsonian agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when hydrochlorothiazide and non-steroidal anti-inflammatory agents are used concomitantly, the patient should be observed closely to determine if the desired effect of the diuretic is obtained.",
+    "relations": [
+      {
+        "e1": "hydrochlorothiazide",
+        "e2": "non-steroidal anti-inflammatory agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Methotrexate: Caution should be used if diflunisal is administered concomitantly with methotrexate.",
+    "relations": [
+      {
+        "e1": "diflunisal",
+        "e2": "methotrexate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If it is necessary to continue the diuretic, initiate therapy with lisinopril at a dose of 5 mg daily, and provide close medical supervision after the initial dose until blood pressure has stabilized.",
+    "relations": [
+      {
+        "e1": "diuretic",
+        "e2": "lisinopril",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When warfarin is co-administered with nevirapine, anticoagulation levels should be monitored frequently.",
+    "relations": [
+      {
+        "e1": "warfarin",
+        "e2": "nevirapine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, co-administration of tricyclic antidepressants with other drugs that are metabolized by this isoenzyme, including other antidepressants, phenothiazines, carbamazepine, and Type 1C antiarrhythmics (eg, propafenone, flecainide, and encainide), or that inhibit this enzyme (eg, quinidine), should be approached with caution.",
+    "relations": [
+      {
+        "e1": "tricyclic antidepressants",
+        "e2": "carbamazepine",
+        "label": "advise"
+      },
+      {
+        "e1": "tricyclic antidepressants",
+        "e2": "propafenone",
+        "label": "advise"
+      },
+      {
+        "e1": "tricyclic antidepressants",
+        "e2": "antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "tricyclic antidepressants",
+        "e2": "Type 1C antiarrhythmics",
+        "label": "advise"
+      },
+      {
+        "e1": "tricyclic antidepressants",
+        "e2": "flecainide",
+        "label": "advise"
+      },
+      {
+        "e1": "tricyclic antidepressants",
+        "e2": "quinidine",
+        "label": "advise"
+      },
+      {
+        "e1": "tricyclic antidepressants",
+        "e2": "phenothiazines",
+        "label": "advise"
+      },
+      {
+        "e1": "tricyclic antidepressants",
+        "e2": "encainide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drugs That Should Not Be Coadministered With VIRACEPT Antiarrhythmics: amiodarone, quinidine Antihistamines: astemizole, terfenadine Antimigraine: ergot derivatives Antimycobacterial agents: rifampin Benzodiazepines midazolam, triazolam GI motility agents: cisapride",
+    "relations": [
+      {
+        "e1": "VIRACEPT",
+        "e2": "ergot derivatives",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "quinidine",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "Antiarrhythmics",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "Antihistamines",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "midazolam",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "Antimycobacterial agents",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "rifampin",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "triazolam",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "amiodarone",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "cisapride",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "Benzodiazepines",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "astemizole",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "terfenadine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, concurrent use of aspirin and ketoprofen is not recommended.",
+    "relations": [
+      {
+        "e1": "aspirin",
+        "e2": "ketoprofen",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "To avoid this interaction, delavirdine or indinavir should be given 1 hour prior to dosing with VIDEX.",
+    "relations": [
+      {
+        "e1": "indinavir",
+        "e2": "VIDEX",
+        "label": "advise"
+      },
+      {
+        "e1": "delavirdine",
+        "e2": "VIDEX",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The use of antacids should be considered in place of H2 blockers or proton pump inhibitors in patients receiving SPRYCEL therapy.",
+    "relations": [
+      {
+        "e1": "H2 blockers",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "proton pump inhibitors",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore when central nervous system depressants are administered concomitantly with hydroxyzine their dosage should be reduced.",
+    "relations": [
+      {
+        "e1": "central nervous system depressants",
+        "e2": "hydroxyzine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although a causal mechanism and a cause-and-effect relationship have not been established, current evidence suggests that renal function should be monitored in patients on thiazide diuretics and allopurinol even in the absence of renal failure, and dosage levels should be even more conservatively adjusted in those patients on such combined therapy if diminished renal function is detected..",
+    "relations": [
+      {
+        "e1": "thiazide diuretics",
+        "e2": "allopurinol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The benefits and risks of using TRICOR with immunosuppressants and other potentially nephrotoxic agents should be carefully considered, and the lowest effective dose employed",
+    "relations": [
+      {
+        "e1": "TRICOR",
+        "e2": "immunosuppressants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Avoid the use of preparations such as decongestants and local anesthetics which contain any sympathomimetic amine (e.g., epinephrine, norepinephrine), since it has been reported that tricyclic antidepressants can potentiate the effects of catecholamines.",
+    "relations": [
+      {
+        "e1": "norepinephrine",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "anesthetics",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "sympathomimetic amine",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "epinephrine",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "decongestants",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "- When Bezalip or Bezalip retard is used concurrently with anion-exchange resins (e.g. cholestryramine), an interval of at least 2 hours should be maintained between the two medicines, since the absorption of Bezalip or Bezalip retard is impaired",
+    "relations": [
+      {
+        "e1": "Bezalip",
+        "e2": "cholestryramine",
+        "label": "advise"
+      },
+      {
+        "e1": "Bezalip retard",
+        "e2": "cholestryramine",
+        "label": "advise"
+      },
+      {
+        "e1": "Bezalip",
+        "e2": "anion-exchange resins",
+        "label": "advise"
+      },
+      {
+        "e1": "Bezalip retard",
+        "e2": "anion-exchange resins",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Cisapride should not be used concomitantly with other drugs known to prolong the QT interval: certain antiarrhythmics, including those of Class IA (such as quinidine and procainamide) and Class III (such as sotalol);",
+    "relations": [
+      {
+        "e1": "Cisapride",
+        "e2": "procainamide",
+        "label": "advise"
+      },
+      {
+        "e1": "Cisapride",
+        "e2": "antiarrhythmics",
+        "label": "advise"
+      },
+      {
+        "e1": "Cisapride",
+        "e2": "quinidine",
+        "label": "advise"
+      },
+      {
+        "e1": "Cisapride",
+        "e2": "sotalol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Dose adjustment of Sensipar may be required and PTH and serum calcium concentrations should be closely monitored if a patient initiates or discontinues therapy with a strong CYP3A4 inhibitor (e.g., ketoconazole, erythromycin, itraconazole;",
+    "relations": [
+      {
+        "e1": "Sensipar",
+        "e2": "itraconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "Sensipar",
+        "e2": "erythromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "Sensipar",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is suggested to monitor both ketoconazole and phenytoin.",
+    "relations": [
+      {
+        "e1": "ketoconazole",
+        "e2": "phenytoin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Dose reduction of CRIXIVAN to 600 mg every 8 hours is recommended when administering itraconazole concurrently.",
+    "relations": [
+      {
+        "e1": "CRIXIVAN",
+        "e2": "itraconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nephrotoxic agents : Concomitant administration of VISTIDE and agents with nephrotoxic potential [e.g., intravenous aminoglycosides (e.g., tobramycin, gentamicin, and amikacin), amphotericin B, foscarnet, intravenous pentamidine, vancomycin, and non-steroidal anti-inflammatory agents] is contraindicated.",
+    "relations": [
+      {
+        "e1": "VISTIDE",
+        "e2": "pentamidine",
+        "label": "advise"
+      },
+      {
+        "e1": "VISTIDE",
+        "e2": "non-steroidal anti-inflammatory agents",
+        "label": "advise"
+      },
+      {
+        "e1": "VISTIDE",
+        "e2": "amikacin",
+        "label": "advise"
+      },
+      {
+        "e1": "VISTIDE",
+        "e2": "tobramycin",
+        "label": "advise"
+      },
+      {
+        "e1": "VISTIDE",
+        "e2": "foscarnet",
+        "label": "advise"
+      },
+      {
+        "e1": "VISTIDE",
+        "e2": "gentamicin",
+        "label": "advise"
+      },
+      {
+        "e1": "VISTIDE",
+        "e2": "aminoglycosides",
+        "label": "advise"
+      },
+      {
+        "e1": "VISTIDE",
+        "e2": "amphotericin B",
+        "label": "advise"
+      },
+      {
+        "e1": "VISTIDE",
+        "e2": "vancomycin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "sildenafil is contraindicated in patients using long-acting nitrates or who may need to use short-acting nitrates, because the combination may cause a sharp fall of the blood pressure.",
+    "relations": [
+      {
+        "e1": "sildenafil",
+        "e2": "long-acting nitrates",
+        "label": "advise"
+      },
+      {
+        "e1": "sildenafil",
+        "e2": "short-acting nitrates",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients should be warned of the potential danger of the intravenous self-administration of benzodiazepines while under treatment with SUBOXONE or SUBUTEX.",
+    "relations": [
+      {
+        "e1": "benzodiazepines",
+        "e2": "SUBOXONE",
+        "label": "advise"
+      },
+      {
+        "e1": "benzodiazepines",
+        "e2": "SUBUTEX",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The oral dexamethasone doses should be reduced by approximately 50% when coadministered with Aprepitant, to achieve exposures of dexamethasone similar to those obtained when it is given without Aprepitant.",
+    "relations": [
+      {
+        "e1": "dexamethasone",
+        "e2": "Aprepitant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "These increased exposures of norethindrone and ethinyl estradiol should be taken into consideration when selecting an oral contraceptive for women taking valdecoxib.",
+    "relations": [
+      {
+        "e1": "contraceptive",
+        "e2": "valdecoxib",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "MAO inhibitors should be used with caution in patients receiving hydralazine.",
+    "relations": [
+      {
+        "e1": "MAO inhibitors",
+        "e2": "hydralazine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In patients receiving Nalfon and a steroid concomitantly, any reduction in steroid dosage should be gradual in order to avoid the possible complications of sudden steroid withdrawal.",
+    "relations": [
+      {
+        "e1": "Nalfon",
+        "e2": "steroid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, co-administration of clozapine with other drugs that are metabolized by this isozyme, including antidepressants, phenothiazines, carbamazepine, and Type 1C antiarrhythmics (e.g., propafenone, flecainide and encainide), or that inhibit this enzyme (e.g., quinidine), should be approached with caution.",
+    "relations": [
+      {
+        "e1": "clozapine",
+        "e2": "carbamazepine",
+        "label": "advise"
+      },
+      {
+        "e1": "clozapine",
+        "e2": "phenothiazines",
+        "label": "advise"
+      },
+      {
+        "e1": "clozapine",
+        "e2": "flecainide",
+        "label": "advise"
+      },
+      {
+        "e1": "clozapine",
+        "e2": "quinidine",
+        "label": "advise"
+      },
+      {
+        "e1": "clozapine",
+        "e2": "encainide",
+        "label": "advise"
+      },
+      {
+        "e1": "clozapine",
+        "e2": "propafenone",
+        "label": "advise"
+      },
+      {
+        "e1": "clozapine",
+        "e2": "antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "clozapine",
+        "e2": "Type 1C antiarrhythmics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thus, when VIOXX and lithium are administered concurrently, subjects should be observed carefully for signs of lithium toxicity.",
+    "relations": [
+      {
+        "e1": "VIOXX",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant use of zalcitabine and lamivudine is not recommended.",
+    "relations": [
+      {
+        "e1": "zalcitabine",
+        "e2": "lamivudine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant administration of alosetron and moderate CYP1A2 inhibitors, including quinolone antibiotics and cimetidine, has not been evaluated, but should be avoided unless clinically necessary because of similar potential drug interactions.",
+    "relations": [
+      {
+        "e1": "alosetron",
+        "e2": "cimetidine",
+        "label": "advise"
+      },
+      {
+        "e1": "alosetron",
+        "e2": "quinolone antibiotics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Cimetidine treatment should be stopped during treatment with ELLENCE.",
+    "relations": [
+      {
+        "e1": "Cimetidine",
+        "e2": "ELLENCE",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Accordingly, careful patient monitoring and dose adjustment of metformin is recommended in patients concomitantly taking cephalexin and metformin.",
+    "relations": [
+      {
+        "e1": "cephalexin",
+        "e2": "metformin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nevirapine and rifampin should not beadministered concomitantly becausedecreases in nevirapine plasmaconcentrations may reduce the efficacy ofthe drug.",
+    "relations": [
+      {
+        "e1": "Nevirapine",
+        "e2": "rifampin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when heparin sodium is given with dicumarol or warfarin sodium, a period of at least 5 hours after the last intravenous dose or 24 hours after the last subcutaneous dose should elapse before blood is drawn if a valid prothrombin time is to be obtained.",
+    "relations": [
+      {
+        "e1": "heparin sodium",
+        "e2": "warfarin sodium",
+        "label": "advise"
+      },
+      {
+        "e1": "heparin sodium",
+        "e2": "dicumarol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients receiving beta-adrenergic blocking agents along with either oral or intravenous calcium antagonists should be monitored for possible atrioventricular conduction disturbances, left ventricular failure and hypotension.",
+    "relations": [
+      {
+        "e1": "beta-adrenergic blocking agents",
+        "e2": "calcium antagonists",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When carbamazepine is added to aripiprazole therapy, aripiprazole dose should be doubled.",
+    "relations": [
+      {
+        "e1": "carbamazepine",
+        "e2": "aripiprazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Considerable caution should be exercised if PEGANONE is administered concurrently with Phenurone (phenacemide) since paranoid symptoms have been reported during therapy with this combination.",
+    "relations": [
+      {
+        "e1": "PEGANONE",
+        "e2": "Phenurone",
+        "label": "advise"
+      },
+      {
+        "e1": "PEGANONE",
+        "e2": "phenacemide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nevertheless, caution is indicated in the co-administration of T.A. with any of the SSRIs and also in switching from one class to the other.",
+    "relations": [
+      {
+        "e1": "T.A.",
+        "e2": "SSRIs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is advisable to check coagulation time within the first few days after the start and discontinuation of cisapride therapy, with an appropriate adjustment of the anticoagulant dose, if necessary.",
+    "relations": [
+      {
+        "e1": "cisapride",
+        "e2": "anticoagulant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "aspirin: Concomitant administration of diclofenac and aspirin is not recommended because diclofenac is displaced from its binding sites during the concomitant administration of aspirin, resulting in lower plasma concentrations, peak plasma levels, and AUC values.",
+    "relations": [
+      {
+        "e1": "diclofenac",
+        "e2": "aspirin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If treatment with inhibitors of CYP3A4 activity (such as ketoconazole, intraconazole, ritonavir, indinavir, saquinavir, erythromycin, etc.) is indicated, reduction of the budesonide dose should be considered.",
+    "relations": [
+      {
+        "e1": "ritonavir",
+        "e2": "budesonide",
+        "label": "advise"
+      },
+      {
+        "e1": "indinavir",
+        "e2": "budesonide",
+        "label": "advise"
+      },
+      {
+        "e1": "saquinavir",
+        "e2": "budesonide",
+        "label": "advise"
+      },
+      {
+        "e1": "ketoconazole",
+        "e2": "budesonide",
+        "label": "advise"
+      },
+      {
+        "e1": "intraconazole",
+        "e2": "budesonide",
+        "label": "advise"
+      },
+      {
+        "e1": "erythromycin",
+        "e2": "budesonide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since apraclonidine may reduce pulse and blood pressure, caution in using drugs such as beta-blockers (ophthalmic and systemic), antihypertensives, and cardiac glycosides is advised.",
+    "relations": [
+      {
+        "e1": "apraclonidine",
+        "e2": "antihypertensives",
+        "label": "advise"
+      },
+      {
+        "e1": "apraclonidine",
+        "e2": "cardiac glycosides",
+        "label": "advise"
+      },
+      {
+        "e1": "apraclonidine",
+        "e2": "beta-blockers",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant administration of naproxen and aspirin is not recommended because naproxen is displaced from its binding sites during the concomitant administration of aspirin, resulting in lower plasma concentrations and peak plasma levels.",
+    "relations": [
+      {
+        "e1": "naproxen",
+        "e2": "aspirin",
+        "label": "advise"
+      },
+      {
+        "e1": "naproxen",
+        "e2": "aspirin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, fenofibrate should be taken at least 1 hour before or 4-6 hours after a bile acid binding resin to avoid impeding its absorption .",
+    "relations": [
+      {
+        "e1": "fenofibrate",
+        "e2": "bile acid binding resin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thus, concomitant administration of enoxacin and bismuth subsalicylate should be avoided.",
+    "relations": [
+      {
+        "e1": "enoxacin",
+        "e2": "bismuth subsalicylate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When CANCIDAS is co-administered with inducers of drug clearance, such as efavirenz, nevirapine, phenytoin, dexamethasone, or carbamazepine, use of a daily dose of 70 mg of CANCIDAS should be considered",
+    "relations": [
+      {
+        "e1": "CANCIDAS",
+        "e2": "dexamethasone",
+        "label": "advise"
+      },
+      {
+        "e1": "CANCIDAS",
+        "e2": "carbamazepine",
+        "label": "advise"
+      },
+      {
+        "e1": "CANCIDAS",
+        "e2": "phenytoin",
+        "label": "advise"
+      },
+      {
+        "e1": "CANCIDAS",
+        "e2": "efavirenz",
+        "label": "advise"
+      },
+      {
+        "e1": "CANCIDAS",
+        "e2": "nevirapine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In addition, most macrolides are contraindicated in patients receiving terfenadine therapy who have pre-existing cardiac abnormalities (arrhythmia, bradycardia, QT c interval prolongation, ischemic heart disease, congestive heart failure, etc.) or electrolyte disturbances.",
+    "relations": [
+      {
+        "e1": "macrolides",
+        "e2": "terfenadine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The daily dose of ENABLEX should not exceed 7.5 mg when coadministered with potent CYP3A4 inhibitors (e.g., ketoconazole, itraconazole, ritonavir, nelfinavir, clarithromycin and nefazadone) .",
+    "relations": [
+      {
+        "e1": "ENABLEX",
+        "e2": "ritonavir",
+        "label": "advise"
+      },
+      {
+        "e1": "ENABLEX",
+        "e2": "clarithromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "ENABLEX",
+        "e2": "nelfinavir",
+        "label": "advise"
+      },
+      {
+        "e1": "ENABLEX",
+        "e2": "ketoconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "ENABLEX",
+        "e2": "itraconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Additionally, BREVIBLOC should not be used to control supraventricular tachycardia in the presence of agents which are vasoconstrictive and inotropic such as dopamine, epinephrine, and norepinephrine because of the danger of blocking cardiac contractility when systemic vascular resistance is high.",
+    "relations": [
+      {
+        "e1": "BREVIBLOC",
+        "e2": "epinephrine",
+        "label": "advise"
+      },
+      {
+        "e1": "BREVIBLOC",
+        "e2": "dopamine",
+        "label": "advise"
+      },
+      {
+        "e1": "BREVIBLOC",
+        "e2": "norepinephrine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Acellular vaccines, live vaccines and live-attenuated vaccines should not be administered during RAPTIVA treatment.",
+    "relations": [
+      {
+        "e1": "live-attenuated vaccines",
+        "e2": "RAPTIVA",
+        "label": "advise"
+      },
+      {
+        "e1": "live vaccines",
+        "e2": "RAPTIVA",
+        "label": "advise"
+      },
+      {
+        "e1": "Acellular vaccines",
+        "e2": "RAPTIVA",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, it is recommended that Fluvoxamine Tablets not be used in combination with MAOIs, or within 14 days of discontinuing treatment with a MAOI.",
+    "relations": [
+      {
+        "e1": "Fluvoxamine",
+        "e2": "MAOI",
+        "label": "advise"
+      },
+      {
+        "e1": "Fluvoxamine",
+        "e2": "MAOIs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant use of HIVID with didanosine is not recommended.",
+    "relations": [
+      {
+        "e1": "HIVID",
+        "e2": "didanosine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "There is insufficient experience to assess the safety and efficacy of ORENCIA administered concurrently with anakinra, and therefore such use is not recommended.",
+    "relations": [
+      {
+        "e1": "ORENCIA",
+        "e2": "anakinra",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, indomethacin and diflunisal should not be used concomitantly.",
+    "relations": [
+      {
+        "e1": "indomethacin",
+        "e2": "diflunisal",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although the interactions observed in these studies do not appear to be of major clinical importance, BREVIBLOC should be titrated with caution in patients being treated concurrently with digoxin, morphine, succinylcholine or warfarin.",
+    "relations": [
+      {
+        "e1": "BREVIBLOC",
+        "e2": "warfarin",
+        "label": "advise"
+      },
+      {
+        "e1": "BREVIBLOC",
+        "e2": "morphine",
+        "label": "advise"
+      },
+      {
+        "e1": "BREVIBLOC",
+        "e2": "digoxin",
+        "label": "advise"
+      },
+      {
+        "e1": "BREVIBLOC",
+        "e2": "succinylcholine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be exercised if an HMG-CoA reductase inhibitor is administered concomitantly with drugs that may decrease the levels or activity of endogenous steroid hormones, such as ketoconazole, spironolactone, and cimetidine.",
+    "relations": [
+      {
+        "e1": "HMG-CoA reductase inhibitor",
+        "e2": "spironolactone",
+        "label": "advise"
+      },
+      {
+        "e1": "HMG-CoA reductase inhibitor",
+        "e2": "cimetidine",
+        "label": "advise"
+      },
+      {
+        "e1": "HMG-CoA reductase inhibitor",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If a patient requires TIKOSYN and anti-ulcer therapy, it is suggested that omeprazole, ranitidine, or antacids (aluminum hydroxide and magnesium hydroxide) be used as alternatives to cimetidine, as these agents have no effect on the pharmacokinetic profile of TIKOSYN.",
+    "relations": [
+      {
+        "e1": "TIKOSYN",
+        "e2": "cimetidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, the concomitant administration of TRACLEER and glyburide is contraindicated, and alternative hypoglycemic agents should be considered.",
+    "relations": [
+      {
+        "e1": "TRACLEER",
+        "e2": "glyburide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, co-administration of bupropion with drugs that are metabolized by CYP2D6 isoenzyme including certain antidepressants (e.g., nortriptyline, imipramine, desipramine, paroxetine, fluoxetine, sertraline), antipsychotics (e.g., haloperidol, risperidone, thioridazine), beta-blockers (e.g., metoprolol), and Type 1C antiarrhythmics (e.g., propafenone, flecainide), should be approached with caution and should be initiated at the lower end of the dose range of the concomitant medication.",
+    "relations": [
+      {
+        "e1": "bupropion",
+        "e2": "thioridazine",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "imipramine",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "desipramine",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "risperidone",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "Type 1C antiarrhythmics",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "paroxetine",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "propafenone",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "haloperidol",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "sertraline",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "beta-blockers",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "fluoxetine",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "flecainide",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "nortriptyline",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "antipsychotics",
+        "label": "advise"
+      },
+      {
+        "e1": "bupropion",
+        "e2": "metoprolol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "- Drugs with ototoxic potential: Especially in the presence of impaired renal function, the use of parenterally administered bumetanide in patients to whom aminoglycoside antibiotics are also being given should be avoided, except in life-threatening conditions.",
+    "relations": [
+      {
+        "e1": "bumetanide",
+        "e2": "aminoglycoside antibiotics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since acetaminophen in high doses has been associated with hepatotoxicity, concomitant administration of diflunisal and acetaminophen should be used cautiously, with careful monitoring of patients.",
+    "relations": [
+      {
+        "e1": "diflunisal",
+        "e2": "acetaminophen",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Adequate monitoring of theophylline plasma concentrations should be considered when therapy with VIOXX is initiated or changed in patients receiving theophylline.",
+    "relations": [
+      {
+        "e1": "VIOXX",
+        "e2": "theophylline",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although a dose adjustment of azithromycin is not recommended when administered in combination with nelfinavir, close monitoring for known side effects of azithromycin, such as liver enzyme abnormalities and hearing impairment, is warranted.",
+    "relations": [
+      {
+        "e1": "azithromycin",
+        "e2": "nelfinavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, CYP3A4 substrates known to have a narrow therapeutic index such as alfentanil, astemizole, terfenadine, cisapride, cyclosporine, fentanyl, pimozide, quinidine, sirolimus, tacrolimus, or ergot alkaloids (ergotamine, dihydroergotamine) should be administered with caution in patients receiving SPRYCEL.",
+    "relations": [
+      {
+        "e1": "dihydroergotamine",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "alfentanil",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "quinidine",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "terfenadine",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "ergot alkaloids",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "astemizole",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "tacrolimus",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "fentanyl",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "pimozide",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "ergotamine",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "sirolimus",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "cyclosporine",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "cisapride",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If concomitant treatment with sumatriptan and an SSRI (e.g., fluoxetine, fluvoxamine, paroxetine, sertraline, citalopram, escitalopram) is clinically warranted, appropriate observation of the patient is advised.",
+    "relations": [
+      {
+        "e1": "sumatriptan",
+        "e2": "SSRI",
+        "label": "advise"
+      },
+      {
+        "e1": "sumatriptan",
+        "e2": "fluvoxamine",
+        "label": "advise"
+      },
+      {
+        "e1": "sumatriptan",
+        "e2": "citalopram",
+        "label": "advise"
+      },
+      {
+        "e1": "sumatriptan",
+        "e2": "paroxetine",
+        "label": "advise"
+      },
+      {
+        "e1": "sumatriptan",
+        "e2": "escitalopram",
+        "label": "advise"
+      },
+      {
+        "e1": "sumatriptan",
+        "e2": "sertraline",
+        "label": "advise"
+      },
+      {
+        "e1": "sumatriptan",
+        "e2": "fluoxetine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The potential effects of increased plasma concentrations of midazolam or other benzodiazepines metabolized via CYP3A4 (alprazolam, triazolam) should be considered when coadministering these agents with Aprepitant.",
+    "relations": [
+      {
+        "e1": "midazolam",
+        "e2": "Aprepitant",
+        "label": "advise"
+      },
+      {
+        "e1": "triazolam",
+        "e2": "Aprepitant",
+        "label": "advise"
+      },
+      {
+        "e1": "benzodiazepines",
+        "e2": "Aprepitant",
+        "label": "advise"
+      },
+      {
+        "e1": "alprazolam",
+        "e2": "Aprepitant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The use of FLUDARA FOR INJECTION in combination with pentostatin is not recommended due to the risk of severe pulmonary toxicity.",
+    "relations": [
+      {
+        "e1": "FLUDARA",
+        "e2": "pentostatin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because prostaglandins play an important role in hemostasis, and NSAIDs affect platelet function as well, concurrent therapy with all NSAIDs, including diclofenac, and warfarin requires close monitoring of patients to be certain that no change in their anticoagulant dosage is required.",
+    "relations": [
+      {
+        "e1": "diclofenac",
+        "e2": "warfarin",
+        "label": "advise"
+      },
+      {
+        "e1": "NSAIDs",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Until data on possible interactions between verapamil and disopyramide phosphate are obtained, disopyramide should not be administered within 48 hours before or 24 hours after verapamil administration.",
+    "relations": [
+      {
+        "e1": "disopyramide",
+        "e2": "verapamil",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If isradipine therapy is initiated in a patient currently receiving cimetidine careful monitoring for adverse reactions is advised and downward dose adjustment may be required.",
+    "relations": [
+      {
+        "e1": "isradipine",
+        "e2": "cimetidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "This interaction, which has not been investigated using higher doses of fluvoxamine, may be more pronounced if a 300 mg daily dose is co-administered, particularly since fluvoxamine exhibits non-linear pharmacokinetics over the dosage range 100-300 mg. If alprazolam is co-administered with Fluvoxamine Tablets, the initial alprazolam dosage should be at least halved and titration to the lowest effective dose is recommended.",
+    "relations": [
+      {
+        "e1": "alprazolam",
+        "e2": "Fluvoxamine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be observed when anileridine is coadministered with other opioids, sedatives, phenothiazines, or anesthetics, as these agents may increase respiratory and circulatory depression.",
+    "relations": [
+      {
+        "e1": "anileridine",
+        "e2": "sedatives",
+        "label": "advise"
+      },
+      {
+        "e1": "anileridine",
+        "e2": "opioids",
+        "label": "advise"
+      },
+      {
+        "e1": "anileridine",
+        "e2": "anesthetics",
+        "label": "advise"
+      },
+      {
+        "e1": "anileridine",
+        "e2": "phenothiazines",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "cabergoline should not be administered concurrently with D2-antagonists, such as phenothiazines, butyrophenones, thioxanthines, or metoclopramide.",
+    "relations": [
+      {
+        "e1": "cabergoline",
+        "e2": "phenothiazines",
+        "label": "advise"
+      },
+      {
+        "e1": "cabergoline",
+        "e2": "butyrophenones",
+        "label": "advise"
+      },
+      {
+        "e1": "cabergoline",
+        "e2": "metoclopramide",
+        "label": "advise"
+      },
+      {
+        "e1": "cabergoline",
+        "e2": "thioxanthines",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients who are applying Panretin gel should not concurrently use products that contain DEET (N, N-diethyl-m-toluamide), a common component of insect repellent products.",
+    "relations": [
+      {
+        "e1": "Panretin",
+        "e2": "DEET",
+        "label": "advise"
+      },
+      {
+        "e1": "Panretin",
+        "e2": "N-diethyl-m-toluamide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "for adult-onset diabetics, dosage adjustment of hypoglycemic medications may be necessary during and after thiazide diuretic therapy;",
+    "relations": [
+      {
+        "e1": "hypoglycemic medications",
+        "e2": "thiazide diuretic",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Cerubidine should not be used in patients who have previously received the recommended maximum cumulative doses of doxorubicin or Cerubidine.",
+    "relations": [
+      {
+        "e1": "Cerubidine",
+        "e2": "doxorubicin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because both of these drugs have negative inotropic properties and the effects of coadministration with TAMBOCOR are unknown, neither disopyramide nor verapamil should be administered concurrently with TAMBOCOR unless, in the judgment of the physician, the benefits of this combination outweigh the risks.",
+    "relations": [
+      {
+        "e1": "disopyramide",
+        "e2": "TAMBOCOR",
+        "label": "advise"
+      },
+      {
+        "e1": "verapamil",
+        "e2": "TAMBOCOR",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If concomitant treatment with naratriptan and an SSRI is clinically warranted, appropriate observation of the patient is advised.",
+    "relations": [
+      {
+        "e1": "naratriptan",
+        "e2": "SSRI",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nonsteroidal Antiinflammatory Agents: aspirin is contraindicated in patients who are hypersensitive to nonsteroidal anti-inflammatory agents.",
+    "relations": [
+      {
+        "e1": "aspirin",
+        "e2": "nonsteroidal anti-inflammatory",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Lithium: generally should not be given with diuretics.",
+    "relations": [
+      {
+        "e1": "Lithium",
+        "e2": "diuretics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Consequently, the combination of methotrexate with acitretin is also contraindicated.",
+    "relations": [
+      {
+        "e1": "methotrexate",
+        "e2": "acitretin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, co-administration of Duloxetine with other drugs that are extensively metabolized by this isozyme and which have a narrow therapeutic index, including certain antidepressants (tricyclic antidepressants [TCAs], such as nortriptyline, amitriptyline, and imipramine), phenothiazines and Type 1C antiarrhythmics (e.g., propafenone, flecainide), should be approached with caution.",
+    "relations": [
+      {
+        "e1": "Duloxetine",
+        "e2": "antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "TCAs",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "imipramine",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "phenothiazines",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "nortriptyline",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "flecainide",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "Type 1C antiarrhythmics",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "propafenone",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "Duloxetine",
+        "e2": "amitriptyline",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "ISUPREL should be used with caution, if at all, when potent inhalational anesthetics such as halothane are employed because of potential to sensitize the myocardium to effects of sympathomimetic amines.",
+    "relations": [
+      {
+        "e1": "ISUPREL",
+        "e2": "halothane",
+        "label": "advise"
+      },
+      {
+        "e1": "ISUPREL",
+        "e2": "anesthetics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Digitalis: Immediate Release Capsules: Since there have been isolated reports of patients with elevated digoxin levels, and there is a possible interaction between digoxin and nifedipine, it is recommended that digoxin levels be monitored when initiating, adjusting, and discontinuing nifedipine to avoid possible over- or under-digitalization.",
+    "relations": [
+      {
+        "e1": "digoxin",
+        "e2": "nifedipine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "therefore concomitant administration of Itraconazole with cisapride is contraindicated.",
+    "relations": [
+      {
+        "e1": "Itraconazole",
+        "e2": "cisapride",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Consequently, concomitant administration of Aprepitant with strong CYP3A4 inhibitors (e.g., ketoconazole, itraconazole, nefazodone, troleandomycin, clarithromycin, ritonavir, nelfinavir) should be approached with caution.",
+    "relations": [
+      {
+        "e1": "Aprepitant",
+        "e2": "nelfinavir",
+        "label": "advise"
+      },
+      {
+        "e1": "Aprepitant",
+        "e2": "itraconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "Aprepitant",
+        "e2": "troleandomycin",
+        "label": "advise"
+      },
+      {
+        "e1": "Aprepitant",
+        "e2": "nefazodone",
+        "label": "advise"
+      },
+      {
+        "e1": "Aprepitant",
+        "e2": "clarithromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "Aprepitant",
+        "e2": "ritonavir",
+        "label": "advise"
+      },
+      {
+        "e1": "Aprepitant",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because a similar interaction is likely, VIRACEPT should also not be administered concurrently with astemizole.",
+    "relations": [
+      {
+        "e1": "VIRACEPT",
+        "e2": "astemizole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Based on adult data, lower doses of caffeine may be needed following coadministration of drugs which are reported to decrease caffeine elimination (e.g., cimetidine and ketoconazole) and higher caffeine doses may be needed following coadministration of drugs that increase caffeine elimination (e.g., phenobarbital and phenytoin).",
+    "relations": [
+      {
+        "e1": "caffeine",
+        "e2": "cimetidine",
+        "label": "advise"
+      },
+      {
+        "e1": "caffeine",
+        "e2": "phenobarbital",
+        "label": "advise"
+      },
+      {
+        "e1": "caffeine",
+        "e2": "phenytoin",
+        "label": "advise"
+      },
+      {
+        "e1": "caffeine",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that the combination of intravenous dantrolene sodium and calcium channel blockers, such as verapamil, not be used together during the management of malignant hyperthermia crisis until the relevance of these findings to humans is established.",
+    "relations": [
+      {
+        "e1": "dantrolene sodium",
+        "e2": "calcium channel blockers",
+        "label": "advise"
+      },
+      {
+        "e1": "dantrolene sodium",
+        "e2": "verapamil",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drugs Which Require a Dose Reduction When Coadminstered With VIRACEPT Antimycobacterial agents: rifabutin",
+    "relations": [
+      {
+        "e1": "VIRACEPT",
+        "e2": "Antimycobacterial agents",
+        "label": "advise"
+      },
+      {
+        "e1": "VIRACEPT",
+        "e2": "rifabutin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When carbamazepine is withdrawn from the combination therapy, aripiprazole dose should then be reduced.",
+    "relations": [
+      {
+        "e1": "carbamazepine",
+        "e2": "aripiprazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Multivitamins, or other products containing iron or zinc, antacids or sucralfate should not be administered concomitantly with, or within 2 hours of, the administration of norfloxacin, because they may interfere with absorption resulting in lower serum and urine levels of norfloxacin.",
+    "relations": [
+      {
+        "e1": "Multivitamins",
+        "e2": "norfloxacin",
+        "label": "advise"
+      },
+      {
+        "e1": "antacids",
+        "e2": "norfloxacin",
+        "label": "advise"
+      },
+      {
+        "e1": "iron",
+        "e2": "norfloxacin",
+        "label": "advise"
+      },
+      {
+        "e1": "sucralfate",
+        "e2": "norfloxacin",
+        "label": "advise"
+      },
+      {
+        "e1": "zinc",
+        "e2": "norfloxacin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "All vasopressors should be used cautiously in patients taking monoamine oxidase (MAO) inhibitors.",
+    "relations": [
+      {
+        "e1": "vasopressors",
+        "e2": "monoamine oxidase (MAO) inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Particular caution is recommended when administering Gleevec with CYP3A4 substrates that have a narrow therapeutic window (e.g., cyclosporine or pimozide).",
+    "relations": [
+      {
+        "e1": "Gleevec",
+        "e2": "cyclosporine",
+        "label": "advise"
+      },
+      {
+        "e1": "Gleevec",
+        "e2": "pimozide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Theophylline serum levels should be monitored and appropriate dose adjustments considered for patients given both theophylline and PEGASYS.",
+    "relations": [
+      {
+        "e1": "theophylline",
+        "e2": "PEGASYS",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "- Perhexiline hydrogen maleate or MAO-inhibitors (with hepatotoxic potential) must not be administered together with Bezalip or Bezalip retard.",
+    "relations": [
+      {
+        "e1": "MAO-inhibitors",
+        "e2": "Bezalip",
+        "label": "advise"
+      },
+      {
+        "e1": "Perhexiline hydrogen maleate",
+        "e2": "Bezalip",
+        "label": "advise"
+      },
+      {
+        "e1": "Perhexiline hydrogen maleate",
+        "e2": "Bezalip retard",
+        "label": "advise"
+      },
+      {
+        "e1": "MAO-inhibitors",
+        "e2": "Bezalip retard",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is, therefore, advisable to monitor digoxin concentrations in patients receiving ketoconazole.",
+    "relations": [
+      {
+        "e1": "digoxin",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Close observation of the patient is recommended when a beta-blocker is administered to patients receiving catecholamine-depleting drugs such as reserpine, because of possible additive effects and the production of hypotension and/or marked bradycardia, which may produce vertigo, syncope, or postural hypotension.",
+    "relations": [
+      {
+        "e1": "beta-blocker",
+        "e2": "reserpine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When you are using idoxuridine, it is especially important that your health care professional know if you are using the following: Eye product containing boric acid.",
+    "relations": [
+      {
+        "e1": "idoxuridine",
+        "e2": "boric acid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Itraconazole plasma concentrations should be monitored when Itraconazole and isoniazid are coadministered.",
+    "relations": [
+      {
+        "e1": "Itraconazole",
+        "e2": "isoniazid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that plasma lithium levels be monitored when ketoprofen is coadministered with lithium.",
+    "relations": [
+      {
+        "e1": "ketoprofen",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "CELEBREX should be introduced at the lowest recommended dose in patients receiving fluconazole.",
+    "relations": [
+      {
+        "e1": "CELEBREX",
+        "e2": "fluconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients receiving antihistamines should be advised against the concurrent use of other CNS depressant drugs.",
+    "relations": [
+      {
+        "e1": "antihistamines",
+        "e2": "CNS depressant drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Vitamin A and oral retinoids: Concomitant administration of vitamin A and/or other oral retinoids with acitretin must be avoided because of the risk of hypervitaminosis A.",
+    "relations": [
+      {
+        "e1": "retinoids",
+        "e2": "acitretin",
+        "label": "advise"
+      },
+      {
+        "e1": "vitamin A",
+        "e2": "acitretin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Interactions with Mixed Agonist/Antagonist Opioid Analgesics: Agonist/antagonist analgesics (eg, pentazocine, nalbuphine, butorphanol, dezocine and buprenorphine) should NOT be administered to a patient who has received or is receiving a course of therapy with a pure agonist opioid analgesic such as Levo-Dromoran.",
+    "relations": [
+      {
+        "e1": "pentazocine",
+        "e2": "Levo-Dromoran",
+        "label": "advise"
+      },
+      {
+        "e1": "Agonist/antagonist analgesics",
+        "e2": "Levo-Dromoran",
+        "label": "advise"
+      },
+      {
+        "e1": "buprenorphine",
+        "e2": "Levo-Dromoran",
+        "label": "advise"
+      },
+      {
+        "e1": "butorphanol",
+        "e2": "Levo-Dromoran",
+        "label": "advise"
+      },
+      {
+        "e1": "nalbuphine",
+        "e2": "Levo-Dromoran",
+        "label": "advise"
+      },
+      {
+        "e1": "pure agonist opioid analgesic",
+        "e2": "Levo-Dromoran",
+        "label": "advise"
+      },
+      {
+        "e1": "dezocine",
+        "e2": "Levo-Dromoran",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thus patients receiving oral anticoagulants and Fluvoxamine Tablets should have their prothrombin time monitored and their anticoagulant dose adjusted accordingly.",
+    "relations": [
+      {
+        "e1": "anticoagulants",
+        "e2": "Fluvoxamine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If additional adrenergic drugs are to be administered by any route, they should be used with caution because the pharmacologically predictable sympathetic effects of BROVANA may be potentiated.",
+    "relations": [
+      {
+        "e1": "adrenergic drugs",
+        "e2": "BROVANA",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nonetheless, individual patients may require additional titration of their theophylline dosage when lansoprazole is started or stopped to ensure clinically effective blood levels.",
+    "relations": [
+      {
+        "e1": "theophylline",
+        "e2": "lansoprazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, the combination of ketoprofen and probenecid is not recommended.",
+    "relations": [
+      {
+        "e1": "ketoprofen",
+        "e2": "probenecid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "bisoprolol should be used with care when myocardial depressants or inhibitors of AV conduction, such as certain calcium antagonists (particularly of the phenylalkylamine [verapamil] and benzothiazepine [diltiazem] classes), or antiarrhythmic agents, such as disopyramide, are used concurrently.",
+    "relations": [
+      {
+        "e1": "bisoprolol",
+        "e2": "verapamil",
+        "label": "advise"
+      },
+      {
+        "e1": "bisoprolol",
+        "e2": "disopyramide",
+        "label": "advise"
+      },
+      {
+        "e1": "bisoprolol",
+        "e2": "myocardial depressants",
+        "label": "advise"
+      },
+      {
+        "e1": "bisoprolol",
+        "e2": "diltiazem",
+        "label": "advise"
+      },
+      {
+        "e1": "bisoprolol",
+        "e2": "benzothiazepine",
+        "label": "advise"
+      },
+      {
+        "e1": "bisoprolol",
+        "e2": "calcium antagonists",
+        "label": "advise"
+      },
+      {
+        "e1": "bisoprolol",
+        "e2": "phenylalkylamine",
+        "label": "advise"
+      },
+      {
+        "e1": "bisoprolol",
+        "e2": "antiarrhythmic agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If replacing clonidine by beta-blocker therapy, the introduction of beta blockers should be delayed for several days after clonidine administration has stopped.",
+    "relations": [
+      {
+        "e1": "beta blockers",
+        "e2": "clonidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, EXTREME CAUTION should be exercised when administering dopamine HCl to patients receiving cyclopropane or halogenated hydrocarbon anesthetics.",
+    "relations": [
+      {
+        "e1": "dopamine HCl",
+        "e2": "halogenated hydrocarbon anesthetics",
+        "label": "advise"
+      },
+      {
+        "e1": "dopamine HCl",
+        "e2": "cyclopropane",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Other 5-HT1B/1D Agonists Concomitant use of other 5-HT1B/1D agonists within 24 hours of treatment with AXERT is contraindicated.",
+    "relations": [
+      {
+        "e1": "5-HT1B/1D agonists",
+        "e2": "AXERT",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In the presence of these methylxanthines, larger doses of adenosine may be required or adenosine may not be effective.",
+    "relations": [
+      {
+        "e1": "methylxanthines",
+        "e2": "adenosine",
+        "label": "advise"
+      },
+      {
+        "e1": "methylxanthines",
+        "e2": "adenosine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The concomitant use of H2 blockers or proton pump inhibitors with SPRYCEL is not recommended.",
+    "relations": [
+      {
+        "e1": "proton pump inhibitors",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      },
+      {
+        "e1": "H2 blockers",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Wait 5 weeks after stopping escitalopram before starting a non-selective MAO inhibitor.",
+    "relations": [
+      {
+        "e1": "escitalopram",
+        "e2": "non-selective MAO inhibitor",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In patients receiving mercaptopurine (Purinethol) or azathioprine (Imuran), the concomitant administration of 300-600 mg of allopurinol per day will require a reduction in dose to approximately one-third to one-fourth of the usual dose of mercaptopurine or azathioprine.",
+    "relations": [
+      {
+        "e1": "allopurinol",
+        "e2": "mercaptopurine",
+        "label": "advise"
+      },
+      {
+        "e1": "allopurinol",
+        "e2": "azathioprine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Should it be decided to discontinue therapy in patients receiving beta-blockers and clonidine concurrently, the beta-blocker should be discontinued slowly over several days before the gradual withdrawal of clonidine.",
+    "relations": [
+      {
+        "e1": "beta-blockers",
+        "e2": "clonidine",
+        "label": "advise"
+      },
+      {
+        "e1": "beta-blocker",
+        "e2": "clonidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Auranofin should not be used together with penicillamine (Depen, Cuprimine), another arthritis medication.",
+    "relations": [
+      {
+        "e1": "Auranofin",
+        "e2": "Cuprimine",
+        "label": "advise"
+      },
+      {
+        "e1": "Auranofin",
+        "e2": "Depen",
+        "label": "advise"
+      },
+      {
+        "e1": "Auranofin",
+        "e2": "penicillamine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "As with other agents with b-blocking properties, if carvedilol is to be administered orally with calcium channel blockers of the verapamil or diltiazem type, it is recommended that ECG and blood pressure be monitored.",
+    "relations": [
+      {
+        "e1": "carvedilol",
+        "e2": "verapamil",
+        "label": "advise"
+      },
+      {
+        "e1": "carvedilol",
+        "e2": "diltiazem",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "BROVANA, as with other beta2-agonists, should be administered with extreme caution to patients being treated with monoamine oxidase inhibitors, tricyclic antidepressants, or drugs known to prolong the QTc interval because the action of adrenergic agonists on the cardiovascular system may be potentiated by these agents.",
+    "relations": [
+      {
+        "e1": "BROVANA",
+        "e2": "monoamine oxidase inhibitors",
+        "label": "advise"
+      },
+      {
+        "e1": "beta2-agonists",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "BROVANA",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "beta2-agonists",
+        "e2": "monoamine oxidase inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of the possible additive effects of drugs that may depress the nervous system, ethanol or triazolam should be used cautiously in combination with tiagabine.",
+    "relations": [
+      {
+        "e1": "ethanol",
+        "e2": "tiagabine",
+        "label": "advise"
+      },
+      {
+        "e1": "triazolam",
+        "e2": "tiagabine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When initiating a multi-day course of grepafloxacin in a patient maintained on theophylline, the theophylline maintenance dose should be halved for the period of concurrent use of grepafloxacin and monitoring of serum theophylline concentrations should be initiated as a guide to further dosage adjustments.",
+    "relations": [
+      {
+        "e1": "theophylline",
+        "e2": "grepafloxacin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, since aspirin, NSAIDs, and bisphosphonates are all associated with gastrointestinal irritation, caution should be exercised in the concomitant use of aspirin or NSAIDs with Ibandronate.",
+    "relations": [
+      {
+        "e1": "NSAIDs",
+        "e2": "Ibandronate",
+        "label": "advise"
+      },
+      {
+        "e1": "aspirin",
+        "e2": "Ibandronate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Epinephrine should not be administered concomitantly with other sympathomimetic drugs (such as isoproterenol) because of possible additive effects and increased toxicity.",
+    "relations": [
+      {
+        "e1": "Epinephrine",
+        "e2": "sympathomimetic drugs",
+        "label": "advise"
+      },
+      {
+        "e1": "Epinephrine",
+        "e2": "isoproterenol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "vardenafil dose should not exceed a maximum of 2.5 mg in a 24-hour period in patients receiving concomitant indinavir therapy.",
+    "relations": [
+      {
+        "e1": "vardenafil",
+        "e2": "indinavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "During concomitant therapy of Ponstel with furosemide, the patient should be observed closely for signs of renal failure, as well as to assure diuretic efficacy.",
+    "relations": [
+      {
+        "e1": "Ponstel",
+        "e2": "furosemide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nevirapine and ketoconazole should not beadministered concomitantly becausedecreases in ketoconazole plasmaconcentrations may reduce the efficacy of the drug.",
+    "relations": [
+      {
+        "e1": "Nevirapine",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although specific drug interaction studies have not been conducted with ALPHAGAN P, the possibility of an additive or potentiating effect with CNS depressants (alcohol, barbiturates, opiates, sedatives, or anesthetics) should be considered.",
+    "relations": [
+      {
+        "e1": "ALPHAGAN P",
+        "e2": "opiates",
+        "label": "advise"
+      },
+      {
+        "e1": "ALPHAGAN P",
+        "e2": "alcohol",
+        "label": "advise"
+      },
+      {
+        "e1": "ALPHAGAN P",
+        "e2": "barbiturates",
+        "label": "advise"
+      },
+      {
+        "e1": "ALPHAGAN P",
+        "e2": "sedatives",
+        "label": "advise"
+      },
+      {
+        "e1": "ALPHAGAN P",
+        "e2": "anesthetics",
+        "label": "advise"
+      },
+      {
+        "e1": "ALPHAGAN P",
+        "e2": "CNS depressants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Lithium generally should not be given with diuretics because they reduce lithiums renal clearance and add a high risk of lithium toxicity.",
+    "relations": [
+      {
+        "e1": "Lithium",
+        "e2": "diuretics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Based on clinical and pharmacokinetic results from the ATAC trial, tamoxifen should not be administered with anastrozole (see CLINICAL PHARMACOLOGY   Drug Interactions and CLINICAL PHARMACOLOGY - Clinical Studies - Adjuvant Treatment of Breast Cancer in Postmenopausal Women subsections).",
+    "relations": [
+      {
+        "e1": "tamoxifen",
+        "e2": "anastrozole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be taken when ENABLEX is used concomitantly with medications that are predominantly metabolized by CYP2D6 and which have a narrow therapeutic window, such as flecainide, thioridazine and tricyclic antidepressants (see CLINICAL PHARMACOLOGY).",
+    "relations": [
+      {
+        "e1": "ENABLEX",
+        "e2": "flecainide",
+        "label": "advise"
+      },
+      {
+        "e1": "ENABLEX",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "ENABLEX",
+        "e2": "thioridazine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "5HT3 Antagonists: Based on reports of profound hypotension and loss of consciousness when apomorphine was administered with ondansetron, the concomitant use of apomorphine with drugs of the 5HT3 antagonist class (including, for example, ondansetron, granisetron, dolasetron, palonosetron, and alosetron) is contraindicated .",
+    "relations": [
+      {
+        "e1": "apomorphine",
+        "e2": "alosetron",
+        "label": "advise"
+      },
+      {
+        "e1": "apomorphine",
+        "e2": "ondansetron",
+        "label": "advise"
+      },
+      {
+        "e1": "apomorphine",
+        "e2": "granisetron",
+        "label": "advise"
+      },
+      {
+        "e1": "apomorphine",
+        "e2": "5HT3 antagonist class",
+        "label": "advise"
+      },
+      {
+        "e1": "apomorphine",
+        "e2": "dolasetron",
+        "label": "advise"
+      },
+      {
+        "e1": "apomorphine",
+        "e2": "palonosetron",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "These increases should be considered when selecting an oral contraceptive for a woman taking atorvastatin.",
+    "relations": [
+      {
+        "e1": "contraceptive",
+        "e2": "atorvastatin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Digitalis: Vitamin D dosage must be determined with care in patients undergoing treatment with digitalis, as hypercalcemia in such patients may precipitate cardiac arrhythmias.",
+    "relations": [
+      {
+        "e1": "Vitamin D",
+        "e2": "digitalis",
+        "label": "advise"
+      },
+      {
+        "e1": "Vitamin D",
+        "e2": "digitalis",
+        "label": "advise"
+      },
+      {
+        "e1": "Vitamin D",
+        "e2": "digitalis",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thus, when NSAIDs and lithium are administered concurrently, subjects should be observed carefully for signs of lithium toxicity.",
+    "relations": [
+      {
+        "e1": "NSAIDs",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Dose reduction of CRIXIVAN to 600 mg every 8 hours should be considered when taking delavirdine 400 mg three times a day.",
+    "relations": [
+      {
+        "e1": "CRIXIVAN",
+        "e2": "delavirdine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Inhibitors of this isoenzyme (e.g., macrolide antibiotics, azole antifungal agents, protease inhibitors, serotonin reuptake inhibitors, amiodarone, cannabinoids, diltiazem, grapefruit juice, nefazadone, norfloxacin, quinine, zafirlukast) should be cautiously coadministered with TIKOSYN as they can potentially increase dofetilide levels.",
+    "relations": [
+      {
+        "e1": "quinine",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "protease inhibitors",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "norfloxacin",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "amiodarone",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "nefazadone",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "azole antifungal agents",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "macrolide antibiotics",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "serotonin reuptake inhibitors",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "cannabinoids",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "zafirlukast",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      },
+      {
+        "e1": "diltiazem",
+        "e2": "TIKOSYN",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when INDOCIN and digoxin are used concomitantly, serum digoxin levels should be closely monitored.",
+    "relations": [
+      {
+        "e1": "INDOCIN",
+        "e2": "digoxin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, because bleeding has been reported when ibuprofen and other nonsteroidal anti-inflammatory agents have been administered to patients on coumarin-type anticoagulants, the physician should be cautious when administering ibuprofen to patients on anticoagulants.",
+    "relations": [
+      {
+        "e1": "ibuprofen",
+        "e2": "anticoagulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because there is a theoretical basis that these effects may be additive, use of ergotamine-containing or ergot-type medications (like dihydroergotamine or methysergide) and AXERT within 24 hours of each other should be avoided.",
+    "relations": [
+      {
+        "e1": "dihydroergotamine",
+        "e2": "AXERT",
+        "label": "advise"
+      },
+      {
+        "e1": "methysergide",
+        "e2": "AXERT",
+        "label": "advise"
+      },
+      {
+        "e1": "ergot-type medications",
+        "e2": "AXERT",
+        "label": "advise"
+      },
+      {
+        "e1": "ergotamine",
+        "e2": "AXERT",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "These antibiotics should be used in the myasthenic patient only where definitely indicated, and then careful adjustment should be made of adjunctive anticholinesterase dosage.",
+    "relations": [
+      {
+        "e1": "antibiotics",
+        "e2": "anticholinesterase",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If nifedipine therapy is initiated in a patient currently receiving cimetidine, cautious titration is advised.",
+    "relations": [
+      {
+        "e1": "nifedipine",
+        "e2": "cimetidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although it has not been established that there is an interaction between Clozapine and benzodiazepines or other psychotropics, caution is advised when clozapine is initiated in patients taking a benzodiazepine or any other psychotropic drug.",
+    "relations": [
+      {
+        "e1": "clozapine",
+        "e2": "benzodiazepine",
+        "label": "advise"
+      },
+      {
+        "e1": "clozapine",
+        "e2": "psychotropic drug",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Dosage adjustment of atomoxetine may be necessary when coadministered with CYP2D6 inhibitors, e.g., paroxetine, fluoxetine, and quinidine.",
+    "relations": [
+      {
+        "e1": "atomoxetine",
+        "e2": "paroxetine",
+        "label": "advise"
+      },
+      {
+        "e1": "atomoxetine",
+        "e2": "fluoxetine",
+        "label": "advise"
+      },
+      {
+        "e1": "atomoxetine",
+        "e2": "quinidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Anafranil should not be used with MAO inhibitors.",
+    "relations": [
+      {
+        "e1": "Anafranil",
+        "e2": "MAO inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, due to possible pharmacodynamic interactions, when co-administered with PRECEDEX, a reduction in dosage of PRECEDEX on the concomitant anesthetic, sedative, hypnotic or opioid may be required.",
+    "relations": [
+      {
+        "e1": "PRECEDEX",
+        "e2": "hypnotic",
+        "label": "advise"
+      },
+      {
+        "e1": "PRECEDEX",
+        "e2": "sedative",
+        "label": "advise"
+      },
+      {
+        "e1": "PRECEDEX",
+        "e2": "opioid",
+        "label": "advise"
+      },
+      {
+        "e1": "PRECEDEX",
+        "e2": "anesthetic",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Following the administration of INAPSINE, the dose of other CNS depressant drugs should be reduced.",
+    "relations": [
+      {
+        "e1": "INAPSINE",
+        "e2": "CNS depressant drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The concomitant use of sodium cephalothin and Coly-Mycin M Parenteral should be avoided.",
+    "relations": [
+      {
+        "e1": "sodium cephalothin",
+        "e2": "Coly-Mycin M",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Aripiprazole dose should be reduced to one-half of its normal dose when concomitant administration of quinidine with aripiprazole occurs.",
+    "relations": [
+      {
+        "e1": "quinidine",
+        "e2": "aripiprazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Coadministration of alosetron and strong CYP3A4 inhibitors, such as clarithromycin, telithromycin, protease inhibitors, voriconazole, and itraconazole has not been evaluated but should be undertaken with caution because of similar potential drug interactions.",
+    "relations": [
+      {
+        "e1": "alosetron",
+        "e2": "itraconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "alosetron",
+        "e2": "voriconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "alosetron",
+        "e2": "telithromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "alosetron",
+        "e2": "clarithromycin",
+        "label": "advise"
+      },
+      {
+        "e1": "alosetron",
+        "e2": "protease inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients on rifampin should receive 70 mg of CANCIDAS daily.",
+    "relations": [
+      {
+        "e1": "rifampin",
+        "e2": "CANCIDAS",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If iron supplements are required during OMNICEF therapy, OMNICEF should be taken at least 2 hours before or after the supplement.",
+    "relations": [
+      {
+        "e1": "iron supplements",
+        "e2": "OMNICEF",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Netilmicin should not be administered concomitantly with potent loop diuretics such as furosemide and ethacrynic acid as the potential for ototoxicity is enhanced by the combination.",
+    "relations": [
+      {
+        "e1": "Netilmicin",
+        "e2": "ethacrynic acid",
+        "label": "advise"
+      },
+      {
+        "e1": "Netilmicin",
+        "e2": "loop diuretics",
+        "label": "advise"
+      },
+      {
+        "e1": "Netilmicin",
+        "e2": "furosemide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Plasma TCA concentrations may need to be monitored and the dose of the TCA may need to be reduced if a TCA is co-administered with Duloxetine.",
+    "relations": [
+      {
+        "e1": "TCA",
+        "e2": "Duloxetine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Consequently, it is recommended that fluvoxamine not be used in combination with either terbinafine, astemizole, or cisapride.",
+    "relations": [
+      {
+        "e1": "fluvoxamine",
+        "e2": "cisapride",
+        "label": "advise"
+      },
+      {
+        "e1": "fluvoxamine",
+        "e2": "astemizole",
+        "label": "advise"
+      },
+      {
+        "e1": "fluvoxamine",
+        "e2": "terbinafine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Close observation of the patient is recommended when a beta-blocker is administered to patients receiving catecholamine-depleting drugs such as reserpine, because of possible additive effects and the production of hypotension and/or marked bradycardia, which may produce vertigo, syncope or postural hypotension.",
+    "relations": [
+      {
+        "e1": "beta-blocker",
+        "e2": "reserpine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Ibandronate should be taken at least 60 minutes before any oral medications containing multivalent cations (including antacids, supplements or vitamins).",
+    "relations": [
+      {
+        "e1": "Ibandronate",
+        "e2": "antacids",
+        "label": "advise"
+      },
+      {
+        "e1": "Ibandronate",
+        "e2": "vitamins",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although deferasirox has a lower affinity for aluminum than for iron, Exjade should not be taken with aluminum-containing antacid preparations.",
+    "relations": [
+      {
+        "e1": "Exjade",
+        "e2": "aluminum",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Combinations of these drugs have not been studied and coadministration of CRIXIVAN and atazanavir is not recommended.",
+    "relations": [
+      {
+        "e1": "CRIXIVAN",
+        "e2": "atazanavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although this interaction has not been reported with cinoxacin, caution should be exercised when cinoxacin is given concomitantly with caffeine-containing products.",
+    "relations": [
+      {
+        "e1": "cinoxacin",
+        "e2": "caffeine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of the small effect on half-life, the coadministration with probenecid to extend the half-life of ertapenem is not recommended.",
+    "relations": [
+      {
+        "e1": "probenecid",
+        "e2": "ertapenem",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution is advised when TRISENOX is coadministered with other medications that can prolong the QT interval (e.g. certain antiarrhythmics or thioridazine) or lead to electrolyte abnormalities (such as diuretics or amphotericin B).",
+    "relations": [
+      {
+        "e1": "TRISENOX",
+        "e2": "antiarrhythmics",
+        "label": "advise"
+      },
+      {
+        "e1": "TRISENOX",
+        "e2": "amphotericin B",
+        "label": "advise"
+      },
+      {
+        "e1": "TRISENOX",
+        "e2": "diuretics",
+        "label": "advise"
+      },
+      {
+        "e1": "TRISENOX",
+        "e2": "thioridazine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that serum lithium levels be monitored frequently if lisinopril is administered concomitantly with lithium.",
+    "relations": [
+      {
+        "e1": "lisinopril",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although clinical studies have not been performed, based on the involvement of the cytochrome P-450 3A family in clonazepam metabolism, inhibitors of this enzyme system, notably oral antifungal agents, should be used cautiously in patients receiving clonazepam.",
+    "relations": [
+      {
+        "e1": "antifungal agents",
+        "e2": "clonazepam",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of reports of prolongation of the prothrombin time beyond the therapeutic range in patients taking concurrent levamisole and warfarin sodium, it is suggested that the prothrombin time be monitored carefully, and the dose of warfarin sodium or other coumarin-like drugs should be adjusted accordingly, in patients taking both drugs.",
+    "relations": [
+      {
+        "e1": "levamisole",
+        "e2": "warfarin sodium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In addition, drugs that are actively secreted via this route (e.g., triamterene, metformin and amiloride) should be co-administered with care as they might increase dofetilide levels.",
+    "relations": [
+      {
+        "e1": "metformin",
+        "e2": "dofetilide",
+        "label": "advise"
+      },
+      {
+        "e1": "triamterene",
+        "e2": "dofetilide",
+        "label": "advise"
+      },
+      {
+        "e1": "amiloride",
+        "e2": "dofetilide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Due to wide interindividual variability in the dose adjustment required, it is recommended that cyclosporine concentrations be monitored closely after initiation of carvedilol therapy and that the dose of cyclosporine be adjusted as appropriate.",
+    "relations": [
+      {
+        "e1": "carvedilol",
+        "e2": "cyclosporine",
+        "label": "advise"
+      },
+      {
+        "e1": "cyclosporine",
+        "e2": "carvedilol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "On administration of oral amiodarone, the need for digitalis therapy should be reviewed and the dose reduced by approximately 50% or discontinued.",
+    "relations": [
+      {
+        "e1": "amiodarone",
+        "e2": "digitalis",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients currently receiving diltiazem therapy should be carefully monitored for a change in pharmacological effect when initiating and discontinuing therapy with cimetidine.",
+    "relations": [
+      {
+        "e1": "diltiazem",
+        "e2": "cimetidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "This interaction should be given consideration in patients taking NSAIDs concomitantly with ACE inhibitors.",
+    "relations": [
+      {
+        "e1": "NSAIDs",
+        "e2": "ACE inhibitors",
+        "label": "advise"
+      },
+      {
+        "e1": "NSAIDs",
+        "e2": "ACE inhibitors",
+        "label": "advise"
+      },
+      {
+        "e1": "NSAIDs",
+        "e2": "ACE inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients receiving concomitant lovastatin and erythromycin should be carefully monitored;",
+    "relations": [
+      {
+        "e1": "lovastatin",
+        "e2": "erythromycin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is suggested that in patients receiving dopamine HCl, alternatives to phenytoin should be used if anticonvulsant therapy is needed.",
+    "relations": [
+      {
+        "e1": "dopamine HCl",
+        "e2": "phenytoin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients receiving azathioprine and allopurinol concomitantly should have a dose reduction of azathioprine, to approximately 1/3 to 1/4 the usual dose.",
+    "relations": [
+      {
+        "e1": "azathioprine",
+        "e2": "allopurinol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, caution should be used when administering CELEBREX with warfarin since these patients are at increased risk of bleeding complications.",
+    "relations": [
+      {
+        "e1": "CELEBREX",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In simultaneous treatment with imidazole drugs and coumarin drugs, the anticoagulant effect should be carefully titrated and monitored.",
+    "relations": [
+      {
+        "e1": "imidazole drugs",
+        "e2": "coumarin drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Chirocaine   should be used with caution in patients receiving other local anesthetics or agents structurally related to amide-type local anesthetics since the toxic effects of these drugs could be additive.",
+    "relations": [
+      {
+        "e1": "Chirocaine",
+        "e2": "anesthetics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In patients receiving concurrent therapy with clonidine, if therapy is to be discontinued, it is suggested that bisoprolol be discontinued for several days before the withdrawal of clonidine.",
+    "relations": [
+      {
+        "e1": "bisoprolol",
+        "e2": "clonidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If concomitant treatment with AXERT and an SSRI is clinically warranted, appropriate observation of the patient is advised.",
+    "relations": [
+      {
+        "e1": "AXERT",
+        "e2": "SSRI",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "VIRACEPT and rifampin should not be coadministered.",
+    "relations": [
+      {
+        "e1": "VIRACEPT",
+        "e2": "rifampin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Oral Anticoagulants CAUTION SHOULD BE EXERCISED WHEN COUMARIN ANTICOAGULANTS ARE GIVEN IN CONJUNCTION WITH TRICOR.",
+    "relations": [
+      {
+        "e1": "COUMARIN ANTICOAGULANTS",
+        "e2": "TRICOR",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "however, it adversely affected response duration suggesting that pyridoxine should not be administered with HEXALEN and/or cisplatin.1",
+    "relations": [
+      {
+        "e1": "pyridoxine",
+        "e2": "HEXALEN",
+        "label": "advise"
+      },
+      {
+        "e1": "pyridoxine",
+        "e2": "cisplatin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Careful observation is required when amantadine is administered concurrently with central nervous system stimulants.",
+    "relations": [
+      {
+        "e1": "amantadine",
+        "e2": "central nervous system stimulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The clinical significance of this reduction is not known, hence zalcitabine is not recommended to be ingested simultaneously with magnesium/aluminum-containing antacids.",
+    "relations": [
+      {
+        "e1": "zalcitabine",
+        "e2": "aluminum",
+        "label": "advise"
+      },
+      {
+        "e1": "zalcitabine",
+        "e2": "antacids",
+        "label": "advise"
+      },
+      {
+        "e1": "zalcitabine",
+        "e2": "magnesium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be exercised when administering nabumetone with warfarin since interactions have been seen with other NSAIDs.",
+    "relations": [
+      {
+        "e1": "nabumetone",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Isocarboxazid should be administered with caution to patients receiving Antabuse (disulfiram, Wyeth-Ayerst Laboratories).",
+    "relations": [
+      {
+        "e1": "Isocarboxazid",
+        "e2": "Antabuse",
+        "label": "advise"
+      },
+      {
+        "e1": "Isocarboxazid",
+        "e2": "disulfiram",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drugs that Lower Seizure Threshold: Concurrent administration of WELLBUTRIN and agents (e.g., antipsychotics, other antidepressants, theophylline, systemic steroids, etc.) that lower seizure threshold should be undertaken only with extreme caution.",
+    "relations": [
+      {
+        "e1": "WELLBUTRIN",
+        "e2": "antipsychotics",
+        "label": "advise"
+      },
+      {
+        "e1": "WELLBUTRIN",
+        "e2": "steroids",
+        "label": "advise"
+      },
+      {
+        "e1": "WELLBUTRIN",
+        "e2": "antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "WELLBUTRIN",
+        "e2": "theophylline",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be exercised when administering ETOPOPHOS with drugs that are known to inhibit phosphatase activities (e.g., levamisole hydrochloride).",
+    "relations": [
+      {
+        "e1": "ETOPOPHOS",
+        "e2": "levamisole hydrochloride",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although the clinical significance of these effects is not known, caution is advised in the co-administration of beta-agonists with non-potassium sparing diuretics.",
+    "relations": [
+      {
+        "e1": "beta-agonists",
+        "e2": "non-potassium sparing diuretics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because there is a theoretical basis that these effects may be additive, use of ergotamine-containing or ergot-type medications (like dihydroergotamine or methysergide) and naratriptan within 24 hours is contraindicated.",
+    "relations": [
+      {
+        "e1": "methysergide",
+        "e2": "naratriptan",
+        "label": "advise"
+      },
+      {
+        "e1": "dihydroergotamine",
+        "e2": "naratriptan",
+        "label": "advise"
+      },
+      {
+        "e1": "ergot-type medications",
+        "e2": "naratriptan",
+        "label": "advise"
+      },
+      {
+        "e1": "ergotamine",
+        "e2": "naratriptan",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Consequently, estazolam should be avoided in patients receiving ketoconazole and itraconazole, which are very potent inhibitors of CYP3A.",
+    "relations": [
+      {
+        "e1": "estazolam",
+        "e2": "ketoconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "estazolam",
+        "e2": "itraconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that if CASODEX is started in patients already receiving coumarin anticoagulants, prothrombin times should be closely monitored and adjustment of the anticoagulant dose may be necessary.",
+    "relations": [
+      {
+        "e1": "CASODEX",
+        "e2": "coumarin anticoagulants",
+        "label": "advise"
+      },
+      {
+        "e1": "CASODEX",
+        "e2": "anticoagulant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In long surgical procedures during enflurane or isoflurane anesthesia, less frequent maintenance dosing, lower maintenance doses, or reduced infusion rates of NIMBEX may be necessary.",
+    "relations": [
+      {
+        "e1": "isoflurane",
+        "e2": "NIMBEX",
+        "label": "advise"
+      },
+      {
+        "e1": "enflurane",
+        "e2": "NIMBEX",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "MAO Inhibitors: DURAGESIC  is not recommended for use in patients who have received MAOI within 14 days because severe and unpredictable potentiation by MAO inhibitors has been reported with opioid analgesics",
+    "relations": [
+      {
+        "e1": "DURAGESIC",
+        "e2": "MAOI",
+        "label": "advise"
+      },
+      {
+        "e1": "MAO inhibitors",
+        "e2": "opioid analgesics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Azlocillin should not be administered concomitantly with amikacin, ciprofloxacin, gentamicin, netilmicin, or tobramycin.",
+    "relations": [
+      {
+        "e1": "Azlocillin",
+        "e2": "gentamicin",
+        "label": "advise"
+      },
+      {
+        "e1": "Azlocillin",
+        "e2": "tobramycin",
+        "label": "advise"
+      },
+      {
+        "e1": "Azlocillin",
+        "e2": "ciprofloxacin",
+        "label": "advise"
+      },
+      {
+        "e1": "Azlocillin",
+        "e2": "amikacin",
+        "label": "advise"
+      },
+      {
+        "e1": "Azlocillin",
+        "e2": "netilmicin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that gabapentin be taken at least 2 hours following Maalox administration.",
+    "relations": [
+      {
+        "e1": "gabapentin",
+        "e2": "Maalox",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "furosemide should not be used concomitantly with ethacrynic acid because of the possibility of ototoxicity.",
+    "relations": [
+      {
+        "e1": "furosemide",
+        "e2": "ethacrynic acid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Potentiation of the hypotensive effects of nitrates for patients with ischemic heart disease has not been evaluated, and concomitant use of vardenafil and nitrates is contraindicated.",
+    "relations": [
+      {
+        "e1": "vardenafil",
+        "e2": "nitrates",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Due to a theoretical risk of a pharmacodynamic interaction, use of ergotamine-containing or ergot-type medications (like dihydroergotamine or methysergide) and frovatriptan within 24 hours of each other should be avoided (see  a href= frova_od.htm#CI CONTRAINDICATIONS).",
+    "relations": [
+      {
+        "e1": "methysergide",
+        "e2": "frovatriptan",
+        "label": "advise"
+      },
+      {
+        "e1": "ergot-type medications",
+        "e2": "frovatriptan",
+        "label": "advise"
+      },
+      {
+        "e1": "dihydroergotamine",
+        "e2": "frovatriptan",
+        "label": "advise"
+      },
+      {
+        "e1": "ergotamine",
+        "e2": "frovatriptan",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nabilone should be administered with caution to patients who are taking other psychoactive drugs or CNS depressants, including alcohol, barbiturates and narcotic analgesics, or to those with a history of psychiatric disorder (including manic-depressive illness and schizophrenia).",
+    "relations": [
+      {
+        "e1": "Nabilone",
+        "e2": "narcotic analgesics",
+        "label": "advise"
+      },
+      {
+        "e1": "Nabilone",
+        "e2": "psychoactive drugs",
+        "label": "advise"
+      },
+      {
+        "e1": "Nabilone",
+        "e2": "CNS depressants",
+        "label": "advise"
+      },
+      {
+        "e1": "Nabilone",
+        "e2": "alcohol",
+        "label": "advise"
+      },
+      {
+        "e1": "Nabilone",
+        "e2": "barbiturates",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, chloroprocaine should not be used in any condition in which a sulfonamide drug is being employed.",
+    "relations": [
+      {
+        "e1": "chloroprocaine",
+        "e2": "sulfonamide drug",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Use lowest possible dose of atorvastatin with careful monitoring, or consider HMG-CoA reductase inhibitors that are not primarily metabolized by CYP3A4, such as pravastatin, fluvastatin, or rosuvastatin in combination with CRIXIVAN.",
+    "relations": [
+      {
+        "e1": "HMG-CoA reductase inhibitors",
+        "e2": "CRIXIVAN",
+        "label": "advise"
+      },
+      {
+        "e1": "atorvastatin",
+        "e2": "CRIXIVAN",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Cyclosporine, tacrolimus and digoxin concentrations should be monitored at the initiation of Itraconazole therapy and frequently thereafter, and the dose of these three drug products adjusted appropriately.",
+    "relations": [
+      {
+        "e1": "tacrolimus",
+        "e2": "Itraconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "digoxin",
+        "e2": "Itraconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "Cyclosporine",
+        "e2": "Itraconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If chlorprothixene is given concomitantly with opioids, the opioid dose should be reduced (by approx. 50%), because chlorprothixene amplifies the therapeutic actions and side-effects of opioids massively.",
+    "relations": [
+      {
+        "e1": "chlorprothixene",
+        "e2": "opioids",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of its primary CNS effect, caution should be used when EQUETROTM is taken with other centrally acting drugs and alcohol.",
+    "relations": [
+      {
+        "e1": "EQUETROTM",
+        "e2": "alcohol",
+        "label": "advise"
+      },
+      {
+        "e1": "EQUETROTM",
+        "e2": "centrally acting drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Special consideration should be given to the administration of ETHYOL in patients receiving antihypertensive medications or other drugs that could cause or potentiate hypotension.",
+    "relations": [
+      {
+        "e1": "ETHYOL",
+        "e2": "antihypertensive medications",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "therefore, nitroglycerin or other nitrates (as used for management of angina) or other drugs having vasodilator activity should, if possible, be discontinued before starting captopril.",
+    "relations": [
+      {
+        "e1": "nitrates",
+        "e2": "captopril",
+        "label": "advise"
+      },
+      {
+        "e1": "nitroglycerin",
+        "e2": "captopril",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant Administration with Racemic citalopram citalopram - Since escitalopram is the active isomer of racemic citalopram (citalopram), the two agents should not be coadministered.",
+    "relations": [
+      {
+        "e1": "escitalopram",
+        "e2": "citalopram",
+        "label": "advise"
+      },
+      {
+        "e1": "escitalopram",
+        "e2": "citalopram",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If the two drugs are coadministered, the beta blocker should be withdrawn several days before the gradual withdrawal of clonidine.",
+    "relations": [
+      {
+        "e1": "beta blocker",
+        "e2": "clonidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Close supervision and careful adjustment of the dosage are required when nortriptyline hydrochloride is used with other anticholinergic drugs or sympathomimetic drugs.",
+    "relations": [
+      {
+        "e1": "nortriptyline hydrochloride",
+        "e2": "anticholinergic drugs",
+        "label": "advise"
+      },
+      {
+        "e1": "nortriptyline hydrochloride",
+        "e2": "sympathomimetic drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "A dose increase of lopinavir/ritonavir to 533/133 mg (4 capsules or 6.5 mL) twice daily taken with food is recommended when used in combination with SUSTIVA.",
+    "relations": [
+      {
+        "e1": "ritonavir",
+        "e2": "SUSTIVA",
+        "label": "advise"
+      },
+      {
+        "e1": "lopinavir",
+        "e2": "SUSTIVA",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Zidovudine should either be temporarily discontinued or decreased by 50% when coadministered with probenecid on the day of VISTIDE infusion.",
+    "relations": [
+      {
+        "e1": "Zidovudine",
+        "e2": "probenecid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Oral contraceptives and other hormonalmethods of birth control should not be usedas the sole method of contraception inwomen taking nevirapine, since nevirapinemay lower the plasma levels of thesemedications.",
+    "relations": [
+      {
+        "e1": "contraceptives",
+        "e2": "nevirapine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, patients without a functioning thyroid gland who are on thyroid replacement therapy may need to increase their thyroid dose if estrogens or estrogen-containing oral contraceptives are given.",
+    "relations": [
+      {
+        "e1": "thyroid",
+        "e2": "contraceptives",
+        "label": "advise"
+      },
+      {
+        "e1": "thyroid",
+        "e2": "estrogens",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "SUBUTEX and SUBOXONE should be prescribed with caution to patients on benzodiazepines or other drugs that act on the central nervous system, regardless of whether these drugs are taken on the advice of a physician or are taken as drugs of abuse.",
+    "relations": [
+      {
+        "e1": "SUBUTEX",
+        "e2": "benzodiazepines",
+        "label": "advise"
+      },
+      {
+        "e1": "SUBOXONE",
+        "e2": "benzodiazepines",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Coadministration of diltiazem with rifampin or any known CYP3A4 inducer should be avoided when possible, and alternative therapy considered.",
+    "relations": [
+      {
+        "e1": "diltiazem",
+        "e2": "rifampin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution is advised when beginning, discontinuing, or changing the dose of acetazolamide in patients receiving primidone.",
+    "relations": [
+      {
+        "e1": "acetazolamide",
+        "e2": "primidone",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nevertheless, caution is indicated in the co-administration of TCAs with any of the SSRIs and also in switching from one class to the other.",
+    "relations": [
+      {
+        "e1": "TCAs",
+        "e2": "SSRIs",
+        "label": "advise"
+      },
+      {
+        "e1": "TCAs",
+        "e2": "SSRIs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although these results do not indicate a significant interaction between TORADOL and warfarin or heparin, the administration of TORADOL to patients taking anticoagulants should be done extremely cautiously, and patients should be closely monitored.",
+    "relations": [
+      {
+        "e1": "TORADOL",
+        "e2": "anticoagulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "These results would seem to dictate against the clinical use of methotrexate with ELSPAR, or during the period following ELSPAR therapy when plasma asparagine levels are below normal.",
+    "relations": [
+      {
+        "e1": "methotrexate",
+        "e2": "ELSPAR",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If leprosy-associated inflammatory reactions develop in patients being treated with dapsone and clofazimine, it is still advisable to continue treatment with both drugs.",
+    "relations": [
+      {
+        "e1": "dapsone",
+        "e2": "clofazimine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, appropriate monitoring of blood glucose should be performed when initiating EXTRANEAL in diabetic patients and insulin dosage should be adjusted if needed.",
+    "relations": [
+      {
+        "e1": "EXTRANEAL",
+        "e2": "insulin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Physicians are provided this information to increase awareness of the potential for serious interactions when cinoxacin and certain nonsteroidal anti-inflammatory agents are administered concomitantly.",
+    "relations": [
+      {
+        "e1": "cinoxacin",
+        "e2": "nonsteroidal anti-inflammatory agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when chlorothiazide and non-steroidal anti-inflammatory agents are used concomitantly, the patient should be observed closely to determine if the desired effect of the diuretic is obtained",
+    "relations": [
+      {
+        "e1": "chlorothiazide",
+        "e2": "non-steroidal anti-inflammatory agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Microdosed minipill progestin preparations are not recommended for use with Soriatane.",
+    "relations": [
+      {
+        "e1": "progestin",
+        "e2": "Soriatane",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The following precautions should be kept in mind in the treatment of anticholinesterase poisoning although they do not bear directly on the use of atropine and pralidoxime.",
+    "relations": [
+      {
+        "e1": "atropine",
+        "e2": "pralidoxime",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Monitoring of liver enzymes is recommended when SUSTIVA is used in combination with ritonavir.",
+    "relations": [
+      {
+        "e1": "SUSTIVA",
+        "e2": "ritonavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, because some quinolones have been reported to enhance the effects of warfarin or its derivatives, prothrombin time or other suitable anticoagulation test should be monitored closely if a quinolone antimicrobial is administered with warfarin or its derivatives.",
+    "relations": [
+      {
+        "e1": "quinolone antimicrobial",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "After stopping Fluvoxamine Tablets, at least 2 weeks should be allowed before starting a MAOI.",
+    "relations": [
+      {
+        "e1": "Fluvoxamine",
+        "e2": "MAOI",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "We report the case of an adolescent with altered consciousness caused by carbamazepine overdose with a positive tricyclic antidepressant level to alert clinicians to the cross-reactivity of carbamazepine with a toxicology screen for tricyclic antidepressants.",
+    "relations": [
+      {
+        "e1": "carbamazepine",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Magnesium: Magnesium-containing preparations (eg, antacids) may cause hypermagnesemia and should therefore not be taken during therapy with vitamin D by patients on chronic renal dialysis.",
+    "relations": [
+      {
+        "e1": "Magnesium",
+        "e2": "vitamin D",
+        "label": "advise"
+      },
+      {
+        "e1": "Magnesium",
+        "e2": "vitamin D",
+        "label": "advise"
+      },
+      {
+        "e1": "antacids",
+        "e2": "vitamin D",
+        "label": "advise"
+      },
+      {
+        "e1": "antacids",
+        "e2": "vitamin D",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "At least 14 days should elapse between discontinuation of a MAO inhibitor and initiation of treatment with dexfenfluramine.",
+    "relations": [
+      {
+        "e1": "MAO inhibitor",
+        "e2": "dexfenfluramine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended to avoid concurrent administration of ethambutol with aluminum hydroxide containing antacids for at least 4 hours following ethambutol administration.",
+    "relations": [
+      {
+        "e1": "ethambutol",
+        "e2": "aluminum hydroxide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If you are also using a steroid inhaler, take bitolterol first and then wait about 15 minutes before using the steroid inhaler.",
+    "relations": [
+      {
+        "e1": "steroid",
+        "e2": "bitolterol",
+        "label": "advise"
+      },
+      {
+        "e1": "bitolterol",
+        "e2": "steroid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since PLETAL is extensively metabolized by cytochrome P-450 isoenzymes, caution should be exercised when PLETAL is coadministered with inhibitors of C.P.A. such as ketoconazole and erythromycin or inhibitors of CYP2C19 such as omeprazole.",
+    "relations": [
+      {
+        "e1": "PLETAL",
+        "e2": "omeprazole",
+        "label": "advise"
+      },
+      {
+        "e1": "PLETAL",
+        "e2": "ketoconazole",
+        "label": "advise"
+      },
+      {
+        "e1": "PLETAL",
+        "e2": "erythromycin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, use of lamivudine in combination with zalcitabine is not recommended",
+    "relations": [
+      {
+        "e1": "lamivudine",
+        "e2": "zalcitabine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when hydroflumethiazide and nonsteroidal anti-inflammatory agents are used concomitantly, the patient should be observed closely to determine if the desired effect of the diuretic is obtained.)",
+    "relations": [
+      {
+        "e1": "hydroflumethiazide",
+        "e2": "nonsteroidal anti-inflammatory agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nevertheless, the effects of Mefloquine on travelers receiving comedication, particularly diabetics or patients using anticoagulants, should be checked before departure.",
+    "relations": [
+      {
+        "e1": "Mefloquine",
+        "e2": "anticoagulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients with major psychotic disorders, treated with neuroleptics, should be treated with dopamine agonists only if the potential benefits outweigh the risks.",
+    "relations": [
+      {
+        "e1": "neuroleptics",
+        "e2": "dopamine agonists",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Based on the chemical resemblance of itraconazole and ketoconazole, coadministration of astemizole with itraconazole is contraindicated.",
+    "relations": [
+      {
+        "e1": "astemizole",
+        "e2": "itraconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because Nalfon has not been shown to produce any additional effect beyond that obtained with aspirin alone and because aspirin increases the rate of excretion of Nalfon, the concomitant use of Nalfon and salicylates is not recommended.",
+    "relations": [
+      {
+        "e1": "Nalfon",
+        "e2": "salicylates",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, the combined use of lovastatin with fibrates should generally be avoided.",
+    "relations": [
+      {
+        "e1": "lovastatin",
+        "e2": "fibrates",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Estrogen-containing therapies should not be used with ARIMIDEX as they may diminish its pharmacologic action.",
+    "relations": [
+      {
+        "e1": "Estrogen",
+        "e2": "ARIMIDEX",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although the interaction between almotriptan and other potent CYP3A4 inhibitors (e.g., itraconazole, ritonavir, and erythromycin) has not been studied, increased exposures to almotriptan may be expected when almotriptan is used concomitantly with these medications.",
+    "relations": [
+      {
+        "e1": "itraconazole",
+        "e2": "almotriptan",
+        "label": "advise"
+      },
+      {
+        "e1": "ritonavir",
+        "e2": "almotriptan",
+        "label": "advise"
+      },
+      {
+        "e1": "erythromycin",
+        "e2": "almotriptan",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended not to exceed a single 5 mg dose of vardenafil in a 24-hour period when used in combination with erythromycin.",
+    "relations": [
+      {
+        "e1": "vardenafil",
+        "e2": "erythromycin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If these agents are to be administered concurrently, cyclosporine concentrations should be monitored, especially when diltiazem therapy is initiated, adjusted, or discontinued.",
+    "relations": [
+      {
+        "e1": "cyclosporine",
+        "e2": "diltiazem",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Consequently, it is recommended not to exceed a single 2.5 mg vardenafil dose in a 72-hour period when used in combination with ritonavir.",
+    "relations": [
+      {
+        "e1": "vardenafil",
+        "e2": "ritonavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Evidence supporting the conclusion that it is inadvisable to co-administer fluvoxamine and diazepam is derived from a study in which healthy volunteers taking 150 mg/day of fluvoxamine were administered a single oral dose of 10 mg of diazepam.",
+    "relations": [
+      {
+        "e1": "fluvoxamine",
+        "e2": "diazepam",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, diflunisal and INDOCIN should not be used concomitantly.",
+    "relations": [
+      {
+        "e1": "diflunisal",
+        "e2": "INDOCIN",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Dose reduction of rifabutin to half the standard dose and a dose increase of CRIXIVAN to 1000 mg (three 333-mg capsules) every 8 hours are recommended when rifabutin and CRIXIVAN are coadministered.",
+    "relations": [
+      {
+        "e1": "rifabutin",
+        "e2": "CRIXIVAN",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "A dose increase of lopinavir/ritonavir to 533/133 mg twice daily with food isrecommended in combination with nevirapine.",
+    "relations": [
+      {
+        "e1": "lopinavir",
+        "e2": "nevirapine",
+        "label": "advise"
+      },
+      {
+        "e1": "ritonavir",
+        "e2": "nevirapine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drugs Whose Absorption Can Be Affected by the Level of Acidity in the Stomach: Drugs such as ketoconazole and itraconazole should be administered at least 2 hours prior to dosing with VIDEX.",
+    "relations": [
+      {
+        "e1": "ketoconazole",
+        "e2": "VIDEX",
+        "label": "advise"
+      },
+      {
+        "e1": "itraconazole",
+        "e2": "VIDEX",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients taking both flurbiprofen and a beta-blocker should be monitored to ensure that a satisfactory hypotensive effect is achieved.",
+    "relations": [
+      {
+        "e1": "flurbiprofen",
+        "e2": "beta-blocker",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients receiving both indomethacin and furosemide should be observed closely to determine if the desired diuretic and/or antihypertensive effect of furosemide is achieved.",
+    "relations": [
+      {
+        "e1": "indomethacin",
+        "e2": "furosemide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, increased monitoring of digoxin is recommended when initiating, adjusting, or discontinuing carvedilol.",
+    "relations": [
+      {
+        "e1": "digoxin",
+        "e2": "carvedilol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because lithium may enhance the serotonergic effects of escitalopram, caution should be exercised when LEXAPRO and lithium are coadministered.",
+    "relations": [
+      {
+        "e1": "LEXAPRO",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drug Interactions with Beta-Blockers: Concomitant use of fenoldopam with beta-blockers should be avoided.",
+    "relations": [
+      {
+        "e1": "fenoldopam",
+        "e2": "beta-blockers",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "This interaction should be given consideration in patients taking BEXTRA concomitantly with ACE-inhibitors.",
+    "relations": [
+      {
+        "e1": "BEXTRA",
+        "e2": "ACE-inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "however, as with other NSAIDs, concomitant administration of Lodine and aspirin is not generally recommended because of the potential of increased adverse effects.",
+    "relations": [
+      {
+        "e1": "Lodine",
+        "e2": "aspirin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Amphotericin B injection and potassium-depleting agents: When corticosteroids are administered concomitantly with potassium-depleting agents (e.g., amphotericin B, diuretics), patients should be observed closely for development of hypokalemia.",
+    "relations": [
+      {
+        "e1": "corticosteroids",
+        "e2": "diuretics",
+        "label": "advise"
+      },
+      {
+        "e1": "corticosteroids",
+        "e2": "amphotericin B",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The beneficial effects on arterial thrombus formation from combined therapy with antiplatelet medication and anticoagulant medication must be weighed against an increased risk of inducing hemorrhage.",
+    "relations": [
+      {
+        "e1": "antiplatelet medication",
+        "e2": "anticoagulant medication",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution is therefore advised when administering PEGANONE to patients receiving coumarin anticoagulants.",
+    "relations": [
+      {
+        "e1": "PEGANONE",
+        "e2": "coumarin anticoagulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Alternatives to rifampin should be considered during the course of PCP treatment with MEPRON.",
+    "relations": [
+      {
+        "e1": "rifampin",
+        "e2": "MEPRON",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drug-Drug Interactions albuterol - atomoxetine should be administered with caution to patients being treated with systemically-administered (oral or intravenous) albuterol (or other beta2 agonists) because the action of albuterol on the cardiovascular system can be potentiated resulting in increases in heart rate and blood pressure.",
+    "relations": [
+      {
+        "e1": "atomoxetine",
+        "e2": "albuterol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Refer to the package insert for lithium preparations before use of such preparations with chlorothiazide",
+    "relations": [
+      {
+        "e1": "lithium",
+        "e2": "chlorothiazide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, careful attention must be directed to cross toxicity and possible pharmacokinetic interactions between antiretroviral drugs and antineoplastic drugs.",
+    "relations": [
+      {
+        "e1": "antiretroviral drugs",
+        "e2": "antineoplastic drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, 4 to 5 hours should elapse between administration of cholestyramine and thyroid hormones.",
+    "relations": [
+      {
+        "e1": "cholestyramine",
+        "e2": "thyroid hormones",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "sildenafil dose should not exceed a maximum of 25 mg in a 48- hour period in patients receiving concomitant indinavir therapy.",
+    "relations": [
+      {
+        "e1": "sildenafil",
+        "e2": "indinavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Experience with co-administration of HMG-CoA reductase inhibitors and Fentanyl in patients is limited,therefore,consideration should be given to temporarily suspending use of HMG-CoA reductase inhibitors in patients receiving Fentanyl.",
+    "relations": [
+      {
+        "e1": "HMG-CoA reductase inhibitors",
+        "e2": "Fentanyl",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when using doses of Trileptal greater than 1200 mg/day during adjunctive therapy, a decrease in the dose of phenytoin may be required.",
+    "relations": [
+      {
+        "e1": "Trileptal",
+        "e2": "phenytoin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Indinavir may be taken with a light meal 1 h following the administration of 400 mg of didanosine.",
+    "relations": [
+      {
+        "e1": "Indinavir",
+        "e2": "didanosine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Close supervision and careful adjustment of dosage are required when Anafranil is administered with anticholinergic or sympathomimetic drugs.",
+    "relations": [
+      {
+        "e1": "Anafranil",
+        "e2": "anticholinergic",
+        "label": "advise"
+      },
+      {
+        "e1": "Anafranil",
+        "e2": "sympathomimetic drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The consumption of alcohol during treatment with WELLBUTRIN should be minimized or avoided (also see  a href= bupropz_od.htm#CI CONTRAINDICATIONS)",
+    "relations": [
+      {
+        "e1": "alcohol",
+        "e2": "WELLBUTRIN",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore concomitant administration of ketoconazole tablets with cisapride is contraindicated.",
+    "relations": [
+      {
+        "e1": "ketoconazole",
+        "e2": "cisapride",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "therefore, close monitoring of prothrombin time is recommended, and adjustment of the anticoagulant dose may be necessary when Tagamet is administered concomitantly.",
+    "relations": [
+      {
+        "e1": "anticoagulant",
+        "e2": "Tagamet",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients already stabilized on valdecoxib should be closely monitored for loss of symptom control with phenytoin coadministration.",
+    "relations": [
+      {
+        "e1": "valdecoxib",
+        "e2": "phenytoin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, such combined treatment should be approached with caution and patients should be monitored closely when Clozapine is combined with these drugs, particularly with fluvoxamine.",
+    "relations": [
+      {
+        "e1": "Clozapine",
+        "e2": "fluvoxamine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thus, probenecid should not be administered concurrently with bumetanide.",
+    "relations": [
+      {
+        "e1": "probenecid",
+        "e2": "bumetanide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "This interaction should be given consideration in patients taking VIOXX concomitantly with ACE inhibitors.",
+    "relations": [
+      {
+        "e1": "VIOXX",
+        "e2": "ACE inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients taking isoniazid when disulfiram is given should be observed for the appearance of unsteady gait or marked changes in mental status;",
+    "relations": [
+      {
+        "e1": "isoniazid",
+        "e2": "disulfiram",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when meclofenamate sodium is given to a patient receiving warfarin, the dosage of warfarin should be reduced to prevent excessive prolongation of the prothrombin time.",
+    "relations": [
+      {
+        "e1": "meclofenamate sodium",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "DIDREX should not be used concomitantly with other CNS stimulants.",
+    "relations": [
+      {
+        "e1": "DIDREX",
+        "e2": "CNS stimulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "aspirin: As with other NSAIDs, concomitant administration of Ponstel and aspirin is not generally recommended because of the potential of increased adverse effects.",
+    "relations": [
+      {
+        "e1": "NSAIDs",
+        "e2": "aspirin",
+        "label": "advise"
+      },
+      {
+        "e1": "Ponstel",
+        "e2": "aspirin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although no interaction between MAO inhibitors and Levo-Dromoran has been observed, it is not recommended for use with MAO inhibitors.",
+    "relations": [
+      {
+        "e1": "Levo-Dromoran",
+        "e2": "MAO inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Cevimeline should be administered with caution to patients taking beta adrenergic antagonists, because of the possibility of conduction disturbances.",
+    "relations": [
+      {
+        "e1": "Cevimeline",
+        "e2": "beta adrenergic antagonists",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concurrent use of flurbiprofen and aspirin is therefore not recommended.",
+    "relations": [
+      {
+        "e1": "flurbiprofen",
+        "e2": "aspirin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Quinolone Antibiotics: VIDEX should be administered at least 2 hours after or 6 hours before dosing with ciprofloxacin because plasma concentrations of ciprofloxacin are decreased when administered with antacids containing magnesium, calcium, or aluminum.",
+    "relations": [
+      {
+        "e1": "VIDEX",
+        "e2": "ciprofloxacin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Routine administration of vaccines or toxoids should be deferred until corticosteroid therapy is discontinued if possible.",
+    "relations": [
+      {
+        "e1": "vaccines",
+        "e2": "corticosteroid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The IV methylprednisolone dose should be reduced by approximately 25%, and the oral methylprednisolone dose should be reduced by approximately 50% when coadministered with Aprepitant to achieve exposures of methylprednisolone similar to those obtained when it is given without Aprepitant.",
+    "relations": [
+      {
+        "e1": "methylprednisolone",
+        "e2": "Aprepitant",
+        "label": "advise"
+      },
+      {
+        "e1": "methylprednisolone",
+        "e2": "Aprepitant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concurrent therapy with ORENCIA and TNF antagonists is not recommended.",
+    "relations": [
+      {
+        "e1": "ORENCIA",
+        "e2": "TNF antagonists",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In the case that you are taking digoxin while taking aminosalicylic acid, higher doses of digoxin may be needed.",
+    "relations": [
+      {
+        "e1": "digoxin",
+        "e2": "aminosalicylic acid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Monoamine Oxidase Inhibitors and Tricyclic Antidepressants: formoterol should be administered with extreme caution in patients being treated with monoamine oxidase inhibitors or tricyclic antidepressants because the action of formoterol on the cardiovascular system may be potentiated by these agents.",
+    "relations": [
+      {
+        "e1": "formoterol",
+        "e2": "tricyclic antidepressants",
+        "label": "advise"
+      },
+      {
+        "e1": "formoterol",
+        "e2": "monoamine oxidase inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Alcohol - Although LEXAPRO did not potentiate the cognitive and motor effects of alcohol in a clinical trial, as with other psychotropic medications, the use of alcohol by patients taking LEXAPRO is not recommended.",
+    "relations": [
+      {
+        "e1": "psychotropic medications",
+        "e2": "LEXAPRO",
+        "label": "advise"
+      },
+      {
+        "e1": "alcohol",
+        "e2": "LEXAPRO",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "DISULFIRAM SHOULD BE USED WITH CAUTION IN THOSE PATIENTS REVEIVING PHENYTOIN AND ITS CONGENERS.",
+    "relations": [
+      {
+        "e1": "DISULFIRAM",
+        "e2": "PHENYTOIN",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "RAPTIVA should not be used with other immunosuppressive drugs.",
+    "relations": [
+      {
+        "e1": "RAPTIVA",
+        "e2": "immunosuppressive drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Indinavir and didanosine formulations containing buffer should be administered at least one hour apart on an empty stomach.",
+    "relations": [
+      {
+        "e1": "Indinavir",
+        "e2": "didanosine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "A 5-mg vardenafil dose should not be exceeded when used in combination with 200 mg once daily ketoconazole.",
+    "relations": [
+      {
+        "e1": "vardenafil",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The intake of furosemide and sucralfate should be separated by at least two hours.",
+    "relations": [
+      {
+        "e1": "furosemide",
+        "e2": "sucralfate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "This interaction should be given consideration in patients taking NSAIDs concomitantly with ACE-inhibitors.",
+    "relations": [
+      {
+        "e1": "NSAIDs",
+        "e2": "ACE-inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Plasma concentrations of cyclosporine should therefore be closely monitored, and its dosage reduced accordingly, in patients treated with nicardipine.",
+    "relations": [
+      {
+        "e1": "cyclosporine",
+        "e2": "nicardipine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Dexfenfluramine should not be administered with other serotoninergic agents.",
+    "relations": [
+      {
+        "e1": "Dexfenfluramine",
+        "e2": "serotoninergic agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients treated with acebutolol plus catecholamine depletors should, therefore, be observed closely for evidence of marked bradycardia or hypotension which may present as vertigo, syncope/presyncope, or orthostatic changes in blood pressure without compensatory tachycardia.",
+    "relations": [
+      {
+        "e1": "acebutolol",
+        "e2": "catecholamine depletors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "For this reason, the dose of the anticoagulant should be reduced by 30 - 50% at the start of treatment with Bezalip or Bezalip retard and then titrated according to the blood clotting parameters",
+    "relations": [
+      {
+        "e1": "anticoagulant",
+        "e2": "Bezalip",
+        "label": "advise"
+      },
+      {
+        "e1": "anticoagulant",
+        "e2": "Bezalip",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although a 3-day regimen of Aprepitant given concomitantly with oral contraceptives has not been studied, alternative or back-up methods of contraception should be used.",
+    "relations": [
+      {
+        "e1": "Aprepitant",
+        "e2": "contraceptives",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "therefore, VIRACEPT should not be administered concurrently with terfenadine because of the potential for serious and/or life-threatening cardiac arrhythmias.",
+    "relations": [
+      {
+        "e1": "VIRACEPT",
+        "e2": "terfenadine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be used if INDOCIN is administered simultaneously with methotrexate.",
+    "relations": [
+      {
+        "e1": "INDOCIN",
+        "e2": "methotrexate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Refer to the package insert for lithium preparations before use of such preparations with hydrochlorothiazide.",
+    "relations": [
+      {
+        "e1": "lithium",
+        "e2": "hydrochlorothiazide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, prothrombin time should be carefully monitored in patients receiving Itraconazole and coumarin-like drugs simultaneously.",
+    "relations": [
+      {
+        "e1": "Itraconazole",
+        "e2": "coumarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Appropriate laboratory testing should be considered prior to initiating combination therapy with Amprenavir and ritonavir and at periodic intervals or if any clinical signs or symptoms of hyperlipidemia or elevated liver function tests occur during therapy.",
+    "relations": [
+      {
+        "e1": "Amprenavir",
+        "e2": "ritonavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nafazodone, fluvoxamine, cimetidine (consider Xanax dose reduction).",
+    "relations": [
+      {
+        "e1": "Nafazodone",
+        "e2": "Xanax",
+        "label": "advise"
+      },
+      {
+        "e1": "cimetidine",
+        "e2": "Xanax",
+        "label": "advise"
+      },
+      {
+        "e1": "fluvoxamine",
+        "e2": "Xanax",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since higher doses of ketoconazole (400 mg daily) may result in higher increases in Cmax and AUC, a single 2.5 mg dose of vardenafil should not be exceeded in a 24-hour period when used in combination with ketoconazole 400 mg daily.",
+    "relations": [
+      {
+        "e1": "vardenafil",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, interactions may be expected, and UROXATRAL should NOT be used in combination with other alpha-blockers.",
+    "relations": [
+      {
+        "e1": "UROXATRAL",
+        "e2": "alpha-blockers",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant use of ELLENCE with other cardioactive compounds that could cause heart failure (e.g., calcium channel blockers), requires close monitoring of cardiac function throughout treatment.",
+    "relations": [
+      {
+        "e1": "ELLENCE",
+        "e2": "calcium channel blockers",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when amiloride and non-steroidal anti-inflammatory agents are used concomitantly, the patient should be observed closely to determine if the desired effect of the diuretic is obtained.",
+    "relations": [
+      {
+        "e1": "amiloride",
+        "e2": "non-steroidal anti-inflammatory agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nicardipine HCl usually does not alter the plasma levels of digoxin, however, serum digoxin levels should be evaluated after concomitant therapy with nicardipine HCl is initiated.",
+    "relations": [
+      {
+        "e1": "digoxin",
+        "e2": "nicardipine HCl",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thus, when ibuprofen and lithium are administered concurrently, subjects should be observed carefully for signs of lithium toxicity.",
+    "relations": [
+      {
+        "e1": "ibuprofen",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant use of bromocriptine mesylate with other ergot alkaloids is not recommended.",
+    "relations": [
+      {
+        "e1": "bromocriptine mesylate",
+        "e2": "ergot alkaloids",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The concomitant use of INDOCIN with other NSAIDs is not recommended due to the increased possibility of gastrointestinal toxicity, with little or no increase in efficacy.",
+    "relations": [
+      {
+        "e1": "INDOCIN",
+        "e2": "NSAIDs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thus, careful monitoring of clinical status is warranted when rifampin is administered or discontinued in haloperidol-treated patients.",
+    "relations": [
+      {
+        "e1": "rifampin",
+        "e2": "haloperidol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant administration of gemfibrozil with Targretin capsules is not recommended.",
+    "relations": [
+      {
+        "e1": "gemfibrozil",
+        "e2": "Targretin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Care should be taken if labetalol is used concomitantly with calcium antagonists of the verapamil type.",
+    "relations": [
+      {
+        "e1": "labetalol",
+        "e2": "calcium antagonist",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution is advised in patients receiving concomitant high-dose aspirin and carbonic anhydrase inhibitors, as anorexia, tachypnea, lethargy and coma have been rarely reported due to a possible drug interaction.",
+    "relations": [
+      {
+        "e1": "aspirin",
+        "e2": "carbonic anhydrase inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Other CNS depressant drugs should be used with caution in patients taking fenfluramine, since the effects may be additive.",
+    "relations": [
+      {
+        "e1": "CNS depressant drugs",
+        "e2": "fenfluramine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The concomitant administration of bosentan and cyclosporine A is contraindicated.",
+    "relations": [
+      {
+        "e1": "bosentan",
+        "e2": "cyclosporine A",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of foscarnets tendency to cause renal impairment, the use of FOSCAVIR should be avoided in combination with potentially nephrotoxic drugs such as aminoglycosides, amphotericin B and intravenous pentamidine unless the potential benefits outweigh the risks to the patient.",
+    "relations": [
+      {
+        "e1": "FOSCAVIR",
+        "e2": "pentamidine",
+        "label": "advise"
+      },
+      {
+        "e1": "FOSCAVIR",
+        "e2": "aminoglycosides",
+        "label": "advise"
+      },
+      {
+        "e1": "FOSCAVIR",
+        "e2": "amphotericin B",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be used if naproxen is administered concomitantly with methotrexate.",
+    "relations": [
+      {
+        "e1": "naproxen",
+        "e2": "methotrexate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Lithium generally should not be given with diuretics because they reduce its renal clearance and add a high risk of lithium toxicity.",
+    "relations": [
+      {
+        "e1": "Lithium",
+        "e2": "diuretics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since INVIRASE is coadministered with ritonavir, the ritonavir label should be reviewed for additional drugs that should not be coadministered.",
+    "relations": [
+      {
+        "e1": "INVIRASE",
+        "e2": "ritonavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Apraclonidine should not be used in patients receiving MAO inhibitors..",
+    "relations": [
+      {
+        "e1": "Apraclonidine",
+        "e2": "MAO inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since there have been isolated reports of patients with elevated digoxin levels, it is recommended that digoxin levels be monitored when initiating, adjusting, and discontinuing nifedipine to avoid possible over- or under-digitalization.",
+    "relations": [
+      {
+        "e1": "digoxin",
+        "e2": "nifedipine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be exercised when anticoagulants are given in conjunction with Atromid-S.",
+    "relations": [
+      {
+        "e1": "anticoagulants",
+        "e2": "Atromid-S",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Epinephrine also should be used cautiously with other drugs (e.g., digitalis, glycosides) that sensitize the myocardium to the actions of sympathomimetic drugs.",
+    "relations": [
+      {
+        "e1": "Epinephrine",
+        "e2": "digitalis",
+        "label": "advise"
+      },
+      {
+        "e1": "Epinephrine",
+        "e2": "glycosides",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended not to exceed a single 2.5 mg vardenafil dose in a 24-hour period when used in combination with indinavir.",
+    "relations": [
+      {
+        "e1": "vardenafil",
+        "e2": "indinavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be exercised when INDOCIN and anticoagulants are administered concomitantly.",
+    "relations": [
+      {
+        "e1": "INDOCIN",
+        "e2": "anticoagulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "- Lithium: Lithium should generally not be given with diuretics (such as bumetanide) because they reduce its renal clearance and add a high risk of lithium toxicity.",
+    "relations": [
+      {
+        "e1": "Lithium",
+        "e2": "bumetanide",
+        "label": "advise"
+      },
+      {
+        "e1": "Lithium",
+        "e2": "diuretics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients on oral antidiabetic agents receiving VELCADE treatment may require close monitoring of their blood glucose levels and adjustment of the dose of their antidiabetic medication.",
+    "relations": [
+      {
+        "e1": "antidiabetic agents",
+        "e2": "VELCADE",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because changes in glucose concentrations with valdecoxib coadministration were within the normal variability and individual glucose concentrations were above or near 70 mg/dL, dose adjustment for glyburide (5 mg QD and 10 mg BID) with valdecoxib coadministration (up to 40 mg QD) is not indicated.",
+    "relations": [
+      {
+        "e1": "glyburide",
+        "e2": "valdecoxib",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "At least 3 weeks should elapse between discontinuation of dexfenfluramine and initiation of treatment with a MAO inhibitor.",
+    "relations": [
+      {
+        "e1": "dexfenfluramine",
+        "e2": "MAO inhibitor",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Accordingly, diazepam and fluvoxamine should not ordinarily be co-administered.",
+    "relations": [
+      {
+        "e1": "diazepam",
+        "e2": "fluvoxamine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant use of Isocarboxazid and other psychotropic agents is generally not recommended because of possible potentiating effects.",
+    "relations": [
+      {
+        "e1": "Isocarboxazid",
+        "e2": "psychotropic agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant administration of clarithromycin with pimozide is contraindicated.",
+    "relations": [
+      {
+        "e1": "clarithromycin",
+        "e2": "pimozide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that serum lithium levels be monitored frequently if enalapril is administered concomitantly with lithium.",
+    "relations": [
+      {
+        "e1": "enalapril",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nevertheless, caution is indicated in the coadministration of TCAs with any of the SSRIs and also in switching from one class to the other.",
+    "relations": [
+      {
+        "e1": "TCAs",
+        "e2": "SSRIs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that buspirone hydrochloride not be used concomitantly with MAO inhibitors Because the effects of concomitant administration of buspirone HCl with most other psychotropic drugs have not been studied, the concomitant use of buspirone HCl with other CNS-active drugs should be approached with caution.",
+    "relations": [
+      {
+        "e1": "buspirone hydrochloride",
+        "e2": "MAO inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Beta-adrenergic blocking agents should be withdrawn at least 48 hours before conducting an arbutamine-mediated stress test.",
+    "relations": [
+      {
+        "e1": "Beta-adrenergic blocking agents",
+        "e2": "arbutamine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Lithium serum concentrations should be monitored closely when initiating or changing therapy with BEXTRA in patients receiving lithium.",
+    "relations": [
+      {
+        "e1": "BEXTRA",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is not known if the effects of butorphanol are altered by concomitant medications that affect hepatic metabolism of drugs (erythromycin, etc.), but physicians should be alert to the possibility that a smaller initial dose and longer intervals between doses may be needed.",
+    "relations": [
+      {
+        "e1": "butorphanol",
+        "e2": "erythromycin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of the risk of serious ventricular arrhythmias and sudden death potentially associated with elevated plasma levels of thioridazine, Duloxetine and thioridazine should not be co-administered.",
+    "relations": [
+      {
+        "e1": "Duloxetine",
+        "e2": "thioridazine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution is warranted and therapeutic concentration monitoring is recommended for antiarrhythmics when coadministered with CRIXIVAN.",
+    "relations": [
+      {
+        "e1": "antiarrhythmics",
+        "e2": "CRIXIVAN",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be exercised if tacrolimus and bosentan are used together.",
+    "relations": [
+      {
+        "e1": "tacrolimus",
+        "e2": "bosentan",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of the danger of a potentially fatal prolongation of the QTc interval, halofantrine must not be given simultaneously with or subsequent to Mefloquine.",
+    "relations": [
+      {
+        "e1": "halofantrine",
+        "e2": "Mefloquine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nevertheless, the prothrombin time or other suitable coagulation test should be monitored when warfarin or its derivatives and enoxacin are given concomitantly.",
+    "relations": [
+      {
+        "e1": "warfarin",
+        "e2": "enoxacin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since bacteriostatic drugs may interfere with the bactericidal action of penicillin, it is advisable to avoid giving tetracyclines in conjunction with penicillin.",
+    "relations": [
+      {
+        "e1": "tetracyclines",
+        "e2": "penicillin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "NSAIDs should be used with caution in patients taking cyclosporine, and renal function should be carefully monitored.",
+    "relations": [
+      {
+        "e1": "NSAIDs",
+        "e2": "cyclosporine",
+        "label": "advise"
+      },
+      {
+        "e1": "NSAIDs",
+        "e2": "cyclosporine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Barbiturates and glutethimide should not be administered to patients receiving coumarin drugs.",
+    "relations": [
+      {
+        "e1": "Barbiturates",
+        "e2": "coumarin drugs",
+        "label": "advise"
+      },
+      {
+        "e1": "glutethimide",
+        "e2": "coumarin drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In case of theophylline toxicity and/or elevated serum theophylline levels, the dose of theophylline should be reduced while the patient is receiving concomitant erythromycin therapy.",
+    "relations": [
+      {
+        "e1": "theophylline",
+        "e2": "erythromycin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, when any additional drug, including INDOCIN, is added to the treatment of patients on anticoagulant therapy, the patients should be observed for alterations of the prothrombin time.",
+    "relations": [
+      {
+        "e1": "INDOCIN",
+        "e2": "anticoagulant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "therefore, plasma concentrations of phenytoin should also be monitored when it is given concurrently with Itraconazole.",
+    "relations": [
+      {
+        "e1": "phenytoin",
+        "e2": "Itraconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be used when alosetron and ketoconazole are administered concomitantly.",
+    "relations": [
+      {
+        "e1": "alosetron",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Studies with ACE inhibitors in combination with diuretics indicate that the dose of the ACE inhibitor can be reduced when it is given with a diuretic.",
+    "relations": [
+      {
+        "e1": "ACE inhibitor",
+        "e2": "diuretic",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Serum lithium levels should be monitored frequently if eplerenone is administered concomitantly with lithium.",
+    "relations": [
+      {
+        "e1": "eplerenone",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that in patients taking anticoagulants, prothrombin time be determined before starting lovastatin and frequently enough during early therapy to insure that no significant alteration of prothrombin time occurs.",
+    "relations": [
+      {
+        "e1": "anticoagulants",
+        "e2": "lovastatin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Simultaneous administration of SPRYCEL with antacids should be avoided.",
+    "relations": [
+      {
+        "e1": "SPRYCEL",
+        "e2": "antacids",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of the pronounced intersubject variability in the extent of the sirolimus-diltiazem interaction, whole blood sirolimus concentrations should be monitored closely in patients treated with the two drugs.",
+    "relations": [
+      {
+        "e1": "sirolimus",
+        "e2": "diltiazem",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "tadalafil dose should not exceed a maximum of 10 mg in a 72- hour period in patients receiving concomitant indinavir therapy.",
+    "relations": [
+      {
+        "e1": "tadalafil",
+        "e2": "indinavir",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since there have been conflicting results regarding the effect of digoxin levels, it is recommended that digoxin levels be monitored when initiating, adjusting, and discontinuing diltiazem hydrochloride therapy to avoid possible over- or under-digitalization.",
+    "relations": [
+      {
+        "e1": "digoxin",
+        "e2": "diltiazem hydrochloride",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Anticoagulant therapy should be monitored, particularly during the first few weeks, after initiating therapy with BEXTRA in patients receiving warfarin or similar agents.",
+    "relations": [
+      {
+        "e1": "BEXTRA",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Sucralfate should not be taken within 2 hours of FACTIVE.",
+    "relations": [
+      {
+        "e1": "Sucralfate",
+        "e2": "FACTIVE",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It is recommended that the dose of rifabutin be reduced to one-half the usual dose when administered with VIRACEPT.",
+    "relations": [
+      {
+        "e1": "rifabutin",
+        "e2": "VIRACEPT",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "HMG-CoA reductase inhibitors: The combined use of TRICOR and HMG-CoA reductase inhibitors should be avoided unless the benefit of further alterations in lipid levels is likely to outweigh the increased risk of this drug combination.",
+    "relations": [
+      {
+        "e1": "TRICOR",
+        "e2": "HMG-CoA reductase inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Co-administration of BOTOX and aminoglycosides or other agents interfering with neuromuscular transmission (e.g., curare-like compounds) should only be performed with caution as the effect of the toxin may be potentiated.",
+    "relations": [
+      {
+        "e1": "BOTOX",
+        "e2": "aminoglycosides",
+        "label": "advise"
+      },
+      {
+        "e1": "BOTOX",
+        "e2": "curare-like compounds",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, concomitant use of TORADOL and probenecid is contraindicated.",
+    "relations": [
+      {
+        "e1": "TORADOL",
+        "e2": "probenecid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because the tetracyclines have been shown to depress plasma prothrombin activity, patients who are on anticoagulant therapy may require downward adjustment of their anticoagulant dosage.",
+    "relations": [
+      {
+        "e1": "tetracyclines",
+        "e2": "anticoagulant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be exercised when considering the use of BREVIBLOC and verapamil in patients with depressed myocardial function.",
+    "relations": [
+      {
+        "e1": "BREVIBLOC",
+        "e2": "verapamil",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although in vivo studies have not been done to see if etodolac clearance is changed by coadministration of phenylbutazone, it is not recommended that they be coadministered.",
+    "relations": [
+      {
+        "e1": "etodolac",
+        "e2": "phenylbutazone",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "ALLEGRA should not be taken closely in time with aluminum and magnesium containing antacids.",
+    "relations": [
+      {
+        "e1": "ALLEGRA",
+        "e2": "aluminum",
+        "label": "advise"
+      },
+      {
+        "e1": "ALLEGRA",
+        "e2": "magnesium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Standard monitoring of methotrexate-related toxicity should be continued if VIOXX and methotrexate are administered concomitantly.",
+    "relations": [
+      {
+        "e1": "VIOXX",
+        "e2": "methotrexate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Administration of WELLBUTRIN Tablets to patients receiving either levodopa or amantadine concurrently should be undertaken with caution, using small initial doses and small gradual dose increases.",
+    "relations": [
+      {
+        "e1": "WELLBUTRIN",
+        "e2": "levodopa",
+        "label": "advise"
+      },
+      {
+        "e1": "WELLBUTRIN",
+        "e2": "amantadine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Since barbiturates are potentiated by the anticholinesterases, they should be used cautiously in the treatment of convulsions.",
+    "relations": [
+      {
+        "e1": "barbiturates",
+        "e2": "anticholinesterases",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because tetracyclines have been shown to depress plasma prothrombin activity, patients who are on anticoagulant therapy may require downward adjustment of their anticoagulant dosage.",
+    "relations": [
+      {
+        "e1": "tetracyclines",
+        "e2": "anticoagulant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Carbamazepine: Isoniazid is known to slow the metabolism of carbamazepine and increase its serum levels Carbamazepine levels should be determined prior to concurrent administration with isoniazid, signs and symptoms of carbamazepine toxicity should be monitored closely, and appropriate dosage adjustment of the anticonvulsant should be made.",
+    "relations": [
+      {
+        "e1": "Carbamazepine",
+        "e2": "isoniazid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, MAO inhibitors should be discontinued at least two weeks prior to the cautious initiation of therapy with SINEQUAN.",
+    "relations": [
+      {
+        "e1": "MAO inhibitors",
+        "e2": "SINEQUAN",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "As a consequence, when INDOCIN and lithium are given concomitantly, the patient should be carefully observed for signs of lithium toxicity.",
+    "relations": [
+      {
+        "e1": "INDOCIN",
+        "e2": "lithium",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Literature reports suggest that oral calcium antagonists may be used in combination with beta-adrenergic blocking agents when heart function is normal, but should be avoided in patients with impaired cardiac function.",
+    "relations": [
+      {
+        "e1": "calcium antagonists",
+        "e2": "beta-adrenergic blocking agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, patients under methotrexate therapy should be carefully monitored when concomitant ciprofloxacin therapy is indicated.",
+    "relations": [
+      {
+        "e1": "methotrexate",
+        "e2": "ciprofloxacin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution is therefore advised in the coadministration of ipratropium Inhalation Aerosol with other anticholinergic-containing drugs.",
+    "relations": [
+      {
+        "e1": "ipratropium",
+        "e2": "anticholinergic",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be used if ibuprofen is administered concomitantly with methotrexate.",
+    "relations": [
+      {
+        "e1": "ibuprofen",
+        "e2": "methotrexate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Of particular importance, sufficient time must elapse before initiating TCAtreatment in a patient being withdrawn from fluoxetine, given the long half-life of the parent and active metabolite (at least 5 weeks may be necessary).",
+    "relations": [
+      {
+        "e1": "TCA",
+        "e2": "fluoxetine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, proton pump inhibitors should be taken at least 30 minutes prior to sucralfate.",
+    "relations": [
+      {
+        "e1": "proton pump inhibitors",
+        "e2": "sucralfate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "aspirin should be used cautiously in conjunction with cortico-steroids in patients suffering from hypopro-thrombinemia.",
+    "relations": [
+      {
+        "e1": "aspirin",
+        "e2": "cortico-steroids",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because the potential interaction of efavirenz with oral contraceptives has not been fully characterized, a reliable method of barrier contraception should be used in addition to oral contraceptives.",
+    "relations": [
+      {
+        "e1": "efavirenz",
+        "e2": "contraceptives",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Antacids: Enteric Coated aspirin should not be given concurrently with antacids, since an increase in the pH of the stomach may effect the enteric coating of the tablets.",
+    "relations": [
+      {
+        "e1": "aspirin",
+        "e2": "antacids",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thyroid administration to a digitalized, hypothyroid patient may increase the dose requirement of digoxin.",
+    "relations": [
+      {
+        "e1": "Thyroid",
+        "e2": "digoxin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients taking coumarin-derivative anticoagulants concomitantly with capecitabine should be monitored regularly for alterations in their coagulation parameters (PT or INR).",
+    "relations": [
+      {
+        "e1": "coumarin-derivative anticoagulants",
+        "e2": "capecitabine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although concomitant use of Clozapine and carbamazepine is not recommended, it should be noted that discontinuation of concomitant carbamazepine administration may result in an increase in Clozapine plasma levels.",
+    "relations": [
+      {
+        "e1": "Clozapine",
+        "e2": "carbamazepine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If intravenous pentamidine is required to treat Pneumocystis carinii pneumonia, treatment with HIVID should be interrupted.",
+    "relations": [
+      {
+        "e1": "pentamidine",
+        "e2": "HIVID",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because moderate CYP3A4 inhibitors (e.g., diltiazem) result in 2-fold increase in plasma concentrations of aprepitant, concomitant administration should also be approached with caution.",
+    "relations": [
+      {
+        "e1": "diltiazem",
+        "e2": "aprepitant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "warfarin: Anticoagulant activity should be monitored, particularly in the first few days after initiating or changing VIOXX therapy in patients receiving warfarin or similar agents, since these patients are at an increased risk of bleeding complications.",
+    "relations": [
+      {
+        "e1": "VIOXX",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "aspirin: CELEBREX can be used with low dose aspirin.",
+    "relations": [
+      {
+        "e1": "CELEBREX",
+        "e2": "aspirin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Avoid the concomitant use of chlorprothixene and tramadol (tramadol).",
+    "relations": [
+      {
+        "e1": "chlorprothixene",
+        "e2": "tramadol",
+        "label": "advise"
+      },
+      {
+        "e1": "chlorprothixene",
+        "e2": "tramadol",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In order to maintain phenytoin levels, limit adverse experiences, and achieve the felbamate dose of 3600 mg/day, a phenytoin dose reduction of approximately 40% was necessary for eight of these 10 subjects.",
+    "relations": [
+      {
+        "e1": "felbamate",
+        "e2": "phenytoin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, ketoconazole should be administered with caution with intranasal ciclesonide.",
+    "relations": [
+      {
+        "e1": "ketoconazole",
+        "e2": "ciclesonide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Tetracyclines: Concomitant treatment with Accutane and tetracyclines should be avoided because Accutane use has been associated with a number of cases of pseudotumor cerebri (benign intracranial hypertension), some of which involved concomitant use of tetracyclines",
+    "relations": [
+      {
+        "e1": "Accutane",
+        "e2": "tetracyclines",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When concomitant treatment with agents with b-blocking properties and clonidine is to be terminated, the b-blocking agent should be discontinued first.",
+    "relations": [
+      {
+        "e1": "agents with b-blocking properties",
+        "e2": "clonidine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients who have been treated with MAO inhibitors within two to three weeks prior to the administration of dopamine HCl should receive initial doses of dopamine HCl no greater than one-tenth (1/10) of the usual dose.",
+    "relations": [
+      {
+        "e1": "MAO inhibitors",
+        "e2": "dopamine HCl",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be used when NSAIDs are administered concomitantly with methotrexate.",
+    "relations": [
+      {
+        "e1": "NSAIDs",
+        "e2": "methotrexate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Auranofin should be avoided by patients with a history of serious reaction to any gold medication, including Solganal and Myochrysine.",
+    "relations": [
+      {
+        "e1": "Auranofin",
+        "e2": "Solganal",
+        "label": "advise"
+      },
+      {
+        "e1": "Auranofin",
+        "e2": "Myochrysine",
+        "label": "advise"
+      },
+      {
+        "e1": "Auranofin",
+        "e2": "gold medication",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, close monitoring of prothrombin time is recommended and adjustment of the anticoagulant dose may be necessary when EULEXIN Capsules are administered concomitantly with warfarin.",
+    "relations": [
+      {
+        "e1": "EULEXIN",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because dexfenfluramine is a serotonin releaser and reuptake inhibitor, dexfenfluramine should not be used concomitantly with a MAO inhibitor.",
+    "relations": [
+      {
+        "e1": "dexfenfluramine",
+        "e2": "MAO inhibitor",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Caution should be exercised during the administration of adrenaline to patients anaesthetised with FLUOTHANE as arrhythmias may be precipitated.",
+    "relations": [
+      {
+        "e1": "adrenaline",
+        "e2": "FLUOTHANE",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If concomitant treatment with frovatriptan and an SSRI is clinically warranted, appropriate observation of the patient is advised.",
+    "relations": [
+      {
+        "e1": "frovatriptan",
+        "e2": "SSRI",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, when eplerenone and NSAIDs are used concomitantly, patients should be observed to determine whether the desired effect on blood pressure is obtained.",
+    "relations": [
+      {
+        "e1": "eplerenone",
+        "e2": "NSAIDs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Thus in order to avoid bleeding, reduced dosage of heparin is recommended during treatment with antithrombin III (human).",
+    "relations": [
+      {
+        "e1": "heparin",
+        "e2": "antithrombin III",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Plasma valproate concentration should be monitored when isoniazid and valproate are co administered, and appropriate dosage adjustments of valproate should be made.",
+    "relations": [
+      {
+        "e1": "isoniazid",
+        "e2": "valproate",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Coadministration of astemizole with ketoconazole tablets is therefore contraindicated.",
+    "relations": [
+      {
+        "e1": "astemizole",
+        "e2": "ketoconazole",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant administration of alosetron and fluvoxamine is contraindicated.",
+    "relations": [
+      {
+        "e1": "alosetron",
+        "e2": "fluvoxamine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Ocupress should be used with caution in patients who are receiving a beta-adrenergic blocking agent orally because of the potential for additive effects on systemic beta-blockade.",
+    "relations": [
+      {
+        "e1": "Ocupress",
+        "e2": "beta-adrenergic blocking agent",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "TRACRIUM should not be administered until a patient has recovered from succinylcholine-induced neuromuscular block.",
+    "relations": [
+      {
+        "e1": "TRACRIUM",
+        "e2": "succinylcholine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "diazepam: The co-administration of Fluvoxamine Tablets and diazepam is generally not advisable.",
+    "relations": [
+      {
+        "e1": "Fluvoxamine",
+        "e2": "diazepam",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Isoproterenol hydrochloride injection and epinephrine should not be administered simultaneously because both drugs are direct cardiac stimulants and their combined effects may induce serious arrhythmias.",
+    "relations": [
+      {
+        "e1": "Isoproterenol hydrochloride",
+        "e2": "epinephrine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Drug-Drug Interactions Given the primary CNS effects of aripiprazole, caution should be used when ABILIFY is taken in combination with other centrally acting drugs and alcohol.",
+    "relations": [
+      {
+        "e1": "ABILIFY",
+        "e2": "alcohol",
+        "label": "advise"
+      },
+      {
+        "e1": "ABILIFY",
+        "e2": "centrally acting drugs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Anticoagulants: While studies have not shown diclofenac to interact with anticoagulants of the warfarin type, caution should be exercised, nonetheless, since interactions have been seen with other NSAIDs.",
+    "relations": [
+      {
+        "e1": "diclofenac",
+        "e2": "NSAIDs",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Although the clinical significance is not known, it is not recommended that cefditoren pivoxil be taken concomitantly with antacids.",
+    "relations": [
+      {
+        "e1": "cefditoren pivoxil",
+        "e2": "antacids",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "- Lithium: Generally should not be given with diuretics.",
+    "relations": [
+      {
+        "e1": "Lithium",
+        "e2": "diuretics",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When used concomitantly, anesthetics and calcium channel blockers should be titrated carefully.",
+    "relations": [
+      {
+        "e1": "anesthetics",
+        "e2": "calcium channel blockers",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Blood glucose concentrations should be carefully monitored when Itraconazole and oral hypoglycemic agents are coadministered.",
+    "relations": [
+      {
+        "e1": "Itraconazole",
+        "e2": "hypoglycemic agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "therefore, nelfinavir should be administered (with food) one hour after or more than two hours before didanosine.",
+    "relations": [
+      {
+        "e1": "nelfinavir",
+        "e2": "didanosine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Renal function should be monitored carefully if high doses of aminoglycosides are to be administered with MAXIPIME because of the increased potential of nephrotoxicity and ototoxicity of aminoglycoside antibiotics.",
+    "relations": [
+      {
+        "e1": "aminoglycosides",
+        "e2": "MAXIPIME",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "INDOCIN and triamterene should not be administered together.",
+    "relations": [
+      {
+        "e1": "INDOCIN",
+        "e2": "triamterene",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "A dose adjustment is not needed when zidovudine is administered with VIRACEPT.",
+    "relations": [
+      {
+        "e1": "zidovudine",
+        "e2": "VIRACEPT",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If antacid therapy is needed, the antacid dose should be administered at least 2 hours prior to or 2 hours after the dose of SPRYCEL.",
+    "relations": [
+      {
+        "e1": "antacid",
+        "e2": "SPRYCEL",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Methadone levels may be decreased; increased dosages may be required to prevent symptoms of opiate withdrawal. Methadone maintained patients beginning nevirapine therapy should be monitored forevidence of withdrawal and methadone dose should be adjusted accordingly.",
+    "relations": [
+      {
+        "e1": "Methadone",
+        "e2": "nevirapine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients using CYP3A4 metabolized statins should have cholesterol levels monitored after TRACLEER is initiated to see whether the statin dose needs adjustment.",
+    "relations": [
+      {
+        "e1": "statins",
+        "e2": "TRACLEER",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Based on these data, vardenafil should not be used in patients on alpha-blocker therapy.",
+    "relations": [
+      {
+        "e1": "vardenafil",
+        "e2": "alpha-blocker",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "bisoprolol should not be combined with other beta-blocking agents.",
+    "relations": [
+      {
+        "e1": "bisoprolol",
+        "e2": "beta-blocking agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients on warfarin-type anticoagulant therapy may require dosage adjustment of the anticoagulant during and after griseofulvin therapy.",
+    "relations": [
+      {
+        "e1": "warfarin-type anticoagulant",
+        "e2": "griseofulvin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Patients on lithium treatment should be closely monitored when CELEBREX is introduced or withdrawn.",
+    "relations": [
+      {
+        "e1": "lithium",
+        "e2": "CELEBREX",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If any signs or symptoms occur physicians should consider discontinuation of either one or both agents (ZYVOX or concomitant serotonergic agents).",
+    "relations": [
+      {
+        "e1": "ZYVOX",
+        "e2": "serotonergic agents",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If the TARCEVA dose is adjusted upward, the dose will need to be reduced upon discontinuation of rifampicin or other inducers.",
+    "relations": [
+      {
+        "e1": "TARCEVA",
+        "e2": "rifampicin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because prostaglandina play an important role in hemostasis and ketoprofen has an effect on platelet function as well, concurent therapy with ketoprofen and warfarin requires close monitoring of patients on both drugs.",
+    "relations": [
+      {
+        "e1": "ketoprofen",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "In patients on chronic warfarin therapy, the prothrombin time (INR) should be closely monitored in the 2-week period, particularly at 7 to 10 days, following initiation of the 3-day regimen of Aprepitant with each chemotherapy cycle.",
+    "relations": [
+      {
+        "e1": "warfarin",
+        "e2": "Aprepitant",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Accordingly, when diflunisal is administered with oral anticoagulants, the prothrombin time should be closely monitored during and for several days after concomitant drug administration.",
+    "relations": [
+      {
+        "e1": "diflunisal",
+        "e2": "anticoagulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore you may need to take a vitamin B12 supplement while taking aminosalicylic acid.",
+    "relations": [
+      {
+        "e1": "vitamin B12",
+        "e2": "aminosalicylic acid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "For example, when vitamin K antagonists are administered concomitantly with nilutamide, prothrombin time should be carefully monitored and if necessary, the dosage of vitamin K antagonists should be reduced.",
+    "relations": [
+      {
+        "e1": "vitamin K antagonists",
+        "e2": "nilutamide",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "However, prudent medical practice dictates careful monitoring of prothrombin time in all patients treated with azithromycin and warfarin concomitantly.",
+    "relations": [
+      {
+        "e1": "azithromycin",
+        "e2": "warfarin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Co-administration of MYOBLOC and aminoglycosides or other agents interfering with neuromuscular transmission (e.g., curare-like compounds) should only be performed with caution as the effect of the toxin may be potentiated.",
+    "relations": [
+      {
+        "e1": "MYOBLOC",
+        "e2": "curare-like compounds",
+        "label": "advise"
+      },
+      {
+        "e1": "MYOBLOC",
+        "e2": "aminoglycosides",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "When phenobarbital is added to or withdrawn from treatment, dosage adjustment of Nalfon may be required.",
+    "relations": [
+      {
+        "e1": "phenobarbital",
+        "e2": "Nalfon",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "It may be necessary to adjust the dosage of oral anticoagulants upon beginning or stopping disulfiram. since disulfiram may prolong prothrombin time.",
+    "relations": [
+      {
+        "e1": "anticoagulants",
+        "e2": "disulfiram",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Because of the potential for ARAVA levels to continue to increase with multiple dosing, caution should be used if patients are to be receiving both ARAVA and rifampin.",
+    "relations": [
+      {
+        "e1": "ARAVA",
+        "e2": "rifampin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Monitoring for amiodarone toxicity and serial measurement of amiodarone serum concentration during concomitant protease inhibitor therapy should be considered.",
+    "relations": [
+      {
+        "e1": "amiodarone",
+        "e2": "protease inhibitor",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If antacids are required during OMNICEF therapy, OMNICEF should be taken at least 2 hours before or after the antacid.",
+    "relations": [
+      {
+        "e1": "OMNICEF",
+        "e2": "antacid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The possibility of hypotensive effects with Lotensin can be minimized by either discontinuing the diuretic or increasing the salt intake prior to initiation of treatment with Lotensin.",
+    "relations": [
+      {
+        "e1": "diuretic",
+        "e2": "Lotensin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "The physician should be cautious when administering flurbiprofen to patients taking anticoagulants.",
+    "relations": [
+      {
+        "e1": "flurbiprofen",
+        "e2": "anticoagulants",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Coadministration of SULAR with phenytoin or any known CYP3A4 inducer should be avoided and alternative antihypertensive therapy should be considered.",
+    "relations": [
+      {
+        "e1": "SULAR",
+        "e2": "phenytoin",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Nucleoside Analogues Didanosine Co-administration of COPEGUS and didanosine is not recommended.",
+    "relations": [
+      {
+        "e1": "COPEGUS",
+        "e2": "didanosine",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "This time window is different than for other oral formulations of ciprofloxacin, which are usually administered 2 hours before or 6 hours after antacids.",
+    "relations": [
+      {
+        "e1": "ciprofloxacin",
+        "e2": "antacids",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "This interaction should be given consideration in patients taking CELEBREX concomitantly with ACE-inhibitors.",
+    "relations": [
+      {
+        "e1": "CELEBREX",
+        "e2": "ACE-inhibitors",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "If possible, anticholinesterase agents should be withdrawn at least 24 hours before initiating corticosteroid therapy.",
+    "relations": [
+      {
+        "e1": "anticholinesterase agents",
+        "e2": "corticosteroid",
+        "label": "advise"
+      }
+    ]
+  },
+  {
+    "text": "Therefore, patients on propranolol should be observed when COLESTID Tablets are either added or deleted from a therapeutic regimen.",
+    "relations": [
+      {
+        "e1": "propranolol",
+        "e2": "COLESTID",
+        "label": "advise"
+      }
+    ]
+  }
+]
