@@ -2,6 +2,16 @@ import pandas as pd
 import torch
 import numpy as np
 import pickle
+import sys
+from pathlib import Path
+
+# 允许直接 `python data_process/build_prime_kg.py` 运行
+_HERE = Path(__file__).resolve()
+if str(_HERE.parent.parent) not in sys.path:
+    sys.path.insert(0, str(_HERE.parent.parent))
+
+from data_process.paths import KG_CSV, PRIMEKG_GRAPH_PKL, PRIMEKG_PYG_PT, ensure_dir, DATA_KG
+
 try:
     from torch_geometric.data import Data
 except Exception:
@@ -80,7 +90,7 @@ def _build_core_graph(df):
         edge_attr_list,
     )
 
-def build_primekg_pyg_graph(csv_path, output_path="data/primekg_pyg.pt"):
+def build_primekg_pyg_graph(csv_path, output_path=str(PRIMEKG_PYG_PT)):
     df = pd.read_csv(csv_path, low_memory=False)
     (
         node_ids,
@@ -340,7 +350,7 @@ class QueryGraph:
             parts.append(f"{self.node_names[src]} -[{rel}]-> {self.node_names[dst]}")
         return " -> ".join(parts)
 
-def build_query_graph(csv_path, output_path="data/primekg_graph.pkl"):
+def build_query_graph(csv_path, output_path=str(PRIMEKG_GRAPH_PKL)):
     df = pd.read_csv(csv_path, low_memory=False)
     (
         node_ids,
@@ -374,12 +384,12 @@ def build_query_graph(csv_path, output_path="data/primekg_graph.pkl"):
         id_to_idx,
     )
 
-def load_query_graph(path="data/primekg_graph.pkl"):
+def load_query_graph(path=str(PRIMEKG_GRAPH_PKL)):
     try:
         with open(path, "rb") as f:
             payload = pickle.load(f)
     except Exception:
-        csv_path = "../data/kg.csv"
+        csv_path = str(KG_CSV)
         df = pd.read_csv(csv_path, low_memory=False)
         (
             node_ids,
@@ -433,17 +443,19 @@ def load_query_graph(path="data/primekg_graph.pkl"):
             payload.id_to_idx,
         )
     except Exception:
-        csv_path = "data/kg.csv"
+        csv_path = str(KG_CSV)
         return build_query_graph(csv_path, output_path=path)
 
  
 
 
 if __name__ == "__main__":
-    csv_path = "../data/kg.csv"
-    g = build_query_graph(csv_path, output_path="../data/primekg_graph.pkl")
+    # 统一从 paths.py 常量取路径；输入 data/kg/kg.csv，输出 data/kg/primekg_*
+    ensure_dir(DATA_KG)
+    csv_path = str(KG_CSV)
+    g = build_query_graph(csv_path, output_path=str(PRIMEKG_GRAPH_PKL))
     if Data is not None:
-        _ = build_primekg_pyg_graph(csv_path, output_path="../data/primekg_pyg.pt")
+        _ = build_primekg_pyg_graph(csv_path, output_path=str(PRIMEKG_PYG_PT))
     print("构建完成")
     print(f"节点数: {len(g.node_names)}")
     print(f"边数: {len(g.edge_index_list)}")

@@ -12,8 +12,16 @@
 import re
 import json
 import os
+import sys
 from collections import defaultdict
 from pathlib import Path
+
+# Allow running this file directly via: python data_process/extract_test_labels.py
+_HERE = Path(__file__).resolve()
+if str(_HERE.parent.parent) not in sys.path:
+    sys.path.insert(0, str(_HERE.parent.parent))
+
+from data_process.paths import DATA_LABELS, RBERT_TEST_CSV, ensure_dir
 
 
 def extract_test_labels(input_file, output_dir):
@@ -139,19 +147,14 @@ def extract_test_labels(input_file, output_dir):
 
 def main():
     """主函数：从测试集提取标签数据"""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    
-    # 输入：测试集文件
-    input_path = os.path.join(project_root, "data", "rbert_test.csv")
-    
-    # 输出：直接到 data 目录
-    output_dir = os.path.join(project_root, "data")
-    
+    # 输入：data/raw/rbert_test.csv；输出：data/labels/{label}_test.json
+    input_path = str(RBERT_TEST_CSV)
+    output_dir = str(ensure_dir(DATA_LABELS))
+
     print("=" * 60)
     print("从 DDIcorpus 测试集提取五种标签类型的数据")
     print("=" * 60)
-    
+
     extract_test_labels(input_path, output_dir)
 
 

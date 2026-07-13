@@ -1,7 +1,16 @@
 import re
 import json
 import os
+import sys
 from collections import defaultdict
+from pathlib import Path
+
+# Allow running this file directly via: python data_process/extract_train_labels.py
+_HERE = Path(__file__).resolve()
+if str(_HERE.parent.parent) not in sys.path:
+    sys.path.insert(0, str(_HERE.parent.parent))
+
+from data_process.paths import DATA_LABELS, STANDARDIZED_TRAIN_CSV, ensure_dir
 
 def process_rbert_data(input_file, output_dir):
     # Target labels
@@ -102,12 +111,8 @@ def process_rbert_data(input_file, output_dir):
             json.dump(output_list, f, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
-    # Calculate paths relative to the script location
-    # Script is in data_process/, so we go up one level to root, then into data/
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    
-    input_path = os.path.join(project_root, "data", "standardized_generated_rbert_train_random.csv")
-    output_dir = os.path .join(project_root, "data")
-    
+    # 输入：data/raw/ 下的源 CSV；输出：data/labels/ 下的五类 JSON
+    input_path = str(STANDARDIZED_TRAIN_CSV)
+    output_dir = str(ensure_dir(DATA_LABELS))
+
     process_rbert_data(input_path, output_dir)

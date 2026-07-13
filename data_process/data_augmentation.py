@@ -2,8 +2,17 @@ import pandas as pd
 import numpy as np
 import re
 import random
+import sys
 from collections import defaultdict
 import hashlib
+from pathlib import Path
+
+# Allow running this file directly via: python data_process/data_augmentation.py
+_HERE = Path(__file__).resolve()
+if str(_HERE.parent.parent) not in sys.path:
+    sys.path.insert(0, str(_HERE.parent.parent))
+
+from data_process.paths import RBERT_TEST_CSV, TEST_AUGMENTED_CSV
 
 # Set random seed for reproducibility
 RANDOM_SEED = 42
@@ -11,8 +20,8 @@ random.seed(RANDOM_SEED)
 np.random.seed(RANDOM_SEED)
 
 # Configuration parameters
-INPUT_CSV_PATH = "../data/rbert_test.csv"
-OUTPUT_CSV_PATH = "../data/test_augmented_data.csv"
+INPUT_CSV_PATH = str(RBERT_TEST_CSV)
+OUTPUT_CSV_PATH = str(TEST_AUGMENTED_CSV)
 HIGH_REPEAT_THRESHOLD = 3  # Threshold for high repetition text
 LABEL_TARGET_NUM = {  # Target number for each label (for balance)
     "false": 1600,

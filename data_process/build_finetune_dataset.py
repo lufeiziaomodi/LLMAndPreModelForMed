@@ -23,6 +23,16 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from prime_kg_utils.select import GraphQuery
 from pipelines.query_utils import get_query_group_text
+from data_process.paths import (
+    DATA_LABELS,
+    DATA_FINETUNE_TRAIN,
+    DATA_FINETUNE_TEST,
+    DATA_FINETUNE_AUX,
+    PRIMEKG_GRAPH_PKL,
+    DRUG_NAME_MAP_JSON,
+    PENDING_UNMATCHED_JSON,
+    ensure_dir,
+)
 
 # 五种标签对应的源数据文件和标准标签名
 LABEL_CONFIG = {
@@ -43,7 +53,14 @@ STOP_NODES = {
 class DrugKGQuery:
     """查询药物在 PrimeKG 中的相关信息"""
 
-    def __init__(self, graph_path: str = "data/primekg_graph.pkl", mapping_path: str = "data/drug_name_map.json"):
+    def __init__(
+        self,
+        graph_path: Optional[str] = None,
+        mapping_path: Optional[str] = None,
+    ):
+        # 默认从 data_process.paths 常量取，允许调用方显式覆盖
+        graph_path = graph_path if graph_path is not None else str(PRIMEKG_GRAPH_PKL)
+        mapping_path = mapping_path if mapping_path is not None else str(DRUG_NAME_MAP_JSON)
         self.gq = GraphQuery(graph_path)
         self.mapping_path = Path(mapping_path)
         if not self.mapping_path.is_absolute():
@@ -1117,7 +1134,7 @@ def main():
     parser.add_argument("--use_all_data", action="store_true",
                         help="使用每个标签文件的全部数据，不按比例采样")
     parser.add_argument("--output", type=str, default=None,
-                        help="输出文件路径（默认: data/finetune_dataset_input.json）")
+                        help="输出文件路径（默认: data/finetune/train/input.json 或 data/finetune/test/input_test.json）")
     parser.add_argument(
         "--ablation_mode",
         type=str,
@@ -1138,9 +1155,9 @@ def main():
     parser.add_argument("--skip_unmatched", action="store_true", default=True,
                         help="未匹配 PrimeKG 的药物对暂不写入输出")
     parser.add_argument("--pending_output", type=str, default=None,
-                        help="保存未匹配药物对清单（默认: data/pending_unmatched_pairs.json）")
+                        help="保存未匹配药物对清单（默认: data/finetune/aux/pending_unmatched_pairs.json）")
     parser.add_argument("--retry_pending_json", type=str, default=None,
-                        help="仅处理待对齐清单（如 data/pending_unmatched_pairs.json）")
+                        help="仅处理待对齐清单（如 data/finetune/aux/pending_unmatched_pairs.json）")
     parser.add_argument("--retry_log_every", type=int, default=100,
                         help="回填模式日志频率（每处理 N 条打印一次，<=0 表示不打印中间进度）")
     parser.add_argument("--append_output", action="store_true",
@@ -1164,10 +1181,8 @@ def main():
 
     random.seed(args.seed)
     ablation = _resolve_ablation_mode(args.ablation_mode)
-    project_root = Path(__file__).parent.parent
-    graph_path = project_root / "data" / "primekg_graph.pkl"
-    mapping_path = project_root / "data" / "drug_name_map.json"
-    kg_query = DrugKGQuery(graph_path=str(graph_path), mapping_path=str(mapping_path))
+    # 直接使用 paths.py 常量，遵循新的 data/ 分层布局
+    kg_query = DrugKGQuery(graph_path=str(PRIMEKG_GRAPH_PKL), mapping_path=str(DRUG_NAME_MAP_JSON))
     before_unmatched = sum(1 for v in kg_query._user_name_map_raw.values() if v is None)
 
     labels = list(LABEL_CONFIG.keys())
@@ -1310,7 +1325,8 @@ def main():
         for label, filename in LABEL_CONFIG.items():
             stem = Path(filename).stem
             target_filename = f"{stem}{args.input_suffix}.json"
-            input_path = project_root / "data" / target_filename
+            # 五类标签 JSON 位于 data/labels/
+            input_path = DATA_LABELS / target_filename
             if not input_path.exists():
                 print(f"[跳过] 文件不存在: {input_path}")
                 continue
@@ -1375,15 +1391,16 @@ def main():
     if args.output:
         output_path = Path(args.output)
     else:
-        if args.input_suffix == "_test":
-            default_base = "finetune_dataset_input_test"
-        else:
-            default_base = "finetune_dataset_input"
+        # 训练集默认落 data/finetune/train/，测试集默认落 data/finetune/test/
+        # 命名统一去掉冗余前缀 finetune_dataset_，改为 input(_test)_<mode>.json
+        is_test = args.input_suffix == "_test"
+        default_base = "input_test" if is_test else "input"
         if args.ablation_mode == "full":
             default_name = f"{default_base}.json"
         else:
             default_name = f"{default_base}_{args.ablation_mode}.json"
-        output_path = project_root / "data" / default_name
+        target_dir = ensure_dir(DATA_FINETUNE_TEST if is_test else DATA_FINETUNE_TRAIN)
+        output_path = target_dir / default_name
 
     if args.append_output and output_path.exists():
         with open(output_path, "r", encoding="utf-8") as f:
@@ -1396,8 +1413,8 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(all_entries, f, ensure_ascii=False, indent=2)
 
-    # 保存待对齐清单，用于外部名称对齐后 retry
-    pending_path = Path(args.pending_output) if args.pending_output else (project_root / "data" / "pending_unmatched_pairs.json")
+    # 保存待对齐清单，用于外部名称对齐后 retry；默认落 data/finetune/aux/
+    pending_path = Path(args.pending_output) if args.pending_output else PENDING_UNMATCHED_JSON
     pending_path.parent.mkdir(parents=True, exist_ok=True)
 
     # 去重待对齐记录
@@ -1422,8 +1439,10 @@ def main():
         if args.gold_label_sidecar:
             sidecar_path = Path(args.gold_label_sidecar)
         else:
-            default_sidecar = "finetune_dataset_input_test_labels.json" if args.input_suffix == "_test" else "finetune_dataset_input_labels.json"
-            sidecar_path = project_root / "data" / default_sidecar
+            is_test = args.input_suffix == "_test"
+            default_sidecar = "input_test_labels.json" if is_test else "input_labels.json"
+            sidecar_dir = ensure_dir(DATA_FINETUNE_TEST if is_test else DATA_FINETUNE_TRAIN)
+            sidecar_path = sidecar_dir / default_sidecar
         sidecar_path.parent.mkdir(parents=True, exist_ok=True)
         with open(sidecar_path, "w", encoding="utf-8") as f:
             json.dump(sidecar_labels, f, ensure_ascii=False, indent=2)
