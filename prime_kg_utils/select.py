@@ -1,11 +1,14 @@
 from data_process.build_prime_kg import load_query_graph
+from data_process.paths import PRIMEKG_GRAPH_PKL
 import time
 import json
 
 
 
 class GraphQuery:
-    def __init__(self, graph_path: str = "data/primekg_graph.pkl"):
+    def __init__(self, graph_path: str | None = None):
+        # 默认 data/kg/primekg_graph.pkl；允许显式覆盖
+        graph_path = graph_path if graph_path is not None else str(PRIMEKG_GRAPH_PKL)
         self.g = load_query_graph(graph_path)
     def neighbors(self, name: str, relation: str | None = None, direction: str = "out"):
         res = []

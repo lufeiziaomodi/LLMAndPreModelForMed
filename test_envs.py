@@ -1,6 +1,7 @@
-from test import load_query_graph
+from data_process.build_prime_kg import load_query_graph
+from data_process.paths import PRIMEKG_GRAPH_PKL
 
-g = load_query_graph('data/primekg_graph.pkl')
+g = load_query_graph(str(PRIMEKG_GRAPH_PKL))
 print('nodes', len(g.node_names))
 print('edges', len(g.edge_index_list))
 # pick a sample neighbor to test path

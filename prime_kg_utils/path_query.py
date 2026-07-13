@@ -11,10 +11,13 @@ from typing import List, Dict, Any, Set, Optional
 import json
 
 from data_process.build_prime_kg import load_query_graph
+from data_process.paths import PRIMEKG_GRAPH_PKL
 
 
 class PathQuery:
-    def __init__(self, graph_path: str = "../data/primekg_graph.pkl"):
+    def __init__(self, graph_path: str | None = None):
+        # 默认 data/kg/primekg_graph.pkl；允许显式覆盖
+        graph_path = graph_path if graph_path is not None else str(PRIMEKG_GRAPH_PKL)
         self.g = load_query_graph(graph_path)
         self._name_to_indices_ci = {}
         for name, inds in self.g.name_to_indices.items():
@@ -691,8 +694,10 @@ def demo():
     print(f"  叶子节点数: {metadata['leaf_count']}")
     print(f"  扩展次数: {metadata['expansions']}")
     
-    # 保存为JSON
-    output_path = "cimetidine_tree.json"
+    # 保存为JSON（demo 输出落 data/reports/legacy_demos/）
+    from data_process.paths import DATA_REPORTS, ensure_dir
+    demo_dir = ensure_dir(DATA_REPORTS / "legacy_demos")
+    output_path = str(demo_dir / "cimetidine_tree.json")
     pq.save_tree_to_json(tree_data, output_path)
     
     # 示例2: 查看树的前几层结构

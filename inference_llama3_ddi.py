@@ -779,10 +779,10 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Inference with LoRA-tuned Llama3 DDI model")
     parser.add_argument("--base_model", type=str, default="models/Meta-Llama-3-8B-Instruct", help="Base model path or hub id")
     parser.add_argument("--adapter_dir", type=str, default="results/llama3_ddi_lora", help="LoRA adapter directory")
-    parser.add_argument("--input_json", type=str, default="data/finetune_dataset_input_test.json", help="Input JSON file")
-    parser.add_argument("--labels_json", type=str, default="data/finetune_dataset_input_test_labels.json", help="Gold labels sidecar JSON for evaluation")
-    parser.add_argument("--output_json", type=str, default="results/test_predictions/finetune_dataset_input_test_out.json", help="Output JSON file")
-    parser.add_argument("--metrics_json", type=str, default="results/test_predictions/finetune_dataset_input_test_metrics.json", help="Output metrics JSON file")
+    parser.add_argument("--input_json", type=str, default="data/finetune/test/input_test.json", help="Input JSON file (under data/finetune/test/)")
+    parser.add_argument("--labels_json", type=str, default="data/finetune/test/input_test_labels.json", help="Gold labels sidecar JSON for evaluation (under data/finetune/test/)")
+    parser.add_argument("--output_json", type=str, default="data/reports/default/inference/test_out.json", help="Output JSON file (under data/reports/{exp}/inference/)")
+    parser.add_argument("--metrics_json", type=str, default="data/reports/default/inference/test_metrics.json", help="Output metrics JSON file (under data/reports/{exp}/inference/)")
     parser.add_argument(
         "--max_new_tokens",
         type=int,

@@ -1,7 +1,7 @@
 """
-Finetune Meta-Llama-3-8B-Instruct on DDI finetune_dataset.json using LoRA (QLoRA-ready).
-- Input: data/finetune_dataset.json (fields: instruction, input.sentence, input.query_group, input.kg_evidence, output)
-- Output: results/llama3_ddi_lora with adapter weights.
+Finetune Meta-Llama-3-8B-Instruct on DDI finetune dataset using LoRA (QLoRA-ready).
+- Input: data/finetune/train/input_<mode>.json (fields: instruction, input.sentence, input.query_group, input.kg_evidence, output)
+- Output: results/llama3_ddi_lora_<mode>/ with adapter weights (results/ is gitignored).
 """
 
 import argparse
@@ -230,8 +230,8 @@ def tokenize_dataset(dataset, tokenizer, prompt_mode: str):
 def main():
     parser = argparse.ArgumentParser(description="Finetune Meta-Llama-3-8B-Instruct on DDI dataset with LoRA")
     parser.add_argument("--model_id", type=str, default="models/Meta-Llama-3-8B-Instruct", help="Base model path or hub id")
-    parser.add_argument("--data_path", type=str, default="data/finetune_dataset.json", help="Path to finetune dataset json")
-    parser.add_argument("--output_dir", type=str, default="results/llama3_ddi_lora", help="Where to save adapter")
+    parser.add_argument("--data_path", type=str, default="data/finetune/train/input.json", help="Path to finetune dataset json (under data/finetune/train/)")
+    parser.add_argument("--output_dir", type=str, default="results/llama3_ddi_lora", help="Where to save adapter (kept under gitignored results/)")
     parser.add_argument("--batch_size", type=int, default=1, help="Per-device batch size")
     parser.add_argument("--grad_accum", type=int, default=8, help="Gradient accumulation steps")
     parser.add_argument("--learning_rate", type=float, default=2e-4, help="Learning rate")

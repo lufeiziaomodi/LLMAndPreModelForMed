@@ -1,6 +1,8 @@
 from prime_kg_utils.path_query import PathQuery
+from data_process.paths import DATA_REPORTS, ensure_dir
 
-pq = PathQuery(graph_path="./data/primekg_graph.pkl")
+# 使用默认 KG 图路径 (data/kg/primekg_graph.pkl)
+pq = PathQuery()
 
 
 tree_data = pq.build_tree_from_source(
@@ -15,8 +17,9 @@ tree_data = pq.build_tree_from_source(
     allow_cycles=False,     # 不允许循环
 )
 
-# 保存为JSON
-pq.save_tree_to_json(tree_data, "cimetidine_tree.json")
+# 保存为JSON（demo 输出落 data/reports/legacy_demos/）
+demo_dir = ensure_dir(DATA_REPORTS / "legacy_demos")
+pq.save_tree_to_json(tree_data, str(demo_dir / "cimetidine_tree.json"))
 
 # 查看统计信息
 metadata = tree_data["metadata"]
