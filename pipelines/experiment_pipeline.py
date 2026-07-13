@@ -15,7 +15,7 @@ def execute_experiment(conf: Dict[str, Any]) -> Dict[str, Any]:
     exp_name = exp.get("name", "exp")
     run_id = make_run_id(exp_name)
 
-    root_output = exp.get("output_root", "results/experiments")
+    root_output = exp.get("output_root", "data/reports")
     output_dir = os.path.join(root_output, exp_name)
     os.makedirs(output_dir, exist_ok=True)
 

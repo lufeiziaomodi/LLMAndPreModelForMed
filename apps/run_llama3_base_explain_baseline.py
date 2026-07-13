@@ -72,8 +72,8 @@ def _cleanup_cuda() -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run non-finetuned Llama3 explainable-reasoning baseline")
     parser.add_argument("--base_model", type=str, default="models/Meta-Llama-3-8B-Instruct")
-    parser.add_argument("--input_json", type=str, default="results/test_predictions/finetune_dataset_input_test_out_label_only_without_kg.json")
-    parser.add_argument("--output_json", type=str, default="results/test_predictions/llama3_base_explanation_no_kg_no_lora.json")
+    parser.add_argument("--input_json", type=str, default="data/reports/_legacy_test_predictions/finetune_dataset_input_test_out_label_only_without_kg.json")
+    parser.add_argument("--output_json", type=str, default="data/reports/default/inference/llama3_base_explanation_no_kg_no_lora.json")
     parser.add_argument("--max_new_tokens", type=int, default=512)
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--top_p", type=float, default=1.0)

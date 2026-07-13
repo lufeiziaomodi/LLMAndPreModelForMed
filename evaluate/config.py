@@ -8,11 +8,11 @@ DEFAULT_DDI_TYPES = ["effect", "mechanism", "advise", "int", "false"]
 @dataclass
 class EvaluationConfig:
     mode: str = "full"
-    test_data_path: str = "data/test_augmented_data.csv"
+    test_data_path: str = "data/raw/test_augmented_data.csv"
     predictions_file: Optional[str] = None
     predictions_labels_file: Optional[str] = None
     label_predictions_file: Optional[str] = None
-    output_dir: str = "results/ddi_evaluation"
+    output_dir: str = "data/reports/default"
 
     model_id: str = "models/google/medgemma-27b-text-it"
     max_new_tokens: int = 256

@@ -189,7 +189,13 @@ def _candidate_label_prediction_paths(predictions_file: str) -> List[str]:
         if src in name:
             candidates.append(pred_path.with_name(name.replace(src, dst)))
 
-    fallback_roots = [Path("results/test_predictions"), pred_path.parent, pred_path.parent.parent]
+    # legacy fallback：兼容老实验产出还留在 data/reports/_legacy_test_predictions/ 的情况
+    fallback_roots = [
+        Path("data/reports/_legacy_test_predictions"),
+        Path("results/test_predictions"),  # legacy path，兼容旧机器
+        pred_path.parent,
+        pred_path.parent.parent,
+    ]
     for src, dst in replacements:
         if src in name:
             target_name = name.replace(src, dst)

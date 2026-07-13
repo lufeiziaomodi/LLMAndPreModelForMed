@@ -40,7 +40,7 @@ def run_matrix(conf: Dict[str, Any]) -> Dict[str, Any]:
             }
         )
 
-    root_output = conf.get("experiment", {}).get("output_root", "results/experiments")
+    root_output = conf.get("experiment", {}).get("output_root", "data/reports")
     os.makedirs(root_output, exist_ok=True)
     out_path = os.path.join(root_output, "matrix_runs_summary.json")
     save_json(out_path, {"runs": results})

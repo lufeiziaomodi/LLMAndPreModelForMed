@@ -8,9 +8,9 @@ from evaluate.cli.workflows import run_classify, run_faithfulness, run_full, run
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="DDI evaluation workflows")
     parser.add_argument("--mode", choices=["classify", "faithfulness", "judge", "full"], default="full")
-    parser.add_argument("--test-data", default="data/test_augmented_data.csv")
+    parser.add_argument("--test-data", default="data/raw/test_augmented_data.csv")
     parser.add_argument("--predictions-file", default=None)
-    parser.add_argument("--output-dir", default="results/ddi_evaluation")
+    parser.add_argument("--output-dir", default="data/reports/default")
     parser.add_argument("--model-id", default="models/google/medgemma-27b-text-it")
     parser.add_argument("--max-new-tokens", type=int, default=256)
 

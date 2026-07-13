@@ -12,7 +12,7 @@ def main() -> None:
 
     conf = load_config(args.config)
     exp = conf.get("experiment", {})
-    output_dir = exp.get("output_dir", "results/experiments/default")
+    output_dir = exp.get("output_dir", "data/reports/default")
     os.makedirs(output_dir, exist_ok=True)
 
     train_conf = conf.get("training", {})

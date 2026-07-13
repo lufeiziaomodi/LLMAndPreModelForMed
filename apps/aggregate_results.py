@@ -6,8 +6,8 @@ from pipelines.results_aggregator import collect_compare_rows, write_aggregate_c
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Aggregate compare_summary.csv files")
-    parser.add_argument("--root", default="results/experiments", help="Root experiments directory")
-    parser.add_argument("--output", default="results/experiments/aggregate_compare_summary.csv", help="Output CSV path")
+    parser.add_argument("--root", default="data/reports", help="Root experiments/report directory (default: data/reports)")
+    parser.add_argument("--output", default="data/reports/aggregate_compare_summary.csv", help="Output CSV path")
     args = parser.parse_args()
 
     rows = collect_compare_rows(args.root)

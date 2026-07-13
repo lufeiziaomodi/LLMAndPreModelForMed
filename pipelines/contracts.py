@@ -47,8 +47,8 @@ class ClassificationEvalConfig:
             enabled=bool(section.get("enabled", False)),
             model_name=str(section.get("model_name", "classification_model")),
             model_id=str(section.get("model_id", "models/google/medgemma-27b-text-it")),
-            test_data=str(section.get("test_data", "data/test_augmented_data.csv")),
-            output_dir=str(section.get("output_dir", "results/ddi_evaluation/classification")),
+            test_data=str(section.get("test_data", "data/raw/test_augmented_data.csv")),
+            output_dir=str(section.get("output_dir", "data/reports/default/classification")),
             max_new_tokens=int(section.get("max_new_tokens", 256)),
         )
 
@@ -97,5 +97,5 @@ class ExplanationEvalConfig:
             predictions_file=str(section.get("predictions_file", "")),
             labels_file=str(section.get("labels_file", "")),
             label_predictions_file=str(section.get("label_predictions_file", "")),
-            output_dir=str(section.get("output_dir", "results/ddi_evaluation/explanation")),
+            output_dir=str(section.get("output_dir", "data/reports/default/explanation_eval")),
         )
