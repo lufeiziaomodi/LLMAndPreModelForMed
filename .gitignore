@@ -7,3 +7,6 @@ results/llama3_ddi_lora_label_only_with_kg/
 data/kg.csv
 data/primekg_graph.pkl
 data/primekg_pyg.pt
+
+# WorkBuddy 助手本地记忆/配置目录，非项目代码
+.workbuddy/
