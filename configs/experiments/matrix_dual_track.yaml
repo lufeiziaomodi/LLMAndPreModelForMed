@@ -1,6 +1,6 @@
 experiment:
   name: dual_track_matrix
-  output_root: results/experiments
+  output_root: data/reports
 
 training:
   enabled: false
@@ -9,13 +9,13 @@ classification_eval:
   enabled: false
   model_name: classifier_baseline
   model_id: models/google/medgemma-27b-text-it
-  test_data: data/test_augmented_data.csv
+  test_data: data/raw/test_augmented_data.csv
   max_new_tokens: 256
 
 explanation_eval:
   enabled: false
   model_name: reasoning_base
-  predictions_file: results/test_predictions/TODO_reasoning_base_out.json
+  predictions_file: data/reports/dual_track_matrix/inference/TODO_reasoning_base_out.json
 
 judge:
   enabled: false
@@ -31,16 +31,16 @@ matrix:
         explanation_eval:
           enabled: true
           model_name: llama3_raw_no_kg
-          predictions_file: results/test_predictions/llama3_raw_no_kg_out.json
+          predictions_file: data/reports/dual_track_matrix/inference/llama3_raw_no_kg_out.json
     - name: llama3_distilled_with_kg
       patch:
         explanation_eval:
           enabled: true
           model_name: llama3_distilled_with_kg
-          predictions_file: results/test_predictions/llama3_distilled_with_kg_out.json
+          predictions_file: data/reports/dual_track_matrix/inference/llama3_distilled_with_kg_out.json
     - name: medgemma_with_kg
       patch:
         explanation_eval:
           enabled: true
           model_name: medgemma_with_kg
-          predictions_file: results/test_predictions/medgemma_with_kg_out.json
+          predictions_file: data/reports/dual_track_matrix/inference/medgemma_with_kg_out.json

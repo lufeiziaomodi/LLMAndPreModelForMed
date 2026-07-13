@@ -1,13 +1,13 @@
 experiment:
   name: dual_track_refactor
-  output_root: results/experiments
+  output_root: data/reports
 
 training:
   enabled: false
   script: finetune_llama3_ddi.py
   args:
     - --data_path
-    - data/finetune_dataset_input_label_only_without_kg.json
+    - data/finetune/train/input_label_only_without_kg.json
     - --output_dir
     - results/llama3_ddi_lora_label_only_without_kg
 
@@ -15,15 +15,15 @@ classification_eval:
   enabled: false
   model_name: medgemma27b_text
   model_id: models/google/medgemma-27b-text-it
-  test_data: data/test_augmented_data.csv
-  output_dir: results/ddi_evaluation/classification
+  test_data: data/raw/test_augmented_data.csv
+  output_dir: data/reports/dual_track_refactor/classification
   max_new_tokens: 256
 
 explanation_eval:
   enabled: false
   model_name: llama3_reasoning_adapter
-  predictions_file: results/test_predictions/TODO_explanation_predictions.json
-  output_dir: results/ddi_evaluation/explanation
+  predictions_file: data/reports/dual_track_refactor/inference/TODO_explanation_predictions.json
+  output_dir: data/reports/dual_track_refactor/explanation_eval
 
 judge:
   enabled: false
