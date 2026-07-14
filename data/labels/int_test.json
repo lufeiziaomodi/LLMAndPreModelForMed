@@ -1,0 +1,577 @@
+[
+  {
+    "text": "Melatonin may interact with the following drugs: aspirin and other NSAIDs (may lower melatonin levels), fluvoxamine (bioavailability of oral melatonin is increased with coadministration), beta blockers (may decrease melatonin levels), fluoxetine (reports of psychotic episodes when coadministered), progestin (coadministration of melatonin with progestin can inhibit ovarian function in women), benzodiazepenes and other sedating drugs (may result in additive sedation and an increased incidence of adverse effects), and corticosteroids (coadministration of melatonin and corticosteroids may interfere with the efficacy of the corticosteroids).",
+    "relations": [
+      {
+        "e1": "Melatonin",
+        "e2": "aspirin",
+        "label": "int"
+      },
+      {
+        "e1": "Melatonin",
+        "e2": "NSAIDs",
+        "label": "int"
+      },
+      {
+        "e1": "Melatonin",
+        "e2": "fluvoxamine",
+        "label": "int"
+      },
+      {
+        "e1": "Melatonin",
+        "e2": "beta blockers",
+        "label": "int"
+      },
+      {
+        "e1": "Melatonin",
+        "e2": "fluoxetine",
+        "label": "int"
+      },
+      {
+        "e1": "Melatonin",
+        "e2": "progestin",
+        "label": "int"
+      },
+      {
+        "e1": "Melatonin",
+        "e2": "benzodiazepenes",
+        "label": "int"
+      },
+      {
+        "e1": "Melatonin",
+        "e2": "corticosteroids",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Some anticonvulsants may interact with Mephenytoin.",
+    "relations": [
+      {
+        "e1": "anticonvulsants",
+        "e2": "Mephenytoin",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Mequitazine can interact with CNS depressant, antichlolinergic, TCA, MAOIs, and alcohol.",
+    "relations": [
+      {
+        "e1": "Mequitazine",
+        "e2": "CNS depressant",
+        "label": "int"
+      },
+      {
+        "e1": "Mequitazine",
+        "e2": "antichlolinergic",
+        "label": "int"
+      },
+      {
+        "e1": "Mequitazine",
+        "e2": "TCA",
+        "label": "int"
+      },
+      {
+        "e1": "Mequitazine",
+        "e2": "MAOIs",
+        "label": "int"
+      },
+      {
+        "e1": "Mequitazine",
+        "e2": "alcohol",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Methscopolamine may interact with antidepressants (tricyclic type), MAO inhibitors (e.g., phenelzine, linezolid, tranylcypromine, isocarboxazid, selegiline, furazolidone), quinidine, amantadine, antihistamines (e.g., diphenhydramine), other anticholinergics, potassium chloride supplements, antacids, absorbent-type anti-diarrhea medicines (e.g., kaolin-pectin), phenothiazines (e.g., chlorpromazine, promethazine).",
+    "relations": [
+      {
+        "e1": "Methscopolamine",
+        "e2": "tricyclic",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "MAO inhibitors",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "phenelzine",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "linezolid",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "tranylcypromine",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "isocarboxazid",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "selegiline",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "furazolidone",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "quinidine",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "amantadine",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "antihistamines",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "diphenhydramine",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "anticholinergics",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "potassium chloride",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "antacids",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "absorbent-type anti-diarrhea medicines",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "kaolin",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "pectin",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "phenothiazines",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "chlorpromazine",
+        "label": "int"
+      },
+      {
+        "e1": "Methscopolamine",
+        "e2": "promethazine",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Other drugs which may enhance the neuromuscular blocking action of nondepolarizing agents such as MIVACRON include certain antibiotics (e.g., aminoglycosides, tetracyclines, bacitracin, polymyxins, lincomycin, clindamycin, colistin, and sodium colistimethate), magnesium salts, lithium, local anesthetics, procainamide, and quinidine.",
+    "relations": [
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "antibiotics",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "aminoglycosides",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "tetracyclines",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "bacitracin",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "polymyxins",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "lincomycin",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "clindamycin",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "colistin",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "sodium colistimethate",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "magnesium",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "lithium",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "anesthetics",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "procainamide",
+        "label": "int"
+      },
+      {
+        "e1": "nondepolarizing agents",
+        "e2": "quinidine",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "antibiotics",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "aminoglycosides",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "tetracyclines",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "bacitracin",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "polymyxins",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "lincomycin",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "clindamycin",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "colistin",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "sodium colistimethate",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "magnesium",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "lithium",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "anesthetics",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "procainamide",
+        "label": "int"
+      },
+      {
+        "e1": "MIVACRON",
+        "e2": "quinidine",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Gentamicin: Animal data have suggested the possibility of interaction between perindopril and gentamicin.",
+    "relations": [
+      {
+        "e1": "perindopril",
+        "e2": "gentamicin",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant use of alcohol with phentermine hydrochloride may result in an adverse drug interaction.",
+    "relations": [
+      {
+        "e1": "alcohol",
+        "e2": "phentermine hydrochloride",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Although this has not occurred in in vitro studies with coumarin-type anticoagulants, interactions with coumarin-type anticoagulants have been reported with FELDENE since marketing, therefore, physicians should closely monitor patients for a change in dosage requirements when administering FELDENE to patients on coumarin-type anticoagulants and other highly protein-bound drugs.",
+    "relations": [
+      {
+        "e1": "coumarin-type anticoagulants",
+        "e2": "FELDENE",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Use with Anticholinergics: Because of their mechanism of action, cholinesterase inhibitors have the potential to interfere with the activity of anticholinergic medications.",
+    "relations": [
+      {
+        "e1": "cholinesterase inhibitors",
+        "e2": "anticholinergic medications",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Thus strong inhibitors of cytochrome P4501A2, such as fluvoxamine, given concomitantly during administration of Ropivacaine, can interact with Ropivacaine leading to increased ropivacaine plasma levels.",
+    "relations": [
+      {
+        "e1": "fluvoxamine",
+        "e2": "Ropivacaine",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Concomitant administrations not recommended:  - Terfenadine and astemizole: Certain macrolides interact with terfenadine and astemizole leading to increased serum concentrations of the latter.",
+    "relations": [
+      {
+        "e1": "macrolides",
+        "e2": "terfenadine",
+        "label": "int"
+      },
+      {
+        "e1": "macrolides",
+        "e2": "astemizole",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Barbiturates may decrease the effectiveness of oral contraceptives, certain antibiotics, quinidine, theophylline, corticosteroids, anticoagulants, and beta blockers.",
+    "relations": [
+      {
+        "e1": "Barbiturates",
+        "e2": "contraceptives",
+        "label": "int"
+      },
+      {
+        "e1": "Barbiturates",
+        "e2": "antibiotics",
+        "label": "int"
+      },
+      {
+        "e1": "Barbiturates",
+        "e2": "quinidine",
+        "label": "int"
+      },
+      {
+        "e1": "Barbiturates",
+        "e2": "theophylline",
+        "label": "int"
+      },
+      {
+        "e1": "Barbiturates",
+        "e2": "corticosteroids",
+        "label": "int"
+      },
+      {
+        "e1": "Barbiturates",
+        "e2": "anticoagulants",
+        "label": "int"
+      },
+      {
+        "e1": "Barbiturates",
+        "e2": "beta blockers",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "This is typical of the interaction of meperidine and MAOIs.",
+    "relations": [
+      {
+        "e1": "meperidine",
+        "e2": "MAOIs",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "norepinephrine and dobutamine are incompatible with sodium bicarbonate solution.",
+    "relations": [
+      {
+        "e1": "norepinephrine",
+        "e2": "sodium bicarbonate",
+        "label": "int"
+      },
+      {
+        "e1": "dobutamine",
+        "e2": "sodium bicarbonate",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Interactions for Vitamin B1 (Thiamine):  Loop Diuretics, Oral Contraceptives, Stavudine, Tricyclic Antidepressants",
+    "relations": [
+      {
+        "e1": "Vitamin B1",
+        "e2": "Loop Diuretics",
+        "label": "int"
+      },
+      {
+        "e1": "Vitamin B1",
+        "e2": "Contraceptives",
+        "label": "int"
+      },
+      {
+        "e1": "Vitamin B1",
+        "e2": "Stavudine",
+        "label": "int"
+      },
+      {
+        "e1": "Vitamin B1",
+        "e2": "Tricyclic Antidepressants",
+        "label": "int"
+      },
+      {
+        "e1": "Thiamine",
+        "e2": "Loop Diuretics",
+        "label": "int"
+      },
+      {
+        "e1": "Thiamine",
+        "e2": "Contraceptives",
+        "label": "int"
+      },
+      {
+        "e1": "Thiamine",
+        "e2": "Stavudine",
+        "label": "int"
+      },
+      {
+        "e1": "Thiamine",
+        "e2": "Tricyclic Antidepressants",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Trilostane may interact with aminoglutethimide or mitotane (causing too great a decrease in adrenal function).",
+    "relations": [
+      {
+        "e1": "Trilostane",
+        "e2": "aminoglutethimide",
+        "label": "int"
+      },
+      {
+        "e1": "Trilostane",
+        "e2": "mitotane",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Vindesine can interact with the drugs of the following categories:  - Blood dyscrasia: can cause unpredictable myelotoxicity - Bone marrow depressants: can cause a predictable dose-related myelotoxicity - Radiation therapy: may cause marrow depression - Neurotoxic medications: can cause neurologic toxicity - Phenytoin: can increase seizure activity - Live virus vaccines: may potentiate the replication of the vaccine virus, may increase the side effects of the vaccination, and decrease patient's response to the vaccine - Mitomycin-C: may cause shortness of breath and bronchospasm - Killed virus vaccines: may decrease patient's response to the vaccine",
+    "relations": [
+      {
+        "e1": "Vindesine",
+        "e2": "Phenytoin",
+        "label": "int"
+      },
+      {
+        "e1": "Vindesine",
+        "e2": "Live virus vaccines",
+        "label": "int"
+      },
+      {
+        "e1": "Vindesine",
+        "e2": "Mitomycin-C",
+        "label": "int"
+      },
+      {
+        "e1": "Vindesine",
+        "e2": "Killed virus vaccines",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "The authors report the case of an infant with confirmed congenital hypothyroidism on levothyroxine who experienced a possible drug interaction with simeticone.",
+    "relations": [
+      {
+        "e1": "levothyroxine",
+        "e2": "simeticone",
+        "label": "int"
+      }
+    ]
+  },
+  {
+    "text": "Synergistic interaction between sunitinib and docetaxel is sequence dependent in human non-small lung cancer with EGFR TKIs-resistant mutation.",
+    "relations": [
+      {
+        "e1": "sunitinib",
+        "e2": "docetaxel",
+        "label": "int"
+      }
+    ]
+  }
+]

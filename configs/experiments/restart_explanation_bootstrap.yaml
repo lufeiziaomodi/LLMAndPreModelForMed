@@ -1,0 +1,135 @@
+# 实验元信息与运行产物根目录。
+experiment:
+  # 实验名称：会写入 run_id 与各类汇总报告中。
+  name: restart_reasoning_without_kg_bootstrap
+  # 运行结果根目录：包含 run_summary、compare_summary、artifact_validation 等。
+  # 新布局：评估报告与推理产物都落 data/reports/{experiment_name}/
+  output_root: data/reports
+
+training:
+  enabled: true
+  script: finetune_llama3_ddi.py
+  args:
+    - --model_id
+    - models/Meta-Llama-3-8B-Instruct
+    - --data_path
+    - data/finetune/train/input_reasoning_without_kg.json
+    - --output_dir
+    # LoRA adapter 仍写入 results/（整个 results/ 被 gitignore，实验机上保留权重）
+    - results/llama3_ddi_lora_reasoning_without_kg
+    - --prompt_mode
+    - explanation_without_kg
+    - --batch_size
+    - "1"
+    - --grad_accum
+    - "8"
+    - --learning_rate
+    - "2e-4"
+    - --max_steps
+    - "1000"
+    - --lora_r
+    - "16"
+    - --lora_alpha
+    - "32"
+    - --train_test_split
+    - "0.05"
+    - --multi_gpu_shard
+
+# 分类评估阶段关闭：本次只关注解释质量评估。
+classification_eval:
+  enabled: false
+
+inference:
+  enabled: true
+  script: inference_llama3_ddi.py
+  args:
+    - --base_model
+    - models/Meta-Llama-3-8B-Instruct
+    - --adapter_dir
+    - results/llama3_ddi_lora_reasoning_without_kg
+    - --input_json
+    - data/finetune/test/input_test_reasoning_without_kg.json
+    - --labels_json
+    - data/finetune/test/input_test_labels_clean.json
+    - --output_json
+    - data/reports/restart_reasoning_without_kg_bootstrap/inference/test_out_reasoning_without_kg.json
+    - --metrics_json
+    - data/reports/restart_reasoning_without_kg_bootstrap/inference/test_metrics_reasoning_without_kg.json
+    - --prompt_mode
+    - explanation_without_kg
+    - --max_new_tokens
+    - "-1"
+    - --multi_gpu_shard
+    - --temperature
+    - "0.0"
+    - --top_p
+    - "1.0"
+
+# 解释评估阶段配置。
+explanation_eval:
+  enabled: true
+  # 模型展示名：用于对比表显示，不影响实际模型加载。
+  model_name: llama3_reasoning_without_kg_lora
+  # 待评估的解释结果文件（需提前生成）。
+  predictions_file: data/reports/restart_reasoning_without_kg_bootstrap/inference/test_out_reasoning_without_kg.json
+  # 测试集标签 sidecar（用于回填 true_label，避免 detail 文件中 true_label 为空）。
+  labels_file: data/finetune/test/input_test_labels_clean.json
+  # Faithfulness 输出目录，典型文件包括：
+  # - faithfulness_detail_*.json（逐样本明细）
+  # - faithfulness_summary_*.json（汇总指标）
+  output_dir: data/reports/restart_reasoning_without_kg_bootstrap/explanation_eval
+
+# LLM-as-a-judge 阶段（Qwen-max）配置。
+judge:
+  enabled: true
+  # Judge 模型 ID（DashScope 兼容接口）。
+  model_id: qwen-max
+  # Judge 请求 API Key：从环境变量读取，禁止明文写入仓库。
+  # 运行前请 export DASHSCOPE_API_KEY=sk-xxx
+  api_key: ${DASHSCOPE_API_KEY}
+  # Judge 输出目录，典型文件包括：
+  # - judge_detail_*.json（逐样本打分）
+  # - judge_summary_*.json（总体均分）
+  output_dir: data/reports/restart_reasoning_without_kg_bootstrap/judge_eval
+  # DashScope 兼容接口地址。
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  # 重试策略：用于应对临时网络波动或接口抖动。
+  max_retries: 4
+  retry_delay: 2.0
+
+# 蒸馏数据生成阶段（可独立执行，不受 run_experiment 控制）。
+distillation_generation:
+  # 输入：可复用已有 label_only_with_kg 输入，配合 ignore_kg_evidence 强制无 KG 蒸馏。
+  input: data/finetune/train/input_label_only_with_kg.json
+  # 输出：无 KG、以推理能力蒸馏为目标的训练数据。
+  output: data/finetune/train/input_reasoning_without_kg.json
+  # 蒸馏模型切换为 Qwen（DashScope OpenAI-compatible）。
+  # 追求推理质量可用 qwen-max，兼顾成本可改为 qwen-plus。
+  model: qwen-plus
+  # 环境变量占位，避免明文密钥写入仓库。
+  api_key: ${DASHSCOPE_API_KEY}
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  generation_mode: distill_reasoning_without_kg
+  ignore_kg_evidence: true
+  max_new_tokens: 768
+  max_workers: 4
+  save_every: 100
+  log_every: 10
+  overwrite: true
+
+# 蒸馏 smoke 验证（小样本快速检查 output 是否为推理过程）。
+distillation_generation_smoke:
+  input: data/finetune/train/input_label_only_with_kg.json
+  # smoke 探针输出落 data/finetune/aux/，与正式输出隔开
+  output: data/finetune/aux/reasoning_no_kg_distillation_probe.json
+  model: qwen-plus
+  api_key: ${DASHSCOPE_API_KEY}
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  generation_mode: distill_reasoning_without_kg
+  ignore_kg_evidence: true
+  limit: 5
+  max_new_tokens: 512
+  max_workers: 1
+  save_every: 5
+  log_every: 1
+  overwrite: true

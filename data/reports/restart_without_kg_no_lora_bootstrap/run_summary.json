@@ -1,0 +1,94 @@
+{
+  "run_id": "restart_without_kg_no_lora_bootstrap_20260419_161704",
+  "experiment": {
+    "name": "restart_without_kg_no_lora_bootstrap",
+    "output_root": "results/eval_report"
+  },
+  "stages": {
+    "inference": {
+      "command": [
+        "python",
+        "inference_llama3_ddi.py",
+        "--base_model",
+        "models/Meta-Llama-3-8B-Instruct",
+        "--adapter_dir",
+        "no_lora",
+        "--input_json",
+        "data/finetune_dataset_input_test_reasoning_without_kg.json",
+        "--labels_json",
+        "data/finetune_dataset_input_test_labels_clean.json",
+        "--output_json",
+        "results/eval_report/restart_without_kg_no_lora_bootstrap/llama3_base_explanation_no_kg_no_lora.json",
+        "--metrics_json",
+        "results/eval_report/restart_without_kg_no_lora_bootstrap/llama3_base_explanation_no_kg_no_lora_metrics.json",
+        "--prompt_mode",
+        "explanation_without_kg",
+        "--max_new_tokens",
+        "-1",
+        "--temperature",
+        "0.0",
+        "--top_p",
+        "1.0",
+        "--multi_gpu_shard"
+      ],
+      "return_code": 0,
+      "ok": true,
+      "output_json": "results/eval_report/restart_without_kg_no_lora_bootstrap/llama3_base_explanation_no_kg_no_lora.json",
+      "metrics_json": "results/eval_report/restart_without_kg_no_lora_bootstrap/llama3_base_explanation_no_kg_no_lora_metrics.json"
+    },
+    "explanation_eval": {
+      "faithfulness": {
+        "n_samples": 1042,
+        "coverage_mean": 0.06565898912348048,
+        "hallucination_mean": 0.052543186180422266,
+        "partial_support_mean": 0.8817978246960972,
+        "consistency_mean": 0.5811900191938577,
+        "kg_grounded_mean": null,
+        "query_coverage_mean": 0.20740779434810058,
+        "strict_supported_mean": 0.06565898912348048,
+        "strict_unsupported_mean": 0.052543186180422266,
+        "lenient_supported_mean": 0.07861484325015995,
+        "by_evidence_mode": {
+          "with_kg": {
+            "n_samples": 0,
+            "coverage_mean": 0.0,
+            "hallucination_mean": 0.0,
+            "partial_support_mean": 0.0,
+            "consistency_mean": 0.0,
+            "kg_grounded_mean": null
+          },
+          "no_kg": {
+            "n_samples": 1042,
+            "coverage_mean": 0.06565898912348048,
+            "hallucination_mean": 0.052543186180422266,
+            "partial_support_mean": 0.8817978246960972,
+            "consistency_mean": 0.5811900191938577,
+            "kg_grounded_mean": null
+          }
+        }
+      },
+      "tag": "20260419_180432",
+      "output_dir": "results/eval_report/restart_without_kg_no_lora_bootstrap/explanation_eval",
+      "artifacts": [
+        "results\\eval_report\\restart_without_kg_no_lora_bootstrap\\explanation_eval\\faithfulness_detail_20260419_180432.json",
+        "results\\eval_report\\restart_without_kg_no_lora_bootstrap\\explanation_eval\\faithfulness_summary_20260419_180432.json"
+      ]
+    }
+  },
+  "compare_summary_csv": "results\\eval_report\\restart_without_kg_no_lora_bootstrap\\compare_summary.csv",
+  "artifact_validation": {
+    "n_artifacts": 2,
+    "ok": true,
+    "missing": [],
+    "checked": [
+      {
+        "path": "results\\eval_report\\restart_without_kg_no_lora_bootstrap\\explanation_eval\\faithfulness_detail_20260419_180432.json",
+        "exists": true
+      },
+      {
+        "path": "results\\eval_report\\restart_without_kg_no_lora_bootstrap\\explanation_eval\\faithfulness_summary_20260419_180432.json",
+        "exists": true
+      }
+    ]
+  }
+}
