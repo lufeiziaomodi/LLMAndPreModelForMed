@@ -224,6 +224,34 @@ python data_process/generate_outputs_distillation.py \
     --config_section distillation_generation
 ```
 
+### 4.7 `apps/run_external_direct_eval.py`（外部大模型直接评估支线）
+**跳过训练与 LoRA 推理**，直接让外部 LLM 对 test 集生成 output 并评估，作为微调后模型的对照基线。可选启用 Agent Loop 反思-重试。
+
+```bash
+export DASHSCOPE_API_KEY=sk-xxx
+python -m apps.run_external_direct_eval \
+    --config configs/experiments/external_direct_eval_baseline.yaml
+```
+
+产出目录结构（与 LoRA 微调流程一致，方便横向对比）：
+
+```text
+data/reports/{external_direct_eval_experiment}/
+├── config_snapshot.json
+├── run_summary.json
+├── inference/
+│   ├── test_out.json                    ← 外部 LLM 产出的解释（+ agent_loop 元信息）
+│   └── agent_trace_<run_id>.json        ← agent loop 每轮反思轨迹（启用时）
+├── explanation_eval/
+│   ├── faithfulness_summary_*.json
+│   └── faithfulness_detail_*.json
+└── judge_eval/
+    ├── judge_summary_*.json
+    └── judge_detail_*.json
+```
+
+Agent Loop 机制详见 [`agent_loop.md`](agent_loop.md)。
+
 ---
 
 ## 5. 实验机首次同步流程
@@ -260,10 +288,14 @@ python -m data_process.build_finetune_dataset \
 python -m data_process.build_finetune_dataset \
     --ablation_mode label_only_with_kg --input_suffix _test --use_all_data
 
-# 5. 跑推理 / 评估（假设 adapter 已就位）
+# 5a. 完整链路：LoRA 微调 + 推理 + 评估（假设 adapter 已就位或让本次训练重新生成）
 export DASHSCOPE_API_KEY=sk-xxx   # judge 阶段需要
 python -m apps.run_experiment \
     --config configs/experiments/restart_explanation_bootstrap.yaml
+
+# 5b. 支线：外部大模型"直接评估"（跳过训练，最快出结果，可选 agent loop）
+python -m apps.run_external_direct_eval \
+    --config configs/experiments/external_direct_eval_baseline.yaml
 
 # 6. 评估报告落在 data/reports/{exp_name}/，
 #    直接 git add / commit / push 即可与其他机器同步
