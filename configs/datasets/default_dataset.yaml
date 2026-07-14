@@ -1,2 +1,0 @@
-classification_test_data: data/raw/test_augmented_data.csv
-explanation_predictions_default: data/reports/_legacy_test_predictions/finetune_dataset_input_test_out_distillation.json

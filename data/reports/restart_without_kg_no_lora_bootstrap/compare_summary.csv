@@ -1,2 +1,0 @@
-experiment_name,model_name,track,micro_f1,macro_f1,weighted_f1,coverage_mean,hallucination_mean,consistency_mean,judge_overall_mean
-restart_without_kg_no_lora_bootstrap,llama3_base_explanation_no_kg_no_lora,explanation,,,,0.06565898912348048,0.052543186180422266,0.5811900191938577,
