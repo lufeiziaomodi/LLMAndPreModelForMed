@@ -1,14 +1,28 @@
-"""Inference and evaluation for LoRA-tuned Meta-Llama-3-8B-Instruct on DDI data."""
+"""Inference and evaluation for LoRA-tuned Meta-Llama-3-8B-Instruct on DDI data.
+
+Supports an optional per-sample agent loop (--enable_agent_loop): after each
+generation the output is scored with `FaithfulnessCritic` (and optionally
+`JudgeCritic`); if a critic fails, its feedback is appended to the messages and
+the model regenerates. See docs/agent_loop.md for details.
+"""
 
 import argparse
 import json
+import os
 import re
+import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
+
+# Allow direct execution: python inference_llama3_ddi.py
+_HERE = Path(__file__).resolve()
+if str(_HERE.parent) not in sys.path:
+    sys.path.insert(0, str(_HERE.parent))
+
 from pipelines.query_utils import expand_query_pairs, get_query_group_text
 
 
@@ -659,21 +673,16 @@ def run_inference(args: argparse.Namespace):
 
     retry_plans = _candidate_retry_plans()
 
-    for idx, entry in enumerate(data, 1):
-        decoded = ""
-        pred_label = None
-
+    # --------------------------------------------------------------------
+    # 抽出"一条 messages -> decoded"的核心生成，包含 OOM 逐级降级。供普通推理
+    # 与 agent-loop 两条路径复用。
+    # --------------------------------------------------------------------
+    def _generate_from_messages(messages: List[Dict[str, str]], sample_idx: int) -> str:
+        decoded_local = ""
         for attempt_id, plan in enumerate(retry_plans, 1):
             inputs = None
             gen = None
             try:
-                messages = build_messages(
-                    entry,
-                    prompt_mode=prompt_mode,
-                    max_kg_evidence_chars=plan["max_kg_evidence_chars"],
-                    max_sentence_chars=plan["max_sentence_chars"],
-                    max_queries_chars=plan["max_queries_chars"],
-                )
                 inputs = tokenizer.apply_chat_template(
                     messages,
                     add_generation_prompt=True,
@@ -681,7 +690,6 @@ def run_inference(args: argparse.Namespace):
                     return_dict=True,
                     return_tensors="pt",
                 ).to(model.device)
-
                 input_len = inputs["input_ids"].shape[-1]
                 with torch.inference_mode():
                     gen = model.generate(
@@ -691,18 +699,12 @@ def run_inference(args: argparse.Namespace):
                         top_p=args.top_p,
                         do_sample=args.temperature > 0,
                     )
-                decoded = tokenizer.decode(gen[0][input_len:], skip_special_tokens=True).strip()
-
-                if prompt_mode in {"explanation_with_kg", "explanation_without_kg"}:
-                    pred_label = None
-                else:
-                    labels = _extract_labels_from_output(decoded)
-                    pred_label = _majority_label(labels)
-                break
+                decoded_local = tokenizer.decode(gen[0][input_len:], skip_special_tokens=True).strip()
+                return decoded_local
             except Exception as e:
                 if _is_oom_error(e):
                     print(
-                        f"[OOM] sample={idx}/{len(data)} attempt={attempt_id}/{len(retry_plans)} "
+                        f"[OOM] sample={sample_idx} attempt={attempt_id}/{len(retry_plans)} "
                         f"plan(new={plan['max_new_tokens']},kg={plan['max_kg_evidence_chars']},q={plan['max_queries_chars']})"
                     )
                     _cleanup_cuda()
@@ -713,6 +715,88 @@ def run_inference(args: argparse.Namespace):
                     del gen
                 if inputs is not None:
                     del inputs
+        return decoded_local
+
+    # --- 可选 Agent Loop 初始化 ---
+    agent_loop = None
+    agent_traces_by_id: Dict[str, Any] = {}
+    if getattr(args, "enable_agent_loop", False):
+        from pipelines.agent_loop import (
+            AgentLoopReasoner,
+            AgentLoopConfig,
+            FaithfulnessCritic,
+            JudgeCritic,
+        )
+        critics = [
+            FaithfulnessCritic(
+                min_coverage=args.faith_min_coverage,
+                max_hallucination=args.faith_max_hallucination,
+            )
+        ]
+        if args.use_judge_critic:
+            api_key = args.judge_api_key or os.getenv("DASHSCOPE_API_KEY", "")
+            if not api_key:
+                raise ValueError("--use_judge_critic requires --judge_api_key or DASHSCOPE_API_KEY env var")
+            critics.append(
+                JudgeCritic(
+                    api_key=api_key,
+                    model_id=args.judge_model_id,
+                    base_url=args.judge_base_url,
+                    min_overall_score=args.judge_min_overall_score,
+                )
+            )
+        agent_loop = AgentLoopReasoner(
+            reasoner=None,  # 每样本重新绑定
+            critics=critics,
+            config=AgentLoopConfig(max_rounds=args.agent_max_rounds, verbose=True),
+        )
+        print(
+            f"[AgentLoop] enabled: max_rounds={args.agent_max_rounds}, "
+            f"faith(cov>={args.faith_min_coverage},hall<={args.faith_max_hallucination}), "
+            f"judge={'on(min='+str(args.judge_min_overall_score)+')' if args.use_judge_critic else 'off'}"
+        )
+
+    for idx, entry in enumerate(data, 1):
+        decoded = ""
+        pred_label = None
+        agent_trace_dict: Optional[Dict[str, Any]] = None
+
+        base_plan = retry_plans[0]
+        initial_messages = build_messages(
+            entry,
+            prompt_mode=prompt_mode,
+            max_kg_evidence_chars=base_plan["max_kg_evidence_chars"],
+            max_sentence_chars=base_plan["max_sentence_chars"],
+            max_queries_chars=base_plan["max_queries_chars"],
+        )
+
+        if agent_loop is not None:
+            # 通过闭包给 loop 提供 reasoner
+            def _reasoner(messages, round_idx, _entry=entry, _idx=idx):
+                return _generate_from_messages(messages, sample_idx=_idx)
+
+            agent_loop.reasoner = _reasoner
+            input_data_view = entry.get("input", {}) if isinstance(entry, dict) else {}
+            sample_view = {
+                "sentence": str(input_data_view.get("sentence", "")),
+                "query_group": get_query_group_text(input_data_view),
+                "kg_evidence": str(input_data_view.get("kg_evidence", "")),
+                "predicted_label": "",
+                "gold_label": str(input_data_view.get("gold_label", "")),
+            }
+            trace = agent_loop.run(sample=sample_view, initial_messages=initial_messages)
+            decoded = trace.final_output
+            from pipelines.agent_loop import trace_to_dict
+            agent_trace_dict = trace_to_dict(trace, keep_full_messages=False)
+            agent_traces_by_id[str(idx - 1)] = trace
+        else:
+            decoded = _generate_from_messages(initial_messages, sample_idx=idx)
+
+        if prompt_mode in {"explanation_with_kg", "explanation_without_kg"}:
+            pred_label = None
+        else:
+            labels = _extract_labels_from_output(decoded)
+            pred_label = _majority_label(labels)
 
         if pred_label is None and not decoded:
             failed_indices.append(idx - 1)
@@ -734,6 +818,13 @@ def run_inference(args: argparse.Namespace):
 
         out_entry["output"] = aligned_output
         out_entry["predicted_label"] = pred_label or ""
+        if agent_trace_dict is not None:
+            out_entry["agent_loop"] = {
+                "n_rounds": agent_trace_dict["n_rounds"],
+                "final_passed": agent_trace_dict["final_passed"],
+                "final_score": agent_trace_dict["final_score"],
+                "stopped_reason": agent_trace_dict["stopped_reason"],
+            }
 
         gold_label = None
         if sidecar_labels is not None and idx - 1 < len(sidecar_labels):
@@ -757,6 +848,13 @@ def run_inference(args: argparse.Namespace):
 
     json.dump(results, open(output_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"Saved predictions to {output_path}")
+
+    # Agent-loop 全量 trace 落到同目录，便于观察反思轨迹
+    if agent_traces_by_id:
+        from pipelines.agent_loop import save_trace_batch
+        trace_path = output_path.parent / f"agent_trace_{output_path.stem}.json"
+        save_trace_batch(agent_traces_by_id, str(trace_path), keep_full_messages=False)
+        print(f"Saved agent-loop trace to {trace_path}")
 
     if sidecar_labels is not None:
         metrics = _compute_metrics(gold_list, pred_list)
@@ -803,6 +901,24 @@ def parse_args() -> argparse.Namespace:
         choices=sorted(PROMPT_MODES),
         help="Prompt engineering mode: auto/full/explanation_with_kg/explanation_without_kg/label_only_with_kg/reasoning_without_kg/label_only_without_kg",
     )
+    # --- Agent Loop (self-critique-retry) options ---
+    parser.add_argument("--enable_agent_loop", action="store_true",
+                        help="Per-sample self-critique-retry loop (faithfulness + optional judge)")
+    parser.add_argument("--agent_max_rounds", type=int, default=3,
+                        help="Total rounds including the initial generation (default: 3)")
+    parser.add_argument("--faith_min_coverage", type=float, default=0.4,
+                        help="Faithfulness coverage_ratio threshold for pass (default: 0.4)")
+    parser.add_argument("--faith_max_hallucination", type=float, default=0.5,
+                        help="Faithfulness hallucination_rate ceiling for pass (default: 0.5)")
+    parser.add_argument("--use_judge_critic", action="store_true",
+                        help="Also use qwen-max judge as critic (expensive; needs DASHSCOPE_API_KEY)")
+    parser.add_argument("--judge_min_overall_score", type=float, default=7.0,
+                        help="Judge mechanism_overall_score threshold for pass (0-12, default: 7)")
+    parser.add_argument("--judge_model_id", type=str, default="qwen-max")
+    parser.add_argument("--judge_base_url", type=str,
+                        default="https://dashscope.aliyuncs.com/compatible-mode/v1")
+    parser.add_argument("--judge_api_key", type=str, default="",
+                        help="Judge API key; falls back to DASHSCOPE_API_KEY env var")
     return parser.parse_args()
 
 
