@@ -153,6 +153,8 @@ LoRA 至少使用 3 个随机种子，报告均值、标准差和 95% bootstrap 
 
 当前仓库远端为 `origin`，当前工作分支为 `refactor/data-flow`。两台机器采用串行交接，避免同时向同一分支写入。
 
+每次切换机器前必须更新 `docs/handoff_current.md`；接收方必须运行 `scripts/verify_handoff.ps1`。聊天记录不替代版本交接单，也不传输 `.gitignore` 忽略的模型、KG、环境变量或本地运行状态。
+
 ### 7.1 笔记本发起实验
 
 1. 完成代码、配置和实验说明。
