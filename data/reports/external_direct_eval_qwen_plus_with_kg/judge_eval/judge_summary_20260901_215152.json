@@ -1,0 +1,14 @@
+{
+  "n_samples": 1042,
+  "n_valid_samples": 1039,
+  "n_failed_samples": 3,
+  "judge_model": "qwen-max",
+  "mechanism_overall_score_mean": 8.593840230991338,
+  "mechanism_chain_completeness_mean": 1.2550529355149183,
+  "mechanism_direction_correctness_mean": 1.5996150144369585,
+  "mechanism_granularity_mean": 1.3657362848893166,
+  "mechanism_internal_consistency_mean": 1.9942252165543792,
+  "uncertainty_calibration_mean": 1.8960538979788257,
+  "clinical_actionability_mean": 0.3474494706448508,
+  "mechanism_good_rate": 0.2964388835418672
+}

@@ -55,3 +55,4 @@ secrets/
 # 本地展示与临时生成物，不参与两台实验机器的数据交接
 output/
 tmp/
+data/reports/*_smoke/

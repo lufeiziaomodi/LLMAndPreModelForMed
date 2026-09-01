@@ -126,6 +126,17 @@ def _get_section(conf: Dict[str, Any], key: str, required: bool = True) -> Dict[
     return section
 
 
+def _redact_config_secrets(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {
+            key: ("${DASHSCOPE_API_KEY}" if key.lower() in {"api_key", "apikey", "token"} and item else _redact_config_secrets(item))
+            for key, item in value.items()
+        }
+    if isinstance(value, list):
+        return [_redact_config_secrets(item) for item in value]
+    return value
+
+
 def run_external_direct_eval(config_path: str) -> Dict[str, Any]:
     conf = load_config(config_path)
 
@@ -138,7 +149,7 @@ def run_external_direct_eval(config_path: str) -> Dict[str, Any]:
     inference_dir = ensure_dir(exp_dir / "inference")
 
     # 快照 config 便于回溯
-    save_json(str(exp_dir / "config_snapshot.json"), conf)
+    save_json(str(exp_dir / "config_snapshot.json"), _redact_config_secrets(conf))
 
     # ---- 生成阶段配置 ----
     gen = _get_section(conf, "external_generation")

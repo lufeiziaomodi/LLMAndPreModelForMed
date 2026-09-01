@@ -361,36 +361,7 @@ def run_judge(config, rows: List[Dict[str, Any]] = None) -> Dict[str, Any]:
     for row, result in zip(rows, judge_results):
         row.update(result)
 
-    mechanism_overall_score_mean = 0.0
-    mechanism_chain_completeness_mean = 0.0
-    mechanism_direction_correctness_mean = 0.0
-    mechanism_granularity_mean = 0.0
-    mechanism_internal_consistency_mean = 0.0
-    uncertainty_calibration_mean = 0.0
-    clinical_actionability_mean = 0.0
-    good_rate = 0.0
-    if judge_results:
-        n = len(judge_results)
-        mechanism_overall_score_mean = sum(float(r.get("mechanism_overall_score", 0.0)) for r in judge_results) / n
-        mechanism_chain_completeness_mean = sum(float(r.get("mechanism_chain_completeness", 0.0)) for r in judge_results) / n
-        mechanism_direction_correctness_mean = sum(float(r.get("mechanism_direction_correctness", 0.0)) for r in judge_results) / n
-        mechanism_granularity_mean = sum(float(r.get("mechanism_granularity", 0.0)) for r in judge_results) / n
-        mechanism_internal_consistency_mean = sum(float(r.get("mechanism_internal_consistency", 0.0)) for r in judge_results) / n
-        uncertainty_calibration_mean = sum(float(r.get("uncertainty_calibration", 0.0)) for r in judge_results) / n
-        clinical_actionability_mean = sum(float(r.get("clinical_actionability", 0.0)) for r in judge_results) / n
-        good_rate = sum(1 for r in judge_results if str(r.get("mechanism_overall_decision", "")).lower() == "good") / n
-    summary = {
-        "n_samples": len(judge_results),
-        "judge_model": config.judge_model_id,
-        "mechanism_overall_score_mean": float(mechanism_overall_score_mean),
-        "mechanism_chain_completeness_mean": float(mechanism_chain_completeness_mean),
-        "mechanism_direction_correctness_mean": float(mechanism_direction_correctness_mean),
-        "mechanism_granularity_mean": float(mechanism_granularity_mean),
-        "mechanism_internal_consistency_mean": float(mechanism_internal_consistency_mean),
-        "uncertainty_calibration_mean": float(uncertainty_calibration_mean),
-        "clinical_actionability_mean": float(clinical_actionability_mean),
-        "mechanism_good_rate": float(good_rate),
-    }
+    summary = _summarize_judge_results(judge_results, config.judge_model_id)
 
     tag = now_tag()
     out_dir = Path(config.output_dir)
@@ -404,6 +375,42 @@ def run_judge(config, rows: List[Dict[str, Any]] = None) -> Dict[str, Any]:
         "summary": summary,
         "tag": tag,
         "artifacts": [str(detail_path), str(summary_path)],
+    }
+
+
+def _summarize_judge_results(judge_results: List[Dict[str, Any]], judge_model: str) -> Dict[str, Any]:
+    def _is_valid(result: Dict[str, Any]) -> bool:
+        rationale = str(result.get("judge_short_rationale", result.get("rationale", "")) or "")
+        return not rationale.startswith(("Judge error:", "HTTPError:"))
+
+    valid_results = [result for result in judge_results if _is_valid(result)]
+    n_valid = len(valid_results)
+
+    def _mean(field: str) -> float:
+        if not valid_results:
+            return 0.0
+        return float(sum(float(result.get(field, 0.0)) for result in valid_results) / n_valid)
+
+    good_rate = 0.0
+    if valid_results:
+        good_rate = sum(
+            1 for result in valid_results
+            if str(result.get("mechanism_overall_decision", "")).lower() == "good"
+        ) / n_valid
+
+    return {
+        "n_samples": len(judge_results),
+        "n_valid_samples": n_valid,
+        "n_failed_samples": len(judge_results) - n_valid,
+        "judge_model": judge_model,
+        "mechanism_overall_score_mean": _mean("mechanism_overall_score"),
+        "mechanism_chain_completeness_mean": _mean("mechanism_chain_completeness"),
+        "mechanism_direction_correctness_mean": _mean("mechanism_direction_correctness"),
+        "mechanism_granularity_mean": _mean("mechanism_granularity"),
+        "mechanism_internal_consistency_mean": _mean("mechanism_internal_consistency"),
+        "uncertainty_calibration_mean": _mean("uncertainty_calibration"),
+        "clinical_actionability_mean": _mean("clinical_actionability"),
+        "mechanism_good_rate": float(good_rate),
     }
 
 

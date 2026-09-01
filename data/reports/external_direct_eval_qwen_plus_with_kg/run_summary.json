@@ -1,0 +1,77 @@
+{
+  "run_id": "external_direct_eval_qwen_plus_with_kg_20260901_171709",
+  "experiment": "external_direct_eval_qwen_plus_with_kg",
+  "n_samples": 1042,
+  "generation": {
+    "requested_samples": 1042,
+    "successful_outputs": 1042,
+    "failed_samples": 0
+  },
+  "agent_loop": {
+    "enabled": false,
+    "max_rounds": 3,
+    "use_judge_critic": false
+  },
+  "external_model": {
+    "model": "qwen-plus",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  },
+  "artifacts": {
+    "predictions": "data\\reports\\external_direct_eval_qwen_plus_with_kg\\inference\\test_out.json",
+    "compare_summary": "data\\reports\\external_direct_eval_qwen_plus_with_kg\\compare_summary.csv"
+  },
+  "evaluation_summary": {
+    "faithfulness": {
+      "n_samples": 1042,
+      "coverage_mean": 0.012775340462480576,
+      "hallucination_mean": 0.32552554611095863,
+      "partial_support_mean": 0.6616991134265604,
+      "consistency_mean": 0.7888035828534862,
+      "kg_grounded_mean": 0.3713870609024161,
+      "query_coverage_mean": 0.8763595649392192,
+      "strict_supported_mean": 0.012775340462480576,
+      "strict_unsupported_mean": 0.32552554611095863,
+      "lenient_supported_mean": 0.019717119093318705,
+      "by_evidence_mode": {
+        "with_kg": {
+          "n_samples": 1042,
+          "coverage_mean": 0.012775340462480576,
+          "hallucination_mean": 0.32552554611095863,
+          "partial_support_mean": 0.6616991134265604,
+          "consistency_mean": 0.7888035828534862,
+          "kg_grounded_mean": 0.3713870609024161
+        },
+        "no_kg": {
+          "n_samples": 0,
+          "coverage_mean": 0.0,
+          "hallucination_mean": 0.0,
+          "partial_support_mean": 0.0,
+          "consistency_mean": 0.0,
+          "kg_grounded_mean": null
+        }
+      }
+    },
+    "tag": "20260901_201332",
+    "output_dir": "data\\reports\\external_direct_eval_qwen_plus_with_kg\\explanation_eval",
+    "artifacts": [
+      "data\\reports\\external_direct_eval_qwen_plus_with_kg\\explanation_eval\\faithfulness_detail_20260901_201332.json",
+      "data\\reports\\external_direct_eval_qwen_plus_with_kg\\explanation_eval\\faithfulness_summary_20260901_201332.json",
+      "data\\reports\\external_direct_eval_qwen_plus_with_kg\\judge_eval\\judge_detail_20260901_215152.json",
+      "data\\reports\\external_direct_eval_qwen_plus_with_kg\\judge_eval\\judge_summary_20260901_215152.json"
+    ],
+    "judge": {
+      "n_samples": 1042,
+      "n_valid_samples": 1039,
+      "n_failed_samples": 3,
+      "judge_model": "qwen-max",
+      "mechanism_overall_score_mean": 8.593840230991338,
+      "mechanism_chain_completeness_mean": 1.2550529355149183,
+      "mechanism_direction_correctness_mean": 1.5996150144369585,
+      "mechanism_granularity_mean": 1.3657362848893166,
+      "mechanism_internal_consistency_mean": 1.9942252165543792,
+      "uncertainty_calibration_mean": 1.8960538979788257,
+      "clinical_actionability_mean": 0.3474494706448508,
+      "mechanism_good_rate": 0.2964388835418672
+    }
+  }
+}

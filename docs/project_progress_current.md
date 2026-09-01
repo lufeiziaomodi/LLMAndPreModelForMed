@@ -1,6 +1,6 @@
 # 项目当前进展与方向
 
-更新时间：2026-07-12
+更新时间：2026-09-01
 
 本文用于快速恢复项目上下文：当前项目在做什么、各目录负责什么、主要创新点是什么、下一步卡点在哪里。
 
@@ -299,3 +299,11 @@ Evidence summary:
 ## 7. 一句话总结
 
 当前项目的核心方向是：把 PrimeKG 从“大图节点列表”压缩成“句子条件下的机制证据摘要”，再用外部 LLM 蒸馏出高质量推理链，最后用 Llama3 微调学习这种机制解释能力，并用更严格的事实度评估控制幻觉。
+
+## 8. 2026-09-01 全量实验进展
+
+- Qwen-Plus Direct No-KG 与 Raw-KG 已在同一 1042 条测试集上完成全量对照，生成均为 1042/1042 成功。
+- No-KG 校准后：strict support 0.0291、partial support 0.5162、hallucination 0.4548、query coverage 0.8732、Judge 8.4904/12。
+- Raw-KG：strict support 0.0128、partial support 0.6617、hallucination 0.3255、query coverage 0.8764、KG grounded 0.3714；有效 Judge 1039/1042，8.5938/12。
+- Raw-KG 的 3 条最长证据为 7.4 万至 10.5 万字符，qwen-max Judge 返回 HTTP 400。这说明原始一阶邻居不仅存在语义噪声，也存在明确的上下文长度与调用成本问题。
+- 当前最优先实验转为：先构建 Anchor Filter / Cue-conditioned Evidence Summary，再做 Filtered-KG Direct 对照；Agent Loop 是后续工程主线，负责将外部模型从全量调用收缩为困难样本救援。

@@ -1,6 +1,6 @@
 # 下一阶段执行计划：With-KG 基线、Agent Loop 与论文起稿
 
-更新时间：2026-08-31
+更新时间：2026-09-01
 
 ## 1. 当前可确认的研究状态
 
@@ -8,7 +8,8 @@
 
 - **Llama3 Base No-KG**：2026-04 历史全量实验，1042 条。该结果使用较早评估口径，适合保留作历史参照，不宜与新版 Judge 直接并列下结论。
 - **Llama3 LoRA Reasoning No-KG**：2026-04 已完成训练、推理和评估；同样属于旧评估口径，主要证明“蒸馏微调链路可运行”。
-- **Qwen-Plus Direct No-KG**：2026-07 在新版评价体系下完成 1042 条全量直接推理，0 条生成失败。Faithfulness：coverage 0.0289、partial support 0.5173、hallucination 0.4538、query coverage 0.7252；Judge：机制总分 8.4904/12，链条完整性 1.2687/2，方向正确性 1.7188/2，机制粒度 1.0211/2，good rate 0.2831。
+- **Qwen-Plus Direct No-KG**：完成 1042 条全量直接推理，0 条生成失败。按 2026-09-01 校准口径重算后，Faithfulness：strict support 0.0291、partial support 0.5162、hallucination 0.4548、query coverage 0.8732；Judge：机制总分 8.4904/12，good rate 0.2831。
+- **Qwen-Plus Direct Raw-KG**：2026-09-01 完成 1042 条全量直接推理，0 条生成失败。Faithfulness：strict support 0.0128、partial support 0.6617、hallucination 0.3255、query coverage 0.8764、KG grounded 0.3714；Judge 有效 1039 条，机制总分 8.5938/12、good rate 0.2964。3 条最长 Raw-KG 样本因上下文达到 7.4 万至 10.5 万字符而被 qwen-max 以 HTTP 400 拒绝，失败记录保留但不计入有效均值。
 
 ### 已落地但尚未全量验证的能力
 
@@ -25,7 +26,7 @@
 
 ## 2. 下一步实验顺序
 
-### 实验 A：Qwen-Plus Direct With-KG 全量基线
+### 实验 A：Qwen-Plus Direct With-KG 全量基线（已完成）
 
 目的：在与已完成 No-KG 基线相同的模型、样本数和评价体系下，测量 KG 是否提高证据支撑和机制粒度。
 
@@ -33,6 +34,7 @@
 - 输入：`data/finetune/test/input_test_label_only_with_kg.json`，1042 条。
 - 输出协议：一句话现象解释；先识别代谢/吸收等 cue，再验证 CYP 等 KG 锚点；最多保留 3 个代表药物对。
 - 报告重点：coverage、hallucination、query coverage、KG grounded、机制总分、链条完整性、机制粒度。
+- 阶段结论：Raw-KG 将 hallucination 降低 0.1292、partial support 提高 0.1455、Judge 提高 0.1034（按有效样本），但 strict support 降低 0.0163。原始邻居有助于提供机制锚点，却不能保证完整因果链受到证据支持；极端长上下文还会直接触发 API 拒绝。这一结果为后续 Anchor Filter 和 Cue-conditioned Evidence Summary 提供了必要动机。
 
 ### 实验 B：Qwen-Plus Direct With-KG + Faithfulness Agent Loop
 
@@ -83,16 +85,16 @@ python -m apps.run_external_direct_eval `
 
 ## 4. 论文现在可以起草的部分
 
-在实验 A/B 运行期间，可并行开始写方法章节；不要将 Mock 水位写进结果章节。
+实验 A 已可写入结果章节；实验 B 运行期间可并行开始写方法章节和 Raw-KG 误差分析。不要将 Mock 水位写进结果章节。
 
 1. **引言**：DDI 分类的局限在于只给标签而不解释机制；医学场景还要求可追溯、可核验。
 2. **方法**：双轨任务划分（分类与解释分离）、句子条件 KG 锚点、现象级结构化输出、Faithfulness × Judge 双通道评价、Agent Loop 的质量门控。
 3. **实验设置**：统一 1042 条测试集、Qwen-Plus Direct No-KG / With-KG、Agent Loop 消融、评价指标和成本统计。
-4. **结果与讨论**：待 A/B 的真实报告产生后填写；分别报告可靠性表、机制能力表和质量—成本曲线。
+4. **结果与讨论**：先写 No-KG 与 Raw-KG 全量对照；Agent Loop 的质量—成本曲线待实验 B 后补充。
 5. **误差分析**：挑选“无可靠 KG 锚点”“方向不清”“代表药物对遗漏”“重复重试无收益”四类案例。
 
 ## 5. 当前验收标准
 
-- 实验 A：1042 条生成无空输出，四类新指标和 Judge 报告完整落盘。
+- 实验 A：已验收。1042 条生成无空输出，Faithfulness 与 Judge 报告完整落盘；3 条超长 Judge 失败已单独记录。
 - 实验 B：trace 完整；可统计平均轮次与最终通过率；报告质量增益是否值得额外成本。
 - 论文：方法与实验设置章节先完成，结果章节仅引用可追溯报告文件中的实测数值。

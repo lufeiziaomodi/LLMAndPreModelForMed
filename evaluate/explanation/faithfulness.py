@@ -1,4 +1,5 @@
-from typing import Any, Dict, List
+import re
+from typing import Any, Dict, List, Set
 
 from .processor import (
     compute_query_coverage,
@@ -42,6 +43,26 @@ CLINICAL_OUTCOME_HINTS = {
     "hypoglycemia", "toxicity", "adverse", "risk", "warning", "serum",
     "outcome", "response", "event",
 }
+
+KG_ANCHOR_PATTERN = re.compile(
+    r"\b([A-Za-z][A-Za-z0-9_-]{1,40})\s*\("
+    r"(?:Enzyme|Transporter|Target|Carrier|Gene/protein(?:;[^)]*)?)\)",
+    flags=re.IGNORECASE,
+)
+
+
+def _extract_kg_anchors(kg_evidence: str) -> Set[str]:
+    anchors: Set[str] = set()
+    for raw_anchor in KG_ANCHOR_PATTERN.findall(str(kg_evidence or "")):
+        anchors.update(tokenize(raw_anchor, drop_stopwords=False))
+    return anchors
+
+
+def _claim_kg_anchor_overlap(claim: str, kg_anchors: Set[str]) -> List[str]:
+    if not kg_anchors:
+        return []
+    claim_tokens = set(tokenize(claim, drop_stopwords=False))
+    return sorted(claim_tokens & kg_anchors)
 
 
 def _claim_support_score(claim: str, evidence_text: str) -> float:
@@ -311,14 +332,21 @@ def compute_faithfulness_for_sample(
     partial_support_rate = len(partial_supported) / len(claims)
 
     kg_grounded_ratio = None
+    kg_grounded_claims: List[Dict[str, Any]] = []
     if has_kg:
-        kg_supported = 0
-        for item in claim_records:
-            features = _claim_support_features(item["claim"], kg_text)
-            claim_type = _classify_claim_type(item["claim"], item.get("field", ""), normalized_explanation, features)
-            if _categorize_support(features, has_kg=True, claim_type=claim_type, lenient=False) == "supported":
-                kg_supported += 1
-        kg_grounded_ratio = float(kg_supported / len(claims))
+        kg_anchors = _extract_kg_anchors(kg_evidence)
+        kg_claim_records = list(claim_records)
+        seen_kg_claims = {normalize_text(item["claim"]) for item in kg_claim_records}
+        for item in normalized_explanation.get("optional_inference", []):
+            claim = str(item.get("text", "") or "").strip()
+            if claim and normalize_text(claim) not in seen_kg_claims:
+                seen_kg_claims.add(normalize_text(claim))
+                kg_claim_records.append({"claim": claim, "field": "optional_inference"})
+        for item in kg_claim_records:
+            matched_anchors = _claim_kg_anchor_overlap(item["claim"], kg_anchors)
+            if matched_anchors:
+                kg_grounded_claims.append({"claim": item["claim"], "matched_anchors": matched_anchors})
+        kg_grounded_ratio = float(len(kg_grounded_claims) / len(kg_claim_records)) if kg_claim_records else 0.0
 
     label = effective_label
     label_terms = LABEL_KEYWORDS.get(label, set())
@@ -352,6 +380,7 @@ def compute_faithfulness_for_sample(
         "partial_support_rate": float(partial_support_rate),
         "consistency_score": float(consistency_score),
         "kg_grounded_ratio": kg_grounded_ratio,
+        "kg_grounded_claims": kg_grounded_claims,
         "supported_claims": supported,
         "partial_supported_claims": partial_supported,
         "unsupported_claims": unsupported,
@@ -367,6 +396,8 @@ def compute_faithfulness_for_sample(
         "query_coverage": query_coverage["query_coverage"],
         "covered_queries": query_coverage["covered_queries"],
         "total_queries": query_coverage["total_queries"],
+        "query_coverage_denominator": query_coverage["query_coverage_denominator"],
+        "representative_pair_precision": query_coverage["representative_pair_precision"],
         "evidence_sentence_coverage": float(1.0 if normalized_explanation.get("evidence_sent_ids") else 0.0),
         "predicted_label": effective_label,
         "predicted_label_source": normalized_explanation.get("label_source", ""),

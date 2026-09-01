@@ -189,7 +189,9 @@ def strip_code_fence(text: str) -> str:
 def _clean_claim_text(text: str) -> str:
     s = str(text or "").strip()
     s = s.replace("\r", "\n")
-    s = re.sub(r"(?<![A-Za-z])\d+\s*[\.\)]\s*", "", s)
+    # Remove only a list marker at the beginning. A broad numeric pattern would
+    # corrupt biomedical identifiers such as CYP2C19).
+    s = re.sub(r"^\s*\d+\s*[\.\)]\s*", "", s)
     s = re.sub(r"\s+", " ", s).strip(" \t\n\r-,:;[]{}\"'")
     return s.strip()
 
@@ -255,7 +257,8 @@ def _parse_json_payload(text: str) -> Optional[Any]:
 def _split_sentence_units(text: str) -> List[str]:
     cleaned = strip_code_fence(text)
     cleaned = cleaned.replace("\r", "\n")
-    cleaned = re.sub(r"(?<![A-Za-z])\d+\s*[\.\)]\s*", "\n", cleaned)
+    cleaned = re.sub(r"(?<=\S)\s+(?=\d+\s*[\.\)]\s+)", "\n", cleaned)
+    cleaned = re.sub(r"(?m)^\s*\d+\s*[\.\)]\s*", "", cleaned)
     raw_parts = re.split(r"[\n;]+|(?<=[.!?])\s+", cleaned)
     parts: List[str] = []
     for part in raw_parts:
@@ -340,9 +343,10 @@ def _normalize_legacy_items(items: List[Dict[str, Any]]) -> Dict[str, Any]:
         mechanism_summary = str(item.get("mechanism_summary", "") or "").strip()
         if mechanism_summary:
             mechanism_summaries.append(mechanism_summary)
-            bucket = _classify_claim_bucket(mechanism_summary)
-            target = optional_inference if bucket == "optional_inference" else core_claims
-            target.append(_text_to_claim_object(mechanism_summary, bucket))
+            for sentence in _split_sentence_units(mechanism_summary):
+                bucket = _classify_claim_bucket(sentence)
+                target = optional_inference if bucket == "optional_inference" else core_claims
+                target.append(_text_to_claim_object(sentence, bucket))
 
     merged_summary = " ".join(mechanism_summaries).strip()
     merged_steps = " ".join(analysis_steps).strip()
@@ -397,9 +401,10 @@ def _normalize_structured_dict(payload: Dict[str, Any]) -> Dict[str, Any]:
             target.append(_text_to_claim_object(sentence, bucket))
 
     if mechanism_summary and not core_claims:
-        bucket = _classify_claim_bucket(mechanism_summary)
-        target = optional_inference if bucket == "optional_inference" else core_claims
-        target.append(_text_to_claim_object(mechanism_summary, bucket))
+        for sentence in _split_sentence_units(mechanism_summary):
+            bucket = _classify_claim_bucket(sentence)
+            target = optional_inference if bucket == "optional_inference" else core_claims
+            target.append(_text_to_claim_object(sentence, bucket))
 
     evidence_ids = payload.get("evidence_sent_ids", [])
     if not isinstance(evidence_ids, list):
@@ -505,21 +510,50 @@ def extract_claim_records(text: str) -> List[Dict[str, str]]:
 
 
 def parse_query_pairs(queries: str) -> List[str]:
-    return _normalize_pairs(expand_query_pairs(queries))
+    return _valid_unique_pairs(expand_query_pairs(queries))
+
+
+def _canonical_pair(pair: str) -> Optional[str]:
+    text = str(pair or "").replace("=>", "->").strip()
+    if "->" not in text:
+        return None
+    left, right = (part.strip() for part in text.split("->", 1))
+    if not left or not right or normalize_text(left) == normalize_text(right):
+        return None
+    return f"{left} -> {right}"
+
+
+def _valid_unique_pairs(pairs: List[str]) -> List[str]:
+    seen = set()
+    ordered: List[str] = []
+    for pair in pairs:
+        canonical = _canonical_pair(pair)
+        if not canonical:
+            continue
+        key = normalize_text(canonical)
+        if key in seen:
+            continue
+        seen.add(key)
+        ordered.append(canonical)
+    return ordered
 
 
 def compute_query_coverage(queries: str, representative_pairs: List[str]) -> Dict[str, Any]:
     query_pairs = parse_query_pairs(queries)
-    rep_pairs = _normalize_pairs([str(x or "").replace("=>", "->") for x in representative_pairs])
+    rep_pairs = _valid_unique_pairs([str(x or "") for x in representative_pairs])
     query_set = {normalize_text(item) for item in query_pairs}
     rep_set = {normalize_text(item) for item in rep_pairs}
     covered = sorted(query_set & rep_set)
+    denominator = min(len(query_pairs), 3)
+    covered_count = min(len(covered), denominator)
     return {
         "query_pairs": query_pairs,
         "representative_pairs": rep_pairs,
-        "covered_queries": len(covered),
+        "covered_queries": covered_count,
         "total_queries": len(query_pairs),
-        "query_coverage": float(len(covered) / len(query_pairs)) if query_pairs else 0.0,
+        "query_coverage_denominator": denominator,
+        "query_coverage": float(covered_count / denominator) if denominator else 0.0,
+        "representative_pair_precision": float(len(covered) / len(rep_pairs)) if rep_pairs else 0.0,
     }
 
 
