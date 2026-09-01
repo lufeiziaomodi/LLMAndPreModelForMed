@@ -1,0 +1,43 @@
+{
+  "experiment": {
+    "name": "external_direct_eval_qwen_plus_with_kg_agent_faith",
+    "output_root": "data/reports"
+  },
+  "external_generation": {
+    "input": "data/finetune/test/input_test_label_only_with_kg.json",
+    "model": "qwen-plus",
+    "api_key": "${DASHSCOPE_API_KEY}",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "generation_mode": "explanation_with_kg",
+    "ignore_kg_evidence": false,
+    "max_new_tokens": 768,
+    "max_kg_evidence_chars": 0,
+    "max_sentence_chars": 0,
+    "request_timeout": 180,
+    "request_retries": 4,
+    "request_retry_delay": 2.0,
+    "limit": null
+  },
+  "agent_loop": {
+    "enabled": true,
+    "max_rounds": 3,
+    "faithfulness_min_coverage": 0.4,
+    "faithfulness_max_hallucination": 0.5,
+    "use_judge_critic": false,
+    "judge_min_overall_score": 7.0,
+    "keep_full_messages_in_trace": false,
+    "verbose": true
+  },
+  "explanation_eval": {
+    "enabled": true,
+    "model_name": "qwen_plus_direct_with_kg_agent_faith"
+  },
+  "judge": {
+    "enabled": true,
+    "model_id": "qwen-max",
+    "api_key": "${DASHSCOPE_API_KEY}",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "max_retries": 4,
+    "retry_delay": 2.0
+  }
+}

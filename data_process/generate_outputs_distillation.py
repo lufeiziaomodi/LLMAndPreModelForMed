@@ -91,15 +91,6 @@ FEW_SHOT_ASSISTANT_NO_KG = """[
 ]
 """
 
-SYSTEM_PROMPT_EXPLANATION_WITH_KG = """You are an expert Clinical Pharmacologist and Graph Reasoning Assistant.
-Generate explanation-only outputs from sentence text and KG evidence.
-
-### OUTPUT FORMAT
-Output a JSON list of objects:
-[{"query": "A -> B", "analysis_steps": "Step 1... 2...", "mechanism_summary": "<brief>", "confidence_assessment": "High/Medium/Low"}]
-Do not output any label field.
-"""
-
 SYSTEM_PROMPT_EXPLANATION_NO_KG = """You are an expert Clinical Pharmacologist.
 Generate concise, evaluation-friendly explanation-only outputs from sentence text only.
 
@@ -116,6 +107,23 @@ Do not output any label field, confidence field, or uncertainty score.
 5. Do not mention KG evidence, labels, or confidence.
 """
 
+SYSTEM_PROMPT_EXPLANATION_WITH_KG = """You are an expert Clinical Pharmacologist and Graph Reasoning Assistant.
+Generate concise, evaluation-friendly explanation-only outputs from sentence text and KG evidence.
+
+### OUTPUT FORMAT
+Output a JSON list of objects:
+[{"query": "GLOBAL_PHENOMENON", "analysis_steps": "Step 1... 2...", "mechanism_summary": "<brief>", "representative_pairs": ["A -> B", "C -> D"]}]
+Do not output any label field, confidence field, or uncertainty score.
+
+### GENERATION RULES
+1. State the clinical phenomenon indicated by the sentence before proposing a mechanism.
+2. Use KG only as a mechanism anchor. Do not infer inhibition, induction, substrate status, or a causal direction from a KG node alone.
+3. For metabolism-related sentences, first identify a metabolism-inhibition cue, then verify a CYP or other enzyme anchor in KG evidence before naming it.
+4. Keep analysis_steps short, concrete, and numbered.
+5. Use at most 3 representative pairs; do not enumerate all query pairs.
+6. When sentence evidence and KG anchors do not support a specific mechanism, state the uncertainty rather than inventing a pathway.
+"""
+
 FEW_SHOT_ASSISTANT_EXPLANATION = """[ 
     { 
         "query": "tetracycline -> bismuth subsalicylate", 
@@ -126,13 +134,23 @@ FEW_SHOT_ASSISTANT_EXPLANATION = """[
 ]
 """
 
-FEW_SHOT_ASSISTANT_EXPLANATION_NO_KG = """[ 
-    { 
-        "query": "GLOBAL_PHENOMENON", 
-        "analysis_steps": "1. Clinical phenomenon: the sentence reports reduced absorption during co-administration.\n2. Mechanistic interpretation: this is a pharmacokinetic interaction affecting drug exposure.\n3. Evidence compression: summarize representative pairs instead of enumerating all possible pair combinations.", 
+FEW_SHOT_ASSISTANT_EXPLANATION_NO_KG = """[
+    {
+        "query": "GLOBAL_PHENOMENON",
+        "analysis_steps": "1. Clinical phenomenon: the sentence reports reduced absorption during co-administration.\n2. Mechanistic interpretation: this is a pharmacokinetic interaction affecting drug exposure.\n3. Evidence compression: summarize representative pairs instead of enumerating all possible pair combinations.",
         "mechanism_summary": "The clinical phenomenon is a mechanism-level DDI characterized by reduced absorption in co-administration.",
         "representative_pairs": ["tetracycline -> bismuth subsalicylate"]
-    } 
+    }
+]
+"""
+
+FEW_SHOT_ASSISTANT_EXPLANATION_WITH_KG = """[
+    {
+        "query": "GLOBAL_PHENOMENON",
+        "analysis_steps": "1. The sentence reports that co-administration reduces metabolism and raises exposure.\n2. The KG evidence contains CYP2C9 anchors for the listed drugs, which is consistent with a metabolism-related mechanism.\n3. The evidence supports a CYP2C9-anchored interpretation, but the inhibition direction is taken from the sentence rather than from the KG node alone.",
+        "mechanism_summary": "The sentence describes reduced metabolism with increased plasma exposure; CYP2C9 is a supported enzyme anchor for the representative drug pairs.",
+        "representative_pairs": ["DIFLUCAN -> tolbutamide", "DIFLUCAN -> glyburide", "DIFLUCAN -> glipizide"]
+    }
 ]
 """
 
@@ -180,6 +198,15 @@ def _fixed_prompt_roles_explanation_no_kg() -> tuple:
     )
 
 
+@lru_cache(maxsize=1)
+def _fixed_prompt_roles_explanation_with_kg() -> tuple:
+    return (
+        ("system", SYSTEM_PROMPT_EXPLANATION_WITH_KG),
+        ("user", FEW_SHOT_USER),
+        ("assistant", FEW_SHOT_ASSISTANT_EXPLANATION_WITH_KG),
+    )
+
+
 def build_messages_for_entry(
     entry: Dict[str, Any],
     max_kg_evidence_chars: int = 0,
@@ -196,8 +223,29 @@ def build_messages_for_entry(
     kg_evidence = _truncate_text(raw_kg_evidence, max_kg_evidence_chars)
     query_group = get_query_group_text(input_data)
     gold_label = input_data.get("gold_label", "Mechanism")
-    if generation_mode not in {"label_conditioned", "explanation_only", "distill_reasoning_without_kg"}:
-        raise ValueError("generation_mode must be one of: label_conditioned, explanation_only, distill_reasoning_without_kg")
+
+    # Keep prompt-mode names used by inference/direct-eval configs compatible
+    # with the smaller set of generation modes implemented here.
+    mode_aliases = {
+        "explanation_without_kg": "explanation_only",
+        "distill_reasoning_with_kg": "explanation_only",
+    }
+    if generation_mode == "explanation_without_kg":
+        ignore_kg_evidence = True
+        raw_kg_evidence = ""
+        has_kg_evidence = False
+        kg_evidence = ""
+    generation_mode = mode_aliases.get(generation_mode, generation_mode)
+    if generation_mode not in {
+        "label_conditioned",
+        "explanation_only",
+        "explanation_with_kg",
+        "distill_reasoning_without_kg",
+    }:
+        raise ValueError(
+            "generation_mode must be one of: label_conditioned, explanation_only, "
+            "explanation_with_kg, distill_reasoning_without_kg"
+        )
 
     if generation_mode == "label_conditioned":
         if has_kg_evidence:
@@ -252,6 +300,27 @@ analysis_steps should contain 2-4 short numbered steps.
 Output:"""
 
             roles = _fixed_prompt_roles_explanation_no_kg()
+        elif generation_mode == "explanation_with_kg" and has_kg_evidence:
+            input_block = f"""{{
+  "sentence": "{sentence}",
+  "query_group": "{query_group}",
+  "kg_evidence": "{kg_evidence}"
+}}"""
+
+            current_user = f"""Instruction: {instruction}
+
+Input Data:
+{input_block}
+
+Generate one concise phenomenon-level explanation. First identify the sentence cue,
+then use KG only to validate mechanism anchors, and finally select at most 3 representative
+drug pairs from query_group. Do not turn a KG anchor into an unsupported causal claim.
+Return JSON list with fields: query, analysis_steps, mechanism_summary, representative_pairs.
+Set query to "GLOBAL_PHENOMENON".
+analysis_steps should contain 2-4 short numbered steps.
+Output:"""
+
+            roles = _fixed_prompt_roles_explanation_with_kg()
         elif has_kg_evidence:
             input_block = f"""{{
   "sentence": "{sentence}",

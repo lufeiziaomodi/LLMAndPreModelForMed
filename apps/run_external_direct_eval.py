@@ -45,6 +45,7 @@ from pipelines.agent_loop import (
 )
 from pipelines.explanation_pipeline import run_explanation_eval
 from pipelines.io_utils import load_config, make_run_id, save_json
+from pipelines.compare_pipeline import write_compare_summary
 from pipelines.query_utils import get_query_group_text
 
 
@@ -133,7 +134,7 @@ def run_external_direct_eval(config_path: str) -> Dict[str, Any]:
     output_root = str(exp.get("output_root", "data/reports"))
     run_id = make_run_id(exp_name)
 
-    exp_dir = ensure_dir(os.path.join(output_root, exp_name))
+    exp_dir = ensure_dir(Path(output_root) / exp_name)
     inference_dir = ensure_dir(exp_dir / "inference")
 
     # 快照 config 便于回溯
@@ -188,6 +189,7 @@ def run_external_direct_eval(config_path: str) -> Dict[str, Any]:
     # ---- 逐条生成 ----
     results: List[Dict[str, Any]] = []
     traces_by_id: Dict[str, Any] = {}
+    generation_failures = 0
     start_t = time.time()
 
     for idx, entry in enumerate(raw_data):
@@ -251,6 +253,7 @@ def run_external_direct_eval(config_path: str) -> Dict[str, Any]:
             except Exception as exc:
                 print(f"[error] idx={idx} generation failed: {exc}")
                 output_text = ""
+                generation_failures += 1
 
         # 记录结果，同时 pop 掉 gold_label 避免污染下游评估
         out_entry = dict(entry)
@@ -303,10 +306,38 @@ def run_external_direct_eval(config_path: str) -> Dict[str, Any]:
         print("[external-direct-eval] explanation_eval.enabled=false, skip evaluation")
         eval_result = {}
 
+    # Keep the direct baseline compatible with the shared result aggregator and
+    # make it directly comparable with LoRA/distilled experiments.
+    compare_rows: List[Dict[str, Any]] = []
+    if eval_result:
+        faith = eval_result.get("faithfulness", {}) or {}
+        judge = eval_result.get("judge", {}) or {}
+        compare_rows.append(
+            {
+                "experiment_name": exp_name,
+                "model_name": str(explanation_conf.get("model_name", model_id)),
+                "track": "explanation",
+                "coverage_mean": faith.get("coverage_mean", ""),
+                "hallucination_mean": faith.get("hallucination_mean", ""),
+                "consistency_mean": faith.get("consistency_mean", ""),
+                "mechanism_overall_score_mean": judge.get("mechanism_overall_score_mean", ""),
+            }
+        )
+
+    compare_csv = ""
+    if compare_rows:
+        compare_csv = write_compare_summary(str(exp_dir / "compare_summary.csv"), compare_rows)
+        print(f"[external-direct-eval] saved comparison summary to {compare_csv}")
+
     run_summary = {
         "run_id": run_id,
         "experiment": exp_name,
         "n_samples": len(results),
+        "generation": {
+            "requested_samples": len(raw_data),
+            "successful_outputs": sum(1 for item in results if str(item.get("output", "")).strip()),
+            "failed_samples": generation_failures,
+        },
         "agent_loop": {
             "enabled": enable_loop,
             "max_rounds": max_rounds,
@@ -315,6 +346,7 @@ def run_external_direct_eval(config_path: str) -> Dict[str, Any]:
         "external_model": {"model": model_id, "base_url": base_url},
         "artifacts": {
             "predictions": str(out_path),
+            "compare_summary": compare_csv,
         },
         "evaluation_summary": eval_result,
     }

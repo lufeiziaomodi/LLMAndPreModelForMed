@@ -73,6 +73,8 @@ python -m apps.run_external_direct_eval \
     --config configs/experiments/external_direct_eval_baseline.yaml
 ```
 
+当前 baseline 默认关闭 Agent Loop；反思-重试实验另行打开 `agent_loop.enabled`。若环境未安装 `PyYAML`，可改用等价的 `external_direct_eval_baseline.json` 配置。
+
 产物：`data/reports/external_direct_eval_qwen_plus_no_kg/`
 - `inference/test_out.json` — 外部 LLM 直接产出的解释
 - `inference/agent_trace_*.json` — agent loop 每轮反思轨迹（开启循环时）
@@ -243,7 +245,7 @@ judge:
 
 | 配置文件 | 场景 |
 |---|---|
-| `configs/experiments/external_direct_eval_baseline.yaml` | 外部 qwen-plus 直接对 test 推理 + agent loop（新增） |
+| `configs/experiments/external_direct_eval_baseline.yaml` | 外部 qwen-plus 直接对 test 推理 + 评估（Agent Loop 可选） |
 | `configs/experiments/restart_explanation_bootstrap.yaml` | 蒸馏 + LoRA 微调（reasoning_without_kg 版本） |
 | `configs/experiments/restart_without_kg_no_lora_bootstrap.yaml` | 无 LoRA baseline：直接跑 Llama3 base + explanation_eval |
 | `configs/experiments/restart_classification_only.yaml` | 只做五分类，不生成解释 |

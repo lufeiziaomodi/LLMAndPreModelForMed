@@ -1,0 +1,30 @@
+{
+  "n_samples": 1042,
+  "coverage_mean": 0.028902751119641697,
+  "hallucination_mean": 0.45383648660999953,
+  "partial_support_mean": 0.5172607622703591,
+  "consistency_mean": 0.615802943058222,
+  "kg_grounded_mean": null,
+  "query_coverage_mean": 0.7252306549548807,
+  "strict_supported_mean": 0.028902751119641697,
+  "strict_unsupported_mean": 0.45383648660999953,
+  "lenient_supported_mean": 0.03218170185540625,
+  "by_evidence_mode": {
+    "with_kg": {
+      "n_samples": 0,
+      "coverage_mean": 0.0,
+      "hallucination_mean": 0.0,
+      "partial_support_mean": 0.0,
+      "consistency_mean": 0.0,
+      "kg_grounded_mean": null
+    },
+    "no_kg": {
+      "n_samples": 1042,
+      "coverage_mean": 0.028902751119641697,
+      "hallucination_mean": 0.45383648660999953,
+      "partial_support_mean": 0.5172607622703591,
+      "consistency_mean": 0.615802943058222,
+      "kg_grounded_mean": null
+    }
+  }
+}

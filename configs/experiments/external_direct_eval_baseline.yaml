@@ -42,7 +42,8 @@ external_generation:
 #         如果任一 critic FAIL，就把 gap 反馈拼进 messages 再生成，最多 max_rounds 轮。
 #   落盘：data/reports/{experiment.name}/inference/agent_trace_<run_id>.json
 agent_loop:
-  enabled: true
+  # 先完成 direct external baseline；反思-重试实验另行开启。
+  enabled: false
   max_rounds: 3
 
   # Faithfulness 阈值：coverage>=X 且 hallucination<=Y 才算通过
